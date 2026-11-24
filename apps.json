@@ -1,0 +1,20 @@
+{
+  "updatedAt": "2024-11-23",
+  "admins": ["Alvandcode"],
+  "categories": ["ابزارها", "رسانه", "امنیت و حریم خصوصی"],
+  "apps": [
+    {
+      "id": "com.idol.store",
+      "name": "Idol Store",
+      "developer": "Idol",
+      "category": "ابزارها",
+      "description": "استور شخصی اپلیکیشن‌ها؛ آخرین ریلیز پایدار از گیت‌هاب گرفته و APK یونیورسال آن برای دانلود گذاشته می‌شود.",
+      "iconUrl": "https://raw.githubusercontent.com/Alvandcode/idol-store-catalog/main/icons/idol-store.png",
+      "packageName": "com.idol.store",
+      "github": "https://github.com/Alvandcode/idol-store",
+      "website": "https://example.com",
+      "email": "admin@example.com",
+      "telegram": "https://t.me/idolstore"
+    }
+  ]
+}
