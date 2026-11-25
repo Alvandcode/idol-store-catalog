@@ -1,0 +1,11 @@
+{
+  "reviews": {
+    "example: enter the first 12+ hex characters of the file's SHA-256 here": {
+      "reviewer": "github-username",
+      "date": "2026-01-01",
+      "decision": "false_positive",
+      "reason": "short explanation, e.g. detection matches bundled test fixture",
+      "note": "Review annotations never override automatic DANGEROUS blocking; they document human verification."
+    }
+  }
+}

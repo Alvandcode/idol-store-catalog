@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 2,
+  "scanner": "Idol Security Scanner",
+  "scannerVersion": "2.0.0",
+  "generatedAt": "2026-01-01T03:17:00+00:00",
+  "policy": {
+    "engines": {
+      "clamav": "ClamAV 0.103.x",
+      "yara": "4.2.0",
+      "semgrep": "1.78.0",
+      "gitleaks": "8.28.0",
+      "osv-scanner": "2.0.3"
+    },
+    "required_engines": ["clamav", "osv-scanner"],
+    "review_engines": ["yara", "semgrep", "gitleaks"],
+    "downloadsAreExecuted": false,
+    "maxAssetMB": 700,
+    "maxSourceMB": 300,
+    "parallelApps": 3,
+    "meaning": "no_detection/SAFE means the configured scanners completed and found nothing; it is not an absolute guarantee of safety. Files are never executed.",
+    "statuses": ["SAFE", "LOW_RISK", "WARNING", "DANGEROUS", "INCOMPLETE", "NOT_SCANNED", "SCAN_ERROR"]
+  },
+  "summary": {
+    "total": 3,
+    "by_status": { "SAFE": 0, "LOW_RISK": 0, "WARNING": 2, "DANGEROUS": 0, "INCOMPLETE": 1, "NOT_SCANNED": 0, "SCAN_ERROR": 0 },
+    "cache_hits": 1,
+    "rate_limit_hits": 0
+  },
+  "results": [
+    {
+      "id": "pattng",
+      "name": "PattNG",
+      "github_repository": "patterniha/PattNG",
+      "scan_timestamp": "2026-01-01T03:17:00+00:00",
+      "scanner_version": "2.0.0",
+      "from_cache": true,
+      "release_version": "v2.4.1",
+      "release_date": "2025-12-28T10:00:00Z",
+      "overall_status": "SAFE",
+      "risk_level": "low",
+      "status": "no_detection",
+      "source_scan": {
+        "sha256_source_archive": "3f2bd8be4f7f0b71e2f5f5e2f0f8f5f5e2f0f8f5f5e2f0f8f5f5e2f0f8f5f5e2",
+        "archive_bytes": 2145233,
+        "clamav": {
+          "engine": "clamav", "available": true, "version": "ClamAV 0.103.11",
+          "scanned_at": "2026-01-01T03:05:12+00:00", "exit_code": 0, "status": "no_detection", "detections": []
+        },
+        "dependency": {
+          "engine": "osv-scanner", "available": true, "version": "2.0.3",
+          "scanned_at": "2026-01-01T03:07:40+00:00", "exit_code": 0,
+          "status": "no_known_vulnerabilities", "vulnerabilities": []
+        },
+        "yara": { "engine": "yara", "available": true, "version": "4.2.0", "scanned_at": "2026-01-01T03:08:02+00:00", "exit_code": 0, "status": "no_detection", "detections": [] },
+        "semgrep": { "engine": "semgrep", "available": true, "version": "1.78.0", "scanned_at": "2026-01-01T03:09:30+00:00", "exit_code": 0, "status": "no_findings", "findings": [] },
+        "gitleaks": { "engine": "gitleaks", "available": true, "version": "8.28.0", "scanned_at": "2026-01-01T03:09:55+00:00", "exit_code": 0, "status": "no_findings", "findings": [] }
+      },
+      "scanned_assets": [
+        {
+          "name": "pattng-v2.4.1-universal.apk",
+          "declared_size": 22345678,
+          "size": 22345678,
+          "sha256": "9a7f3c1c6b8e4d2a0f5e7c9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b",
+          "sha256_after_scan": "9a7f3c1c6b8e4d2a0f5e7c9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b",
+          "integrity_verified": true,
+          "status": "no_detection",
+          "binary": {
+            "engine": "binary-inspection", "available": true, "scanned_at": "2026-01-01T03:10:02+00:00",
+            "status": "inspected", "file_type": "Zip archive data (Android APK)",
+            "is_zip_container": true, "apk_signature": "present",
+            "zip_inventory": { "is_zip": true, "entry_count": 412, "nested_archives": [], "embedded_executables": [], "declared_total_bytes": 45112233 }
+          },
+          "clamav": { "engine": "clamav", "available": true, "version": "ClamAV 0.103.11", "scanned_at": "2026-01-01T03:11:44+00:00", "exit_code": 0, "status": "no_detection", "detections": [] },
+          "yara": { "engine": "yara", "available": true, "version": "4.2.0", "scanned_at": "2026-01-01T03:12:10+00:00", "exit_code": 0, "status": "no_detection", "detections": [] }
+        }
+      ],
+      "detections": [],
+      "vulnerabilities": [],
+      "warnings": [],
+      "scan_errors": [],
+      "skipped_files": [],
+      "execution_statistics": { "api_calls": 8, "downloaded_bytes": 24490911, "cache_hit": true }
+    },
+    {
+      "id": "V2rayng.Idolteam",
+      "name": "V2rayNG",
+      "github_repository": "2dust/v2rayNG",
+      "scan_timestamp": "2026-01-01T03:17:00+00:00",
+      "scanner_version": "2.0.0",
+      "from_cache": false,
+      "release_version": "1.9.24",
+      "release_date": "2025-12-30T08:00:00Z",
+      "overall_status": "WARNING",
+      "risk_level": "medium",
+      "status": "warning",
+      "source_scan": {
+        "sha256_source_archive": "2c9f5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a",
+        "archive_bytes": 18452333,
+        "clamav": { "engine": "clamav", "available": true, "version": "ClamAV 0.103.11", "scanned_at": "2026-01-01T03:14:00+00:00", "exit_code": 0, "status": "no_detection", "detections": [] },
+        "dependency": {
+          "engine": "osv-scanner", "available": true, "version": "2.0.3",
+          "scanned_at": "2026-01-01T03:16:20+00:00", "exit_code": 1,
+          "status": "vulnerabilities_found",
+          "vulnerabilities": [
+            {
+              "tool": "osv-scanner",
+              "id": "GHSA-XXXX-YYYY-ZZZZ",
+              "package": "Gradle/com.example:library",
+              "installed_version": "1.2.0",
+              "fixed_versions": ["1.2.3"],
+              "summary": "Example known dependency vulnerability",
+              "source": "app/build.gradle.kts",
+              "severity": "medium"
+            }
+          ]
+        },
+        "yara": { "engine": "yara", "available": true, "version": "4.2.0", "scanned_at": "2026-01-01T03:16:45+00:00", "exit_code": 0, "status": "no_detection", "detections": [] },
+        "semgrep": { "engine": "semgrep", "available": true, "version": "1.78.0", "scanned_at": "2026-01-01T03:17:30+00:00", "exit_code": 0, "status": "no_findings", "findings": [] },
+        "gitleaks": { "engine": "gitleaks", "available": true, "version": "8.28.0", "scanned_at": "2026-01-01T03:17:50+00:00", "exit_code": 0, "status": "no_findings", "findings": [] }
+      },
+      "scanned_assets": [
+        {
+          "name": "v2rayNG_1.9.24_universal.apk",
+          "declared_size": 31225600,
+          "size": 31225600,
+          "sha256": "7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d",
+          "sha256_after_scan": "7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d",
+          "integrity_verified": true,
+          "status": "no_detection",
+          "binary": {
+            "engine": "binary-inspection", "available": true, "scanned_at": "2026-01-01T03:18:05+00:00",
+            "status": "inspected", "file_type": "Zip archive data (Android APK)",
+            "is_zip_container": true, "apk_signature": "present",
+            "zip_inventory": { "is_zip": true, "entry_count": 980, "nested_archives": [], "embedded_executables": [], "declared_total_bytes": 61222334 }
+          },
+          "clamav": { "engine": "clamav", "available": true, "version": "ClamAV 0.103.11", "scanned_at": "2026-01-01T03:19:31+00:00", "exit_code": 0, "status": "no_detection", "detections": [] },
+          "yara": { "engine": "yara", "available": true, "version": "4.2.0", "scanned_at": "2026-01-01T03:20:02+00:00", "exit_code": 0, "status": "no_detection", "detections": [] }
+        }
+      ],
+      "detections": [],
+      "vulnerabilities": [
+        { "tool": "osv-scanner", "id": "GHSA-XXXX-YYYY-ZZZZ", "package": "Gradle/com.example:library", "installed_version": "1.2.0", "fixed_versions": ["1.2.3"], "summary": "Example known dependency vulnerability", "source": "app/build.gradle.kts", "severity": "medium" }
+      ],
+      "warnings": ["1 known dependency vulnerabilities (OSV)"],
+      "scan_errors": [],
+      "skipped_files": [{ "name": "BUILD_NOTES.txt", "reason": "unsupported_file_type" }],
+      "execution_statistics": { "api_calls": 9, "downloaded_bytes": 49677933, "cache_hit": false }
+    },
+    {
+      "id": "zedsecure",
+      "name": "ZedSecure",
+      "github_repository": "CluvexStudio/ZedSecure",
+      "scan_timestamp": "2026-01-01T03:17:00+00:00",
+      "scanner_version": "2.0.0",
+      "from_cache": false,
+      "release_version": "v5.1.0",
+      "release_date": "2025-12-31T19:00:00Z",
+      "overall_status": "INCOMPLETE",
+      "risk_level": "unknown",
+      "status": "incomplete",
+      "source_scan": {
+        "sha256_source_archive": "1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f",
+        "archive_bytes": 40233111,
+        "clamav": { "engine": "clamav", "available": true, "version": "ClamAV 0.103.11", "scanned_at": "2026-01-01T03:21:00+00:00", "exit_code": 0, "status": "no_detection", "detections": [] },
+        "dependency": { "engine": "osv-scanner", "available": true, "version": "2.0.3", "scanned_at": "2026-01-01T03:23:10+00:00", "exit_code": 0, "status": "no_known_vulnerabilities", "vulnerabilities": [] },
+        "yara": { "engine": "yara", "available": true, "version": "4.2.0", "scanned_at": "2026-01-01T03:23:40+00:00", "exit_code": 0, "status": "detection", "detections": [
+          { "tool": "yara", "rule": "idol_embedded_pe_in_non_exe", "severity": "medium", "file": "source/scripts/stage.bin", "description": "Full PE executable embedded inside another file or archive entry" }
+        ]},
+        "semgrep": { "engine": "semgrep", "available": true, "version": "1.78.0", "scanned_at": "2026-01-01T03:24:20+00:00", "exit_code": 0, "status": "no_findings", "findings": [] },
+        "gitleaks": { "engine": "gitleaks", "available": true, "version": "8.28.0", "scanned_at": "2026-01-01T03:24:41+00:00", "exit_code": 0, "status": "no_findings", "findings": [] }
+      },
+      "scanned_assets": [
+        {
+          "name": "ZedSecure-v5.1.0-x86_64-windows.zip",
+          "declared_size": 58120322,
+          "size": 58120322,
+          "sha256": "5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d",
+          "sha256_after_scan": "5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d3a5f7e9b1d",
+          "integrity_verified": true,
+          "status": "no_detection",
+          "binary": {
+            "engine": "binary-inspection", "available": true, "scanned_at": "2026-01-01T03:25:00+00:00",
+            "status": "inspected", "file_type": "Zip archive data",
+            "is_zip_container": true, "apk_signature": null,
+            "zip_inventory": { "is_zip": true, "entry_count": 210, "nested_archives": ["updater.exe.config"], "embedded_executables": [], "declared_total_bytes": 92333444 }
+          },
+          "clamav": { "engine": "clamav", "available": true, "version": "ClamAV 0.103.11", "scanned_at": "2026-01-01T03:26:12+00:00", "exit_code": 0, "status": "no_detection", "detections": [] },
+          "yara": { "engine": "yara", "available": true, "version": "4.2.0", "scanned_at": "2026-01-01T03:26:55+00:00", "exit_code": 0, "status": "no_detection", "detections": [] }
+        },
+        {
+          "name": "ZedSecure-v5.1.0-linux-amd64.tar.gz",
+          "declared_size": 900999999,
+          "size": null,
+          "sha256": null,
+          "status": "not_scanned_size_limit",
+          "error": "declared size exceeds configured limit (700 MB)"
+        }
+      ],
+      "detections": [
+        { "tool": "yara", "rule": "idol_embedded_pe_in_non_exe", "severity": "medium", "file": "source/scripts/stage.bin", "description": "Full PE executable embedded inside another file or archive entry" }
+      ],
+      "vulnerabilities": [],
+      "warnings": ["1 YARA rule matches requiring review"],
+      "scan_errors": ["asset:ZedSecure-v5.1.0-linux-amd64.tar.gz:not_scanned_size_limit"],
+      "skipped_files": [],
+      "execution_statistics": { "api_calls": 7, "downloaded_bytes": 98353433, "cache_hit": false }
+    }
+  ]
+}
