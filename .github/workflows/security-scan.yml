@@ -35,7 +35,6 @@ jobs:
           sudo apt-get install -y clamav clamav-freshclam
           sudo systemctl stop clamav-freshclam.service || true
           sudo freshclam
-          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
       - name: Set up Go
         uses: actions/setup-go@v5
