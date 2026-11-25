@@ -17,7 +17,8 @@ SEVERITY_MAP = {"critical": "critical", "high": "high", "medium": "medium", "low
 
 
 def _load_rules(rules_dir: Path) -> list[str]:
-    return sorted(str(p) for p in rules_dir.glob("*.yar"))
+    # Rules may live in nested folders (e.g. rules/yara/); search recursively.
+    return sorted(str(p) for p in rules_dir.glob("**/*.yar"))
 
 
 def _parse_findings(output: str) -> list[dict[str, str]]:

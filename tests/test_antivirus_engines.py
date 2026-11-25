@@ -51,7 +51,8 @@ class YaraTest(unittest.TestCase):
         import base64
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "encoded.txt"
-            path.write_text(base64.b64encode(b"MZ\x90\x00\x03").decode() + "\n" * 1)
+            # base64 of 7-byte PE header prefix — must contain the rule's string.
+            path.write_text(base64.b64encode(b"MZ\x90\x00\x03\x00\x00\x00").decode() + "\n")
             result = subprocess.run(
                 ["yara", "-r", str(RULES / "yara" / "idol_custom.yar"), str(path)],
                 capture_output=True, text=True, timeout=60)
@@ -62,7 +63,7 @@ class YaraTest(unittest.TestCase):
         import base64
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "encoded.txt"
-            path.write_text(base64.b64encode(b"MZ\x90\x00\x03").decode())
+            path.write_text(base64.b64encode(b"MZ\x90\x00\x03\x00\x00\x00").decode())
             result = yara_engine.scan(path, RULES)
             self.assertEqual(result["status"], "detection")
             self.assertTrue(any(d["rule"] == "idol_encoded_pe_header" for d in result["detections"]))
