@@ -25,6 +25,49 @@
             "website": "V2rayng.2dust.Link",
             "email": "CaptainIronng@protonmail.com",
             "telegram": "https://t.me/github_2dust"
+        },
+        {
+            "id": "pattng",
+            "name": "PattNG",
+            "developer": "patterniha",
+            "category": "ابزارها",
+            "description": "A V2Ray client for Android, support Xray core and v2fly core",
+            "iconUrl": "https://avatars.githubusercontent.com/u/71074308?v=4",
+            "packageName": "Pattng.Idolteam",
+            "github": "patterniha/PattNG",
+            "telegram": "https://t.me/VPN_PattNG"
+        },
+        {
+            "id": "zedsecure",
+            "name": "ZedSecure",
+            "developer": "CluvexStudio",
+            "category": "ابزارها",
+            "description": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2",
+            "iconUrl": "https://avatars.githubusercontent.com/u/125141320?v=4",
+            "packageName": "Zedsecure.Idolteam",
+            "github": "CluvexStudio/ZedSecure",
+            "telegram": "https://t.me/CluvexStudio"
+        },
+        {
+            "id": "hiddify-app",
+            "name": "hiddify-app",
+            "developer": "hiddify",
+            "category": "ابزارها",
+            "description": "Multi-platform auto-proxy client, supporting Sing-box, X-ray, TUIC, Hysteria, Reality, Trojan, SSH etc. It’s an open-source, secure and ad-free.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/126981719?v=4",
+            "packageName": "Hiddify.Idolteam",
+            "github": "hiddify/hiddify-app",
+            "website": "https://hiddify.com"
+        },
+        {
+            "id": "happ-android",
+            "name": "happ-android",
+            "developer": "Happ-proxy",
+            "category": "ابزارها",
+            "iconUrl": "https://avatars.githubusercontent.com/u/195639782?v=4",
+            "packageName": "Happ.Idolteam",
+            "github": "Happ-proxy/happ-android",
+            "telegram": "https://t.me/happ_chat"
         }
     ],
     "admins": [
@@ -35,5 +78,5 @@
         "رسانه",
         "امنیت و حریم خصوصی"
     ],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
 }
