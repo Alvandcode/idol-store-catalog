@@ -222,7 +222,7 @@ def scan_app(app: dict[str, Any], max_asset_bytes: int, max_source_bytes: int) -
         asset_statuses = [a["status"] for a in result["assets"]]
         if source_status == "detection" or "malware_detected" in asset_statuses:
             result["status"] = "dangerous"
-        elif source_status in ("scan_error", "scanner_unavailable") or dep_status == "scan_error" or any(
+        elif source_status in ("scan_error", "scanner_unavailable") or dep_status in ("scan_error", "scanner_unavailable") or not asset_statuses or any(
             s not in ("no_detection",) for s in asset_statuses
         ):
             result["status"] = "incomplete"
