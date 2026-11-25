@@ -72,7 +72,7 @@ jobs:
       - name: Install OSV-Scanner and Gitleaks
         run: |
           go install github.com/google/osv-scanner/v2/cmd/osv-scanner@v2.0.3
-          go install github.com/gitleaks/gitleaks/v8@v8.28.0
+          go install github.com/zricethezav/gitleaks/v8@v8.28.0
           echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
       - name: Run unit tests
