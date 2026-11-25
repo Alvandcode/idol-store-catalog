@@ -1,0 +1,54 @@
+# Idol Security Scanner — bundled Semgrep rules (offline, low false positive).
+# Findings are review items; they never block downloads on their own.
+rules:
+  - id: idol-subprocess-shell-true
+    languages: [python]
+    message: subprocess call with shell=True enables shell injection
+    severity: WARNING
+    patterns:
+      - pattern-either:
+          - pattern: subprocess.$F(..., shell=True)
+          - pattern: os.system($X)
+          - pattern: os.popen($X)
+
+  - id: idol-python-eval-exec
+    languages: [python]
+    message: Dynamic code execution (eval/exec/compile) of variable input
+    severity: WARNING
+    pattern-either:
+      - pattern: eval($X)
+      - pattern: exec($X)
+      - pattern: __import__($X)
+
+  - id: idol-js-new-function
+    languages: [javascript, typescript]
+    message: Dynamic code construction with new Function()
+    severity: WARNING
+    pattern: new Function(...)
+
+  - id: idol-tls-verify-off
+    languages: [python]
+    message: TLS certificate verification disabled
+    severity: WARNING
+    pattern-either:
+      - pattern: requests.$F(..., verify=False)
+      - pattern: ssl._create_unverified_context()
+
+  - id: idol-unsafe-deserialization
+    languages: [python]
+    message: Unsafe deserialization of untrusted data
+    severity: WARNING
+    pattern-either:
+      - pattern: pickle.loads($X)
+      - pattern: yaml.load($X, ...)
+
+  - id: idol-hardcoded-secret-like
+    languages: [generic, generic]
+    message: Possible hardcoded credential or secret assignment
+    severity: INFO
+    paths:
+      exclude:
+        - "*_test*"
+        - "test_*"
+        - "*fixtures*"
+    pattern-regex: '(?i)\b(api[_-]?key|secret|password|passwd|auth[_-]?token)\b\s*[:=]+\s*["''][A-Za-z0-9+/_\-=]{16,}["'']'
