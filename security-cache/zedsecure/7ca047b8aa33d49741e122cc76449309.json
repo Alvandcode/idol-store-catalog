@@ -1,0 +1,235 @@
+{
+  "id": "zedsecure",
+  "name": "ZedSecure",
+  "github_repository": "CluvexStudio/ZedSecure",
+  "scan_timestamp": "2026-11-26T08:27:45+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v3.2.0",
+  "release_date": "2026-11-19T20:18:55Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "cc3adb49d81b0295c1c27fe3092d6a0c4d22df79fc559ef8429b26f7e97f0716",
+    "archive_bytes": 12253303,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-26T08:28:14+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-26T08:28:15+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-b10766j5/source/CluvexStudio-ZedSecure-11b9bb7\nNot in a Git repository, ignoring .gitignores\nScanned /tmp/idol-scan-v2-b10766j5/source/CluvexStudio-ZedSecure-11b9bb7/tools/stripcomments/go.mod file and found 1 package\npanic: unexpected expr: *ast.KeyValueExpr\n\ngoroutine 857 [running]:\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x38e336c767e0?, 0x38e336c6c800?, {0x2ed78c0?, 0x38e32fdf0750?}, {0x0, {0x0, 0x0}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:960 +0x206e\ngolang.org/x/tools/go/ssa.(*builder).expr(0x38e336c767e0, 0x38e336c6c800, {0x2ed78c0, 0x38e32fdf0750})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).assign(0x2ed3398?, 0x38e336c6c800, {0x2ed9fe8, 0x38e3365ed680}, {0x2ed78c0?, 0x38e32fdf0750?}, 0x58?, 0x38e32e679598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:608 +0x3a5\ngolang.org/x/tools/go/ssa.(*builder).compLit(0x38e336c767e0, 0x38e336c6c800, {0x2edfd28, 0x38e3365fe240}, 0x38e330657380, 0x1, 0x38e32e679598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:1306 +0x1252\ngolang.org/x/tools/go/ssa.(*builder).addr(0x38e336c767e0, 0x38e336c6c800, {0x2ed7890?, 0x38e330657380}, 0x1)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:455 +0xc7b\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x38e336c767e0, 0x38e336c6c800, {0x2ed79b0?, 0x38e330dc94c0}, {0x7, {0x2ed3370, 0x38e3310faa50}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:725 +0xce\ngolang.org/x/tools/go/ssa.(*builder).expr(0x38e336c767e0, 0x38e336c6c800, {0x2ed79b0, 0x38e330dc94c0})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).returnStmt(0x38e336c767e0, 0x38e336c6c800, 0x38e330dc94e0)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2841 +0x15a\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x38e336c767e0, 0x38e336c6c800, {0x2ed7b00?, 0x38e330dc94e0?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2741 +0x53e\ngolang.org/x/tools/go/ssa.(*builder).stmtList(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:966\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x38e336c767e0, 0x38e336c6c800, {0x2ed7b60?, 0x38e32fdf08d0?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2747 +0x10f1\ngolang.org/x/tools/go/ssa.(*builder).buildFromSyntax(0x38e336c767e0, 0x38e336c6c800)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2953 +0x25a\ngolang.org/x/tools/go/ssa.(*builder).buildFunction(0x1?, 0x38e336c6c800)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2906 +0x185\ngolang.org/x/tools/go/ssa.(*builder).iterate(0x38e336c767e0)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2891 +0x25\ngolang.org/x/tools/go/ssa.(*Package).build(0x38e3358c5200)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3174 +0xdc\nsync.(*Once).doSlow(0x2ee43b0?, 0x38e32c3aa0c0?)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:78 +0xab\nsync.(*Once).Do(...)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:69\ngolang.org/x/tools/go/ssa.(*Package).Build(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3163\ngolang.org/x/tools/go/ssa.(*Program).Build.func1(0x38e331d5dfa8?)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3142 +0x45\ncreated by golang.org/x/tools/go/ssa.(*Program).Build in goroutine 883\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3141 +0x1b4\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-26T08:28:15+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-26T08:28:19+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-26T08:28:23+00:00",
+      "exit_code": 1,
+      "status": "secrets_found",
+      "findings": [
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-b10766j5/source/CluvexStudio-ZedSecure-11b9bb7/shared/src/commonMain/kotlin/dev/cluvex/zedsecure/platform/SecureToken.kt",
+          "line": 5,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        }
+      ]
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "ZedSecure-3.2.0-arm64-v8a.apk",
+      "declared_size": 88373303,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-arm64.msi",
+      "declared_size": 167417261,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-armeabi-v7a.apk",
+      "declared_size": 88383131,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-linux-aarch64.tar.gz",
+      "declared_size": 166864354,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-linux-x86_64.tar.gz",
+      "declared_size": 173413050,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-universal.apk",
+      "declared_size": 154669542,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-windows-arm64.zip",
+      "declared_size": 163067983,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-windows-x86_64.zip",
+      "declared_size": 172722481,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-x86.apk",
+      "declared_size": 94722411,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-x86_64.apk",
+      "declared_size": 93209583,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ZedSecure-3.2.0-x86_64.msi",
+      "declared_size": 177087122,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:ZedSecure-3.2.0-arm64-v8a.apk:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-arm64.msi:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-armeabi-v7a.apk:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-linux-aarch64.tar.gz:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-linux-x86_64.tar.gz:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-universal.apk:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-windows-arm64.zip:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-windows-x86_64.zip:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-x86.apk:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-x86_64.apk:download_or_scan_error",
+    "asset:ZedSecure-3.2.0-x86_64.msi:download_or_scan_error"
+  ],
+  "skipped_files": [
+    {
+      "name": "SHA256SUMS-android.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-linux-arm64.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-linux.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-macos-arm64.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-macos-x86_64.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-windows-arm64.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-windows.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "ZedSecure-3.2.0-aarch64.AppImage",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "ZedSecure-3.2.0-aarch64.rpm",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "ZedSecure-3.2.0-amd64.deb",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "ZedSecure-3.2.0-arm64.deb",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "ZedSecure-3.2.0-macos-arm64.dmg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "ZedSecure-3.2.0-macos-x86_64.dmg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "ZedSecure-3.2.0-x86_64.AppImage",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "ZedSecure-3.2.0-x86_64.rpm",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "7ca047b8aa33d49741e122cc764493099bd9ed7cf352a9811b596ee6f8e2d191",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

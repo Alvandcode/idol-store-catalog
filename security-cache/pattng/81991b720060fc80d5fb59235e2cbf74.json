@@ -1,0 +1,203 @@
+{
+  "id": "pattng",
+  "name": "PattNG",
+  "github_repository": "patterniha/PattNG",
+  "scan_timestamp": "2026-11-26T08:27:45+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "2.4.1-P76",
+  "release_date": "2026-11-25T15:01:28Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "26ede31d1e357c318a75c983f013545b40dfbe3a18b420e92627739f5175c9e5",
+    "archive_bytes": 3513556,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-26T08:28:05+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-26T08:28:05+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-m_s24w49/source/patterniha-PattNG-dcff264\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-26T08:28:05+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-26T08:28:07+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-26T08:28:11+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "PattNG_2.4.1-P76_arm64-v8a.apk",
+      "declared_size": 80690594,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "PattNG_2.4.1-P76_armeabi-v7a.apk",
+      "declared_size": 81276770,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "PattNG_2.4.1-P76_universal.apk",
+      "declared_size": 166669898,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "PattNG_2.4.1-P76_x86.apk",
+      "declared_size": 60354969,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "PattNG_2.4.1-P76_x86_64.apk",
+      "declared_size": 84271144,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_arm64-v8a.apk",
+      "declared_size": 80689694,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_armeabi-v7a.apk",
+      "declared_size": 81275870,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_universal.apk",
+      "declared_size": 166669002,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_x86.apk",
+      "declared_size": 60354069,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_x86_64.apk",
+      "declared_size": 84270244,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:PattNG_2.4.1-P76_arm64-v8a.apk:download_or_scan_error",
+    "asset:PattNG_2.4.1-P76_armeabi-v7a.apk:download_or_scan_error",
+    "asset:PattNG_2.4.1-P76_universal.apk:download_or_scan_error",
+    "asset:PattNG_2.4.1-P76_x86.apk:download_or_scan_error",
+    "asset:PattNG_2.4.1-P76_x86_64.apk:download_or_scan_error",
+    "asset:PattNG_fdroid_2.4.1-P76_arm64-v8a.apk:download_or_scan_error",
+    "asset:PattNG_fdroid_2.4.1-P76_armeabi-v7a.apk:download_or_scan_error",
+    "asset:PattNG_fdroid_2.4.1-P76_universal.apk:download_or_scan_error",
+    "asset:PattNG_fdroid_2.4.1-P76_x86.apk:download_or_scan_error",
+    "asset:PattNG_fdroid_2.4.1-P76_x86_64.apk:download_or_scan_error"
+  ],
+  "skipped_files": [
+    {
+      "name": "PattNG-public-key.asc",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_2.4.1-P76_arm64-v8a.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_2.4.1-P76_armeabi-v7a.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_2.4.1-P76_universal.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_2.4.1-P76_x86.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_2.4.1-P76_x86_64.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_arm64-v8a.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_armeabi-v7a.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_universal.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_x86.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "PattNG_fdroid_2.4.1-P76_x86_64.apk.sig",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "81991b720060fc80d5fb59235e2cbf7447c379cff7d08c860e1afdaf2b3b4326",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

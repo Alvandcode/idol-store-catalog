@@ -1,0 +1,233 @@
+{
+  "id": "hiddify-app",
+  "name": "hiddify-app",
+  "github_repository": "hiddify/hiddify-app",
+  "scan_timestamp": "2026-11-26T08:28:02+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v5.9.15",
+  "release_date": "2026-11-19T07:44:59Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "c8055f3d4e629f8bdd30eb5596f36cfba314b481202369410a3dd3c4479777df",
+    "archive_bytes": 61685376,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-26T08:29:23+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-26T08:29:23+00:00",
+      "exit_code": 0,
+      "status": "no_known_vulnerabilities",
+      "vulnerabilities": []
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-26T08:29:23+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-26T08:29:28+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-26T08:29:31+00:00",
+      "exit_code": 1,
+      "status": "secrets_found",
+      "findings": [
+        {
+          "tool": "gitleaks",
+          "rule": "pkcs12-file",
+          "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/android/app/src/androidTest/assets/mtls_client.p12",
+          "line": 0,
+          "description": "Found a PKCS #12 file, which commonly contain bundled private keys."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/.github/sync_translate.sh",
+          "line": 1,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/lib/features/profile/details/json_editor.dart",
+          "line": 121,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/lib/features/profile/details/json_editor.dart",
+          "line": 157,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/lib/features/profile/details/json_editor.dart",
+          "line": 192,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/lib/features/profile/details/json_editor.dart",
+          "line": 194,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        }
+      ]
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "Hiddify-Android-arm64.apk",
+      "declared_size": 67260345,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Hiddify-Android-arm7.apk",
+      "declared_size": 65520115,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Hiddify-Android-universal.apk",
+      "declared_size": 187973042,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Hiddify-Android-x86_64.apk",
+      "declared_size": 70429596,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Hiddify-iOS.ipa",
+      "declared_size": 117699653,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Hiddify-Linux-arm64.AppImage.tar.gz",
+      "declared_size": 69307104,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Hiddify-Linux-x64.AppImage.tar.gz",
+      "declared_size": 73069200,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Hiddify-Windows-Portable-x64.zip",
+      "declared_size": 70480719,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Hiddify-Windows-Setup-x64.exe",
+      "declared_size": 51208848,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "asset:Hiddify-Android-arm64.apk:download_or_scan_error",
+    "asset:Hiddify-Android-arm7.apk:download_or_scan_error",
+    "asset:Hiddify-Android-universal.apk:download_or_scan_error",
+    "asset:Hiddify-Android-x86_64.apk:download_or_scan_error",
+    "asset:Hiddify-iOS.ipa:download_or_scan_error",
+    "asset:Hiddify-Linux-arm64.AppImage.tar.gz:download_or_scan_error",
+    "asset:Hiddify-Linux-x64.AppImage.tar.gz:download_or_scan_error",
+    "asset:Hiddify-Windows-Portable-x64.zip:download_or_scan_error",
+    "asset:Hiddify-Windows-Setup-x64.exe:download_or_scan_error"
+  ],
+  "skipped_files": [
+    {
+      "name": "Hiddify-Debian-arm64.deb",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Hiddify-Debian-x64.deb",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Hiddify-Linux-arm64.AppImage",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Hiddify-Linux-x64.AppImage",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Hiddify-MacOS-Installer.pkg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Hiddify-MacOS.dmg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Hiddify-rpm-arm64.rpm",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Hiddify-rpm-x64.rpm",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Hiddify-Windows-Setup-x64.Msix",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "install.sh",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "f7425a00246a62fb7b00b1c64ed870357f6cc8c14460c6219d7ba29f3eeda13a",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

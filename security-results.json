@@ -1,0 +1,1044 @@
+{
+  "schemaVersion": 2,
+  "scanner": "Idol Security Scanner",
+  "scannerVersion": "2.0.0",
+  "generatedAt": "2026-11-26T08:27:45+00:00",
+  "policy": {
+    "engines": {
+      "clamav": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "yara": null,
+      "semgrep": "1.187.0",
+      "gitleaks": "version is set by build process",
+      "osv-scanner": "osv-scanner version: 2.0.3"
+    },
+    "required_engines": [
+      "clamav",
+      "osv-scanner"
+    ],
+    "review_engines": [
+      "yara",
+      "semgrep",
+      "gitleaks"
+    ],
+    "downloadsAreExecuted": false,
+    "maxAssetMB": 700,
+    "maxSourceMB": 300,
+    "parallelApps": 3,
+    "meaning": "no_detection/SAFE means the configured scanners completed and found nothing; it is not an absolute guarantee of safety. Files are never executed.",
+    "statuses": [
+      "SAFE",
+      "LOW_RISK",
+      "WARNING",
+      "DANGEROUS",
+      "INCOMPLETE",
+      "NOT_SCANNED",
+      "SCAN_ERROR"
+    ]
+  },
+  "results": [
+    {
+      "id": "com.idol.store",
+      "name": "Idol Store",
+      "github_repository": "https://github.com/Alvandcode/idol-store",
+      "scan_timestamp": "2026-11-26T08:27:45+00:00",
+      "scanner_version": "2.0.0",
+      "from_cache": false,
+      "release_version": null,
+      "release_date": null,
+      "overall_status": "NOT_SCANNED",
+      "risk_level": "unknown",
+      "source_scan": null,
+      "scanned_assets": [],
+      "detections": [],
+      "vulnerabilities": [],
+      "warnings": [
+        "no stable release found"
+      ],
+      "scan_errors": [],
+      "skipped_files": [],
+      "execution_statistics": {
+        "api_calls": 0,
+        "downloaded_bytes": 0,
+        "duration_note": "single-run"
+      },
+      "status": "not_scanned"
+    },
+    {
+      "id": "V2rayng.Idolteam",
+      "name": "V2rayNG",
+      "github_repository": "2dust/v2rayNG",
+      "scan_timestamp": "2026-11-26T08:27:45+00:00",
+      "scanner_version": "2.0.0",
+      "from_cache": false,
+      "release_version": "2.3.15",
+      "release_date": "2026-11-01T06:59:32Z",
+      "overall_status": "INCOMPLETE",
+      "risk_level": "unknown",
+      "source_scan": {
+        "sha256_source_archive": "a1a0a20cc956ed2fe24e4425b78e9a535f909f9cd7ce2d3df1a990268e55c9ae",
+        "archive_bytes": 849172,
+        "clamav": {
+          "engine": "clamav",
+          "available": true,
+          "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+          "scanned_at": "2026-11-26T08:27:58+00:00",
+          "exit_code": 0,
+          "status": "no_detection",
+          "detections": []
+        },
+        "dependency": {
+          "engine": "osv-scanner",
+          "available": true,
+          "version": "osv-scanner version: 2.0.3",
+          "scanned_at": "2026-11-26T08:27:58+00:00",
+          "exit_code": 128,
+          "status": "scan_error",
+          "error": "Scanning dir /tmp/idol-scan-v2-etzee10o/source/2dust-v2rayNG-57907cf\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+        },
+        "yara": {
+          "engine": "yara",
+          "available": true,
+          "version": "4.5.4",
+          "scanned_at": "2026-11-26T08:27:58+00:00",
+          "exit_code": null,
+          "status": "no_detection",
+          "detections": []
+        },
+        "semgrep": {
+          "engine": "semgrep",
+          "available": true,
+          "version": "1.187.0",
+          "scanned_at": "2026-11-26T08:28:00+00:00",
+          "exit_code": 2,
+          "status": "scan_error",
+          "error": ""
+        },
+        "gitleaks": {
+          "engine": "gitleaks",
+          "available": true,
+          "version": "version is set by build process",
+          "scanned_at": "2026-11-26T08:28:01+00:00",
+          "exit_code": 0,
+          "status": "no_findings",
+          "findings": []
+        }
+      },
+      "scanned_assets": [
+        {
+          "name": "v2rayNG_2.3.15-fdroid_arm64-v8a.apk",
+          "declared_size": 32462388,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "v2rayNG_2.3.15-fdroid_armeabi-v7a.apk",
+          "declared_size": 33004234,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "v2rayNG_2.3.15-fdroid_universal.apk",
+          "declared_size": 71869421,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "v2rayNG_2.3.15-fdroid_x86.apk",
+          "declared_size": 34031118,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "v2rayNG_2.3.15-fdroid_x86_64.apk",
+          "declared_size": 33514211,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "v2rayNG_2.3.15_arm64-v8a.apk",
+          "declared_size": 32462468,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "v2rayNG_2.3.15_armeabi-v7a.apk",
+          "declared_size": 33004314,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "v2rayNG_2.3.15_universal.apk",
+          "declared_size": 71869497,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "v2rayNG_2.3.15_x86.apk",
+          "declared_size": 34031194,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "v2rayNG_2.3.15_x86_64.apk",
+          "declared_size": 33514283,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        }
+      ],
+      "detections": [],
+      "vulnerabilities": [],
+      "warnings": [],
+      "scan_errors": [
+        "source:osv",
+        "asset:v2rayNG_2.3.15-fdroid_arm64-v8a.apk:download_or_scan_error",
+        "asset:v2rayNG_2.3.15-fdroid_armeabi-v7a.apk:download_or_scan_error",
+        "asset:v2rayNG_2.3.15-fdroid_universal.apk:download_or_scan_error",
+        "asset:v2rayNG_2.3.15-fdroid_x86.apk:download_or_scan_error",
+        "asset:v2rayNG_2.3.15-fdroid_x86_64.apk:download_or_scan_error",
+        "asset:v2rayNG_2.3.15_arm64-v8a.apk:download_or_scan_error",
+        "asset:v2rayNG_2.3.15_armeabi-v7a.apk:download_or_scan_error",
+        "asset:v2rayNG_2.3.15_universal.apk:download_or_scan_error",
+        "asset:v2rayNG_2.3.15_x86.apk:download_or_scan_error",
+        "asset:v2rayNG_2.3.15_x86_64.apk:download_or_scan_error"
+      ],
+      "skipped_files": [
+        {
+          "name": "v2rayN-public-key.asc",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15-fdroid_arm64-v8a.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15-fdroid_armeabi-v7a.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15-fdroid_universal.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15-fdroid_x86.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15-fdroid_x86_64.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15_arm64-v8a.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15_armeabi-v7a.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15_universal.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15_x86.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "v2rayNG_2.3.15_x86_64.apk.sig",
+          "reason": "unsupported_file_type"
+        }
+      ],
+      "execution_statistics": {
+        "api_calls": 2,
+        "downloaded_bytes": 0,
+        "duration_note": "single-run"
+      },
+      "blocking_evidence": [],
+      "status": "incomplete"
+    },
+    {
+      "id": "pattng",
+      "name": "PattNG",
+      "github_repository": "patterniha/PattNG",
+      "scan_timestamp": "2026-11-26T08:27:45+00:00",
+      "scanner_version": "2.0.0",
+      "from_cache": false,
+      "release_version": "2.4.1-P76",
+      "release_date": "2026-11-25T15:01:28Z",
+      "overall_status": "INCOMPLETE",
+      "risk_level": "unknown",
+      "source_scan": {
+        "sha256_source_archive": "26ede31d1e357c318a75c983f013545b40dfbe3a18b420e92627739f5175c9e5",
+        "archive_bytes": 3513556,
+        "clamav": {
+          "engine": "clamav",
+          "available": true,
+          "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+          "scanned_at": "2026-11-26T08:28:05+00:00",
+          "exit_code": 0,
+          "status": "no_detection",
+          "detections": []
+        },
+        "dependency": {
+          "engine": "osv-scanner",
+          "available": true,
+          "version": "osv-scanner version: 2.0.3",
+          "scanned_at": "2026-11-26T08:28:05+00:00",
+          "exit_code": 128,
+          "status": "scan_error",
+          "error": "Scanning dir /tmp/idol-scan-v2-m_s24w49/source/patterniha-PattNG-dcff264\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+        },
+        "yara": {
+          "engine": "yara",
+          "available": true,
+          "version": "4.5.4",
+          "scanned_at": "2026-11-26T08:28:05+00:00",
+          "exit_code": null,
+          "status": "no_detection",
+          "detections": []
+        },
+        "semgrep": {
+          "engine": "semgrep",
+          "available": true,
+          "version": "1.187.0",
+          "scanned_at": "2026-11-26T08:28:07+00:00",
+          "exit_code": 2,
+          "status": "scan_error",
+          "error": ""
+        },
+        "gitleaks": {
+          "engine": "gitleaks",
+          "available": true,
+          "version": "version is set by build process",
+          "scanned_at": "2026-11-26T08:28:11+00:00",
+          "exit_code": 0,
+          "status": "no_findings",
+          "findings": []
+        }
+      },
+      "scanned_assets": [
+        {
+          "name": "PattNG_2.4.1-P76_arm64-v8a.apk",
+          "declared_size": 80690594,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "PattNG_2.4.1-P76_armeabi-v7a.apk",
+          "declared_size": 81276770,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "PattNG_2.4.1-P76_universal.apk",
+          "declared_size": 166669898,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "PattNG_2.4.1-P76_x86.apk",
+          "declared_size": 60354969,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "PattNG_2.4.1-P76_x86_64.apk",
+          "declared_size": 84271144,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_arm64-v8a.apk",
+          "declared_size": 80689694,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_armeabi-v7a.apk",
+          "declared_size": 81275870,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_universal.apk",
+          "declared_size": 166669002,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_x86.apk",
+          "declared_size": 60354069,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_x86_64.apk",
+          "declared_size": 84270244,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        }
+      ],
+      "detections": [],
+      "vulnerabilities": [],
+      "warnings": [],
+      "scan_errors": [
+        "source:osv",
+        "asset:PattNG_2.4.1-P76_arm64-v8a.apk:download_or_scan_error",
+        "asset:PattNG_2.4.1-P76_armeabi-v7a.apk:download_or_scan_error",
+        "asset:PattNG_2.4.1-P76_universal.apk:download_or_scan_error",
+        "asset:PattNG_2.4.1-P76_x86.apk:download_or_scan_error",
+        "asset:PattNG_2.4.1-P76_x86_64.apk:download_or_scan_error",
+        "asset:PattNG_fdroid_2.4.1-P76_arm64-v8a.apk:download_or_scan_error",
+        "asset:PattNG_fdroid_2.4.1-P76_armeabi-v7a.apk:download_or_scan_error",
+        "asset:PattNG_fdroid_2.4.1-P76_universal.apk:download_or_scan_error",
+        "asset:PattNG_fdroid_2.4.1-P76_x86.apk:download_or_scan_error",
+        "asset:PattNG_fdroid_2.4.1-P76_x86_64.apk:download_or_scan_error"
+      ],
+      "skipped_files": [
+        {
+          "name": "PattNG-public-key.asc",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_2.4.1-P76_arm64-v8a.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_2.4.1-P76_armeabi-v7a.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_2.4.1-P76_universal.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_2.4.1-P76_x86.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_2.4.1-P76_x86_64.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_arm64-v8a.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_armeabi-v7a.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_universal.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_x86.apk.sig",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "PattNG_fdroid_2.4.1-P76_x86_64.apk.sig",
+          "reason": "unsupported_file_type"
+        }
+      ],
+      "execution_statistics": {
+        "api_calls": 2,
+        "downloaded_bytes": 0,
+        "duration_note": "single-run"
+      },
+      "blocking_evidence": [],
+      "status": "incomplete"
+    },
+    {
+      "id": "zedsecure",
+      "name": "ZedSecure",
+      "github_repository": "CluvexStudio/ZedSecure",
+      "scan_timestamp": "2026-11-26T08:27:45+00:00",
+      "scanner_version": "2.0.0",
+      "from_cache": false,
+      "release_version": "v3.2.0",
+      "release_date": "2026-11-19T20:18:55Z",
+      "overall_status": "INCOMPLETE",
+      "risk_level": "unknown",
+      "source_scan": {
+        "sha256_source_archive": "cc3adb49d81b0295c1c27fe3092d6a0c4d22df79fc559ef8429b26f7e97f0716",
+        "archive_bytes": 12253303,
+        "clamav": {
+          "engine": "clamav",
+          "available": true,
+          "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+          "scanned_at": "2026-11-26T08:28:14+00:00",
+          "exit_code": 0,
+          "status": "no_detection",
+          "detections": []
+        },
+        "dependency": {
+          "engine": "osv-scanner",
+          "available": true,
+          "version": "osv-scanner version: 2.0.3",
+          "scanned_at": "2026-11-26T08:28:15+00:00",
+          "exit_code": 2,
+          "status": "scan_error",
+          "error": "Scanning dir /tmp/idol-scan-v2-b10766j5/source/CluvexStudio-ZedSecure-11b9bb7\nNot in a Git repository, ignoring .gitignores\nScanned /tmp/idol-scan-v2-b10766j5/source/CluvexStudio-ZedSecure-11b9bb7/tools/stripcomments/go.mod file and found 1 package\npanic: unexpected expr: *ast.KeyValueExpr\n\ngoroutine 857 [running]:\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x38e336c767e0?, 0x38e336c6c800?, {0x2ed78c0?, 0x38e32fdf0750?}, {0x0, {0x0, 0x0}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:960 +0x206e\ngolang.org/x/tools/go/ssa.(*builder).expr(0x38e336c767e0, 0x38e336c6c800, {0x2ed78c0, 0x38e32fdf0750})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).assign(0x2ed3398?, 0x38e336c6c800, {0x2ed9fe8, 0x38e3365ed680}, {0x2ed78c0?, 0x38e32fdf0750?}, 0x58?, 0x38e32e679598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:608 +0x3a5\ngolang.org/x/tools/go/ssa.(*builder).compLit(0x38e336c767e0, 0x38e336c6c800, {0x2edfd28, 0x38e3365fe240}, 0x38e330657380, 0x1, 0x38e32e679598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:1306 +0x1252\ngolang.org/x/tools/go/ssa.(*builder).addr(0x38e336c767e0, 0x38e336c6c800, {0x2ed7890?, 0x38e330657380}, 0x1)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:455 +0xc7b\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x38e336c767e0, 0x38e336c6c800, {0x2ed79b0?, 0x38e330dc94c0}, {0x7, {0x2ed3370, 0x38e3310faa50}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:725 +0xce\ngolang.org/x/tools/go/ssa.(*builder).expr(0x38e336c767e0, 0x38e336c6c800, {0x2ed79b0, 0x38e330dc94c0})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).returnStmt(0x38e336c767e0, 0x38e336c6c800, 0x38e330dc94e0)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2841 +0x15a\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x38e336c767e0, 0x38e336c6c800, {0x2ed7b00?, 0x38e330dc94e0?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2741 +0x53e\ngolang.org/x/tools/go/ssa.(*builder).stmtList(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:966\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x38e336c767e0, 0x38e336c6c800, {0x2ed7b60?, 0x38e32fdf08d0?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2747 +0x10f1\ngolang.org/x/tools/go/ssa.(*builder).buildFromSyntax(0x38e336c767e0, 0x38e336c6c800)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2953 +0x25a\ngolang.org/x/tools/go/ssa.(*builder).buildFunction(0x1?, 0x38e336c6c800)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2906 +0x185\ngolang.org/x/tools/go/ssa.(*builder).iterate(0x38e336c767e0)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2891 +0x25\ngolang.org/x/tools/go/ssa.(*Package).build(0x38e3358c5200)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3174 +0xdc\nsync.(*Once).doSlow(0x2ee43b0?, 0x38e32c3aa0c0?)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:78 +0xab\nsync.(*Once).Do(...)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:69\ngolang.org/x/tools/go/ssa.(*Package).Build(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3163\ngolang.org/x/tools/go/ssa.(*Program).Build.func1(0x38e331d5dfa8?)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3142 +0x45\ncreated by golang.org/x/tools/go/ssa.(*Program).Build in goroutine 883\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3141 +0x1b4\n"
+        },
+        "yara": {
+          "engine": "yara",
+          "available": true,
+          "version": "4.5.4",
+          "scanned_at": "2026-11-26T08:28:15+00:00",
+          "exit_code": null,
+          "status": "no_detection",
+          "detections": []
+        },
+        "semgrep": {
+          "engine": "semgrep",
+          "available": true,
+          "version": "1.187.0",
+          "scanned_at": "2026-11-26T08:28:19+00:00",
+          "exit_code": 2,
+          "status": "scan_error",
+          "error": ""
+        },
+        "gitleaks": {
+          "engine": "gitleaks",
+          "available": true,
+          "version": "version is set by build process",
+          "scanned_at": "2026-11-26T08:28:23+00:00",
+          "exit_code": 1,
+          "status": "secrets_found",
+          "findings": [
+            {
+              "tool": "gitleaks",
+              "rule": "generic-api-key",
+              "file": "/tmp/idol-scan-v2-b10766j5/source/CluvexStudio-ZedSecure-11b9bb7/shared/src/commonMain/kotlin/dev/cluvex/zedsecure/platform/SecureToken.kt",
+              "line": 5,
+              "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+            }
+          ]
+        }
+      },
+      "scanned_assets": [
+        {
+          "name": "ZedSecure-3.2.0-arm64-v8a.apk",
+          "declared_size": 88373303,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-arm64.msi",
+          "declared_size": 167417261,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-armeabi-v7a.apk",
+          "declared_size": 88383131,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-linux-aarch64.tar.gz",
+          "declared_size": 166864354,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-linux-x86_64.tar.gz",
+          "declared_size": 173413050,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-universal.apk",
+          "declared_size": 154669542,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-windows-arm64.zip",
+          "declared_size": 163067983,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-windows-x86_64.zip",
+          "declared_size": 172722481,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-x86.apk",
+          "declared_size": 94722411,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-x86_64.apk",
+          "declared_size": 93209583,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "ZedSecure-3.2.0-x86_64.msi",
+          "declared_size": 177087122,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        }
+      ],
+      "detections": [],
+      "vulnerabilities": [],
+      "warnings": [],
+      "scan_errors": [
+        "source:osv",
+        "asset:ZedSecure-3.2.0-arm64-v8a.apk:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-arm64.msi:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-armeabi-v7a.apk:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-linux-aarch64.tar.gz:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-linux-x86_64.tar.gz:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-universal.apk:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-windows-arm64.zip:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-windows-x86_64.zip:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-x86.apk:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-x86_64.apk:download_or_scan_error",
+        "asset:ZedSecure-3.2.0-x86_64.msi:download_or_scan_error"
+      ],
+      "skipped_files": [
+        {
+          "name": "SHA256SUMS-android.txt",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "SHA256SUMS-linux-arm64.txt",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "SHA256SUMS-linux.txt",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "SHA256SUMS-macos-arm64.txt",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "SHA256SUMS-macos-x86_64.txt",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "SHA256SUMS-windows-arm64.txt",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "SHA256SUMS-windows.txt",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "ZedSecure-3.2.0-aarch64.AppImage",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "ZedSecure-3.2.0-aarch64.rpm",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "ZedSecure-3.2.0-amd64.deb",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "ZedSecure-3.2.0-arm64.deb",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "ZedSecure-3.2.0-macos-arm64.dmg",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "ZedSecure-3.2.0-macos-x86_64.dmg",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "ZedSecure-3.2.0-x86_64.AppImage",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "ZedSecure-3.2.0-x86_64.rpm",
+          "reason": "unsupported_file_type"
+        }
+      ],
+      "execution_statistics": {
+        "api_calls": 2,
+        "downloaded_bytes": 0,
+        "duration_note": "single-run"
+      },
+      "blocking_evidence": [],
+      "status": "incomplete"
+    },
+    {
+      "id": "hiddify-app",
+      "name": "hiddify-app",
+      "github_repository": "hiddify/hiddify-app",
+      "scan_timestamp": "2026-11-26T08:28:02+00:00",
+      "scanner_version": "2.0.0",
+      "from_cache": false,
+      "release_version": "v5.9.15",
+      "release_date": "2026-11-19T07:44:59Z",
+      "overall_status": "INCOMPLETE",
+      "risk_level": "unknown",
+      "source_scan": {
+        "sha256_source_archive": "c8055f3d4e629f8bdd30eb5596f36cfba314b481202369410a3dd3c4479777df",
+        "archive_bytes": 61685376,
+        "clamav": {
+          "engine": "clamav",
+          "available": true,
+          "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+          "scanned_at": "2026-11-26T08:29:23+00:00",
+          "exit_code": 0,
+          "status": "no_detection",
+          "detections": []
+        },
+        "dependency": {
+          "engine": "osv-scanner",
+          "available": true,
+          "version": "osv-scanner version: 2.0.3",
+          "scanned_at": "2026-11-26T08:29:23+00:00",
+          "exit_code": 0,
+          "status": "no_known_vulnerabilities",
+          "vulnerabilities": []
+        },
+        "yara": {
+          "engine": "yara",
+          "available": true,
+          "version": "4.5.4",
+          "scanned_at": "2026-11-26T08:29:23+00:00",
+          "exit_code": null,
+          "status": "no_detection",
+          "detections": []
+        },
+        "semgrep": {
+          "engine": "semgrep",
+          "available": true,
+          "version": "1.187.0",
+          "scanned_at": "2026-11-26T08:29:28+00:00",
+          "exit_code": 2,
+          "status": "scan_error",
+          "error": ""
+        },
+        "gitleaks": {
+          "engine": "gitleaks",
+          "available": true,
+          "version": "version is set by build process",
+          "scanned_at": "2026-11-26T08:29:31+00:00",
+          "exit_code": 1,
+          "status": "secrets_found",
+          "findings": [
+            {
+              "tool": "gitleaks",
+              "rule": "pkcs12-file",
+              "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/android/app/src/androidTest/assets/mtls_client.p12",
+              "line": 0,
+              "description": "Found a PKCS #12 file, which commonly contain bundled private keys."
+            },
+            {
+              "tool": "gitleaks",
+              "rule": "generic-api-key",
+              "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/.github/sync_translate.sh",
+              "line": 1,
+              "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+            },
+            {
+              "tool": "gitleaks",
+              "rule": "generic-api-key",
+              "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/lib/features/profile/details/json_editor.dart",
+              "line": 121,
+              "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+            },
+            {
+              "tool": "gitleaks",
+              "rule": "generic-api-key",
+              "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/lib/features/profile/details/json_editor.dart",
+              "line": 157,
+              "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+            },
+            {
+              "tool": "gitleaks",
+              "rule": "generic-api-key",
+              "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/lib/features/profile/details/json_editor.dart",
+              "line": 192,
+              "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+            },
+            {
+              "tool": "gitleaks",
+              "rule": "generic-api-key",
+              "file": "/tmp/idol-scan-v2-74gjuay8/source/hiddify-hiddify-app-365a2f5/lib/features/profile/details/json_editor.dart",
+              "line": 194,
+              "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+            }
+          ]
+        }
+      },
+      "scanned_assets": [
+        {
+          "name": "Hiddify-Android-arm64.apk",
+          "declared_size": 67260345,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "Hiddify-Android-arm7.apk",
+          "declared_size": 65520115,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "Hiddify-Android-universal.apk",
+          "declared_size": 187973042,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "Hiddify-Android-x86_64.apk",
+          "declared_size": 70429596,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "Hiddify-iOS.ipa",
+          "declared_size": 117699653,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "Hiddify-Linux-arm64.AppImage.tar.gz",
+          "declared_size": 69307104,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "Hiddify-Linux-x64.AppImage.tar.gz",
+          "declared_size": 73069200,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "Hiddify-Windows-Portable-x64.zip",
+          "declared_size": 70480719,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "Hiddify-Windows-Setup-x64.exe",
+          "declared_size": 51208848,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        }
+      ],
+      "detections": [],
+      "vulnerabilities": [],
+      "warnings": [],
+      "scan_errors": [
+        "asset:Hiddify-Android-arm64.apk:download_or_scan_error",
+        "asset:Hiddify-Android-arm7.apk:download_or_scan_error",
+        "asset:Hiddify-Android-universal.apk:download_or_scan_error",
+        "asset:Hiddify-Android-x86_64.apk:download_or_scan_error",
+        "asset:Hiddify-iOS.ipa:download_or_scan_error",
+        "asset:Hiddify-Linux-arm64.AppImage.tar.gz:download_or_scan_error",
+        "asset:Hiddify-Linux-x64.AppImage.tar.gz:download_or_scan_error",
+        "asset:Hiddify-Windows-Portable-x64.zip:download_or_scan_error",
+        "asset:Hiddify-Windows-Setup-x64.exe:download_or_scan_error"
+      ],
+      "skipped_files": [
+        {
+          "name": "Hiddify-Debian-arm64.deb",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "Hiddify-Debian-x64.deb",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "Hiddify-Linux-arm64.AppImage",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "Hiddify-Linux-x64.AppImage",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "Hiddify-MacOS-Installer.pkg",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "Hiddify-MacOS.dmg",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "Hiddify-rpm-arm64.rpm",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "Hiddify-rpm-x64.rpm",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "Hiddify-Windows-Setup-x64.Msix",
+          "reason": "unsupported_file_type"
+        },
+        {
+          "name": "install.sh",
+          "reason": "unsupported_file_type"
+        }
+      ],
+      "execution_statistics": {
+        "api_calls": 2,
+        "downloaded_bytes": 0,
+        "duration_note": "single-run"
+      },
+      "blocking_evidence": [],
+      "status": "incomplete"
+    },
+    {
+      "id": "happ-android",
+      "name": "happ-android",
+      "github_repository": "Happ-proxy/happ-android",
+      "scan_timestamp": "2026-11-26T08:28:11+00:00",
+      "scanner_version": "2.0.0",
+      "from_cache": false,
+      "release_version": "4.11.2",
+      "release_date": "2026-11-16T07:26:25Z",
+      "overall_status": "INCOMPLETE",
+      "risk_level": "unknown",
+      "source_scan": {
+        "sha256_source_archive": "9203dd5fb71e029f28a980d88c9fafaae9fb0a1724d21cb6e1cce65ef18f86b4",
+        "archive_bytes": 3654,
+        "clamav": {
+          "engine": "clamav",
+          "available": true,
+          "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+          "scanned_at": "2026-11-26T08:28:24+00:00",
+          "exit_code": 0,
+          "status": "no_detection",
+          "detections": []
+        },
+        "dependency": {
+          "engine": "osv-scanner",
+          "available": true,
+          "version": "osv-scanner version: 2.0.3",
+          "scanned_at": "2026-11-26T08:28:24+00:00",
+          "exit_code": 128,
+          "status": "scan_error",
+          "error": "Scanning dir /tmp/idol-scan-v2-3s8ej3xa/source/Happ-proxy-happ-android-9047520\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+        },
+        "yara": {
+          "engine": "yara",
+          "available": true,
+          "version": "4.5.4",
+          "scanned_at": "2026-11-26T08:28:24+00:00",
+          "exit_code": null,
+          "status": "no_detection",
+          "detections": []
+        },
+        "semgrep": {
+          "engine": "semgrep",
+          "available": true,
+          "version": "1.187.0",
+          "scanned_at": "2026-11-26T08:28:26+00:00",
+          "exit_code": 2,
+          "status": "scan_error",
+          "error": ""
+        },
+        "gitleaks": {
+          "engine": "gitleaks",
+          "available": true,
+          "version": "version is set by build process",
+          "scanned_at": "2026-11-26T08:28:26+00:00",
+          "exit_code": 0,
+          "status": "no_findings",
+          "findings": []
+        }
+      },
+      "scanned_assets": [
+        {
+          "name": "Happ.apk",
+          "declared_size": 69352837,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        },
+        {
+          "name": "Happ_beta.apk",
+          "declared_size": 69352837,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        }
+      ],
+      "detections": [],
+      "vulnerabilities": [],
+      "warnings": [],
+      "scan_errors": [
+        "source:osv",
+        "asset:Happ.apk:download_or_scan_error",
+        "asset:Happ_beta.apk:download_or_scan_error"
+      ],
+      "skipped_files": [],
+      "execution_statistics": {
+        "api_calls": 2,
+        "downloaded_bytes": 0,
+        "duration_note": "single-run"
+      },
+      "blocking_evidence": [],
+      "status": "incomplete"
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "by_status": {
+      "SAFE": 0,
+      "LOW_RISK": 0,
+      "WARNING": 0,
+      "DANGEROUS": 0,
+      "INCOMPLETE": 5,
+      "NOT_SCANNED": 1,
+      "SCAN_ERROR": 0
+    },
+    "cache_hits": 0,
+    "rate_limit_hits": 0
+  }
+}

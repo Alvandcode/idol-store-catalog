@@ -1,0 +1,203 @@
+{
+  "id": "V2rayng.Idolteam",
+  "name": "V2rayNG",
+  "github_repository": "2dust/v2rayNG",
+  "scan_timestamp": "2026-11-26T08:27:45+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "2.3.15",
+  "release_date": "2026-11-01T06:59:32Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "a1a0a20cc956ed2fe24e4425b78e9a535f909f9cd7ce2d3df1a990268e55c9ae",
+    "archive_bytes": 849172,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-26T08:27:58+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-26T08:27:58+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-etzee10o/source/2dust-v2rayNG-57907cf\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-26T08:27:58+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-26T08:28:00+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-26T08:28:01+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "v2rayNG_2.3.15-fdroid_arm64-v8a.apk",
+      "declared_size": 32462388,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "v2rayNG_2.3.15-fdroid_armeabi-v7a.apk",
+      "declared_size": 33004234,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "v2rayNG_2.3.15-fdroid_universal.apk",
+      "declared_size": 71869421,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "v2rayNG_2.3.15-fdroid_x86.apk",
+      "declared_size": 34031118,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "v2rayNG_2.3.15-fdroid_x86_64.apk",
+      "declared_size": 33514211,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "v2rayNG_2.3.15_arm64-v8a.apk",
+      "declared_size": 32462468,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "v2rayNG_2.3.15_armeabi-v7a.apk",
+      "declared_size": 33004314,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "v2rayNG_2.3.15_universal.apk",
+      "declared_size": 71869497,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "v2rayNG_2.3.15_x86.apk",
+      "declared_size": 34031194,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "v2rayNG_2.3.15_x86_64.apk",
+      "declared_size": 33514283,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:v2rayNG_2.3.15-fdroid_arm64-v8a.apk:download_or_scan_error",
+    "asset:v2rayNG_2.3.15-fdroid_armeabi-v7a.apk:download_or_scan_error",
+    "asset:v2rayNG_2.3.15-fdroid_universal.apk:download_or_scan_error",
+    "asset:v2rayNG_2.3.15-fdroid_x86.apk:download_or_scan_error",
+    "asset:v2rayNG_2.3.15-fdroid_x86_64.apk:download_or_scan_error",
+    "asset:v2rayNG_2.3.15_arm64-v8a.apk:download_or_scan_error",
+    "asset:v2rayNG_2.3.15_armeabi-v7a.apk:download_or_scan_error",
+    "asset:v2rayNG_2.3.15_universal.apk:download_or_scan_error",
+    "asset:v2rayNG_2.3.15_x86.apk:download_or_scan_error",
+    "asset:v2rayNG_2.3.15_x86_64.apk:download_or_scan_error"
+  ],
+  "skipped_files": [
+    {
+      "name": "v2rayN-public-key.asc",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15-fdroid_arm64-v8a.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15-fdroid_armeabi-v7a.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15-fdroid_universal.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15-fdroid_x86.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15-fdroid_x86_64.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15_arm64-v8a.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15_armeabi-v7a.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15_universal.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15_x86.apk.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "v2rayNG_2.3.15_x86_64.apk.sig",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "a5eef176b8cb7758ed25da224eb147502a79876548ddb41bcdc3fa0b8d161529",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}
