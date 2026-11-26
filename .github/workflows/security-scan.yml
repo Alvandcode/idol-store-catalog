@@ -43,9 +43,10 @@ jobs:
           sudo apt-get update -q
           sudo apt-get install -y -q clamav clamav-freshclam file
           sudo systemctl stop clamav-freshclam.service 2>/dev/null || true
-          # Always refresh signatures: with the cached DB restored below,
-          # freshclam downloads only incremental diffs, keeping runs fast.
-          sudo freshclam --quiet || sudo freshclam || echo "signature update failed; using cached DB"
+          # Update signatures only if the cached DB is older than 12 hours.
+          if [ ! -f /var/lib/clamav/daily.cvd ] || [ -z "$(find /var/lib/clamav/daily.c* -mmin -720 2>/dev/null)" ]; then
+            sudo freshclam --quiet || sudo freshclam
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -85,13 +86,6 @@ jobs:
           restore-keys: |
             idol-security-cache-
 
-      - name: Update community YARA rules (open-source feeds)
-        run: |
-          python3 -m scanner.updates \
-            --out-dir security-cache/yara-community \
-            --manifest security-cache/yara-sources.json \
-            || echo "community rule update failed; previous rules remain in use"
-
       - name: Run security scan
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -120,7 +114,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add security-results.json security-results-i18n.json security-cache
+          git add security-results.json security-cache
           if git diff --cached --quiet; then
             echo "Report and cache unchanged."
           else

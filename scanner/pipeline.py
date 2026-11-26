@@ -37,7 +37,6 @@ def scan_app(
     rules_dir: Path,
     cache: ResultCache,
     fp_registry: FalsePositiveRegistry,
-    community_rules_dir: Path | None = None,
 ) -> dict[str, Any]:
     app_id = str(app.get("id") or app.get("name") or "unknown")
     entry: dict[str, Any] = {
@@ -70,7 +69,7 @@ def scan_app(
         stable = next((r for r in releases if not r.get("draft") and not r.get("prerelease")), None)
         if not stable:
             entry["overall_status"] = models.NOT_SCANNED
-            entry["warnings"].append({"key": "warning.no_stable_release"})
+            entry["warnings"].append("no stable release found")
             return _finalize(entry)
         tag = str(stable.get("tag_name", ""))
         entry["release_version"] = tag
@@ -94,8 +93,8 @@ def scan_app(
     try:
         with tempfile.TemporaryDirectory(prefix="idol-scan-v2-") as tmp:
             root = Path(tmp)
-            _scan_sources(entry, repo, tag, stable, root, client, config, rules_dir, community_rules_dir)
-            _scan_assets(entry, stable, root, client, config, rules_dir, fp_registry, community_rules_dir)
+            _scan_sources(entry, repo, tag, stable, root, client, config, rules_dir)
+            _scan_assets(entry, stable, root, client, config, rules_dir, fp_registry)
     except (UnsafeArchive, GitHubError) as exc:
         entry["scan_errors"].append(str(exc)[:500])
     except Exception as exc:  # defensive: one app must never break the run
@@ -134,7 +133,6 @@ def scan_app(
 def _scan_sources(
     entry: dict[str, Any], repo: str, tag: str, stable: dict[str, Any],
     root: Path, client: GitHubClient, config: AppConfig, rules_dir: Path,
-    community_rules_dir: Path | None,
 ) -> None:
     archive_url = f"https://codeload.github.com/{repo}/legacy.zip/refs/tags/{tag}"
     try:
@@ -150,7 +148,7 @@ def _scan_sources(
         return
     entry["source_scan"]["clamav"] = clamav.scan(source_dir)
     entry["source_scan"]["dependency"] = osv.scan(source_dir)
-    entry["source_scan"]["yara"] = yara.scan(source_dir, rules_dir, community_rules_dir)
+    entry["source_scan"]["yara"] = yara.scan(source_dir, rules_dir)
     entry["source_scan"]["semgrep"] = semgrep.scan(source_dir, rules_dir)
     entry["source_scan"]["gitleaks"] = gitleaks.scan(source_dir)
 
@@ -158,11 +156,11 @@ def _scan_sources(
 def _scan_assets(
     entry: dict[str, Any], stable: dict[str, Any], root: Path,
     client: GitHubClient, config: AppConfig, rules_dir: Path,
-    fp_registry: FalsePositiveRegistry, community_rules_dir: Path | None = None,
+    fp_registry: FalsePositiveRegistry,
 ) -> None:
     assets = [a for a in stable.get("assets", []) if not _skip(a, config)]
     if not assets:
-        entry["warnings"].append({"key": "warning.no_supported_assets"})
+        entry["warnings"].append("release has no supported downloadable assets")
         return
 
     def scan_one(asset: dict[str, Any]) -> dict[str, Any]:
@@ -191,7 +189,7 @@ def _scan_assets(
             item["binary"] = binary
             return item
         cl = clamav.scan(path)
-        yr = yara.scan(path, rules_dir, community_rules_dir)
+        yr = yara.scan(path, rules_dir)
         item["binary"] = binary
         item["clamav"] = cl
         item["yara"] = yr
@@ -220,7 +218,7 @@ def _scan_assets(
     entry["scanned_assets"].extend(results)
     for a in stable.get("assets", []):
         if _skip(a, config):
-            entry["skipped_files"].append({"name": a.get("name"), "reason": "unsupported_file_type", "reason_key": "skip.unsupported_file_type"})
+            entry["skipped_files"].append({"name": a.get("name"), "reason": "unsupported_file_type"})
 
 
 def _skip(asset: dict[str, Any], config: AppConfig) -> bool:

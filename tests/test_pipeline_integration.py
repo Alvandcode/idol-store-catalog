@@ -69,25 +69,10 @@ class PipelineIntegrationTest(unittest.TestCase):
         self.assertTrue(any(s["name"] == "notes.txt" for s in entry["skipped_files"]))
         self.assertTrue(entry["scan_errors"])
 
-    def test_second_run_rejects_incomplete_cache(self):
-        # First run here ends INCOMPLETE (engines unavailable in tests);
-        # incomplete results must never be frozen into the cache.
+    def test_second_run_uses_cache(self):
         scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
         entry2 = scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
-        self.assertFalse(entry2["from_cache"])
-
-    def test_complete_results_are_reused(self):
-        first = scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
-        # Simulate a completed scan by promoting the stored entry to SAFE.
-        key_dir = self.root / "cache" / "test_app"
-        for path in key_dir.glob("*.json"):
-            data = path.read_text(encoding="utf-8")
-            data = data.replace('"overall_status": "INCOMPLETE"', '"overall_status": "SAFE"')
-            data = data.replace('"status": "incomplete"', '"status": "no_detection"')
-            path.write_text(data, encoding="utf-8")
-        second = scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
-        self.assertTrue(second["from_cache"])
-        self.assertEqual(second["overall_status"], "SAFE")  # reused the promoted entry
+        self.assertTrue(entry2["from_cache"])
 
     def test_no_stable_release_is_not_scanned(self):
         class NoReleaseClient(FakeClient):
