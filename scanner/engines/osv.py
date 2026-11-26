@@ -26,9 +26,7 @@ def scan(path: Path) -> dict[str, Any]:
         except json.JSONDecodeError:
             parsed = None
     if parsed is None:
-        # osv-scanner exits 128 when the project has no lockfiles/manifests —
-        # that is a documented outcome, not a scan error.
-        if "No package sources found" in output:
+        if "No package sources found" in output and run["exit_code"] == 0:
             result["status"] = "no_manifests"
             return result
         result["status"] = "scan_error"

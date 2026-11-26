@@ -43,7 +43,7 @@ rules:
       - pattern: yaml.load($X, ...)
 
   - id: idol-hardcoded-secret-like
-    languages: [generic]
+    languages: [generic, generic]
     message: Possible hardcoded credential or secret assignment
     severity: INFO
     paths:
