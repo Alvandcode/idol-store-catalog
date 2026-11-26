@@ -45,7 +45,10 @@ class ResultCache:
             return None
         if entry.get("policy_key") != CACHE_POLICY_KEY:
             return None
-        if entry.get("status") == "SCAN_ERROR" or entry.get("overall_status") == "SCAN_ERROR":
+        # Only complete, confident results are reused. INCOMPLETE/SCAN_ERROR/
+        # NOT_SCANNED entries are always re-scanned (infrastructure may have
+        # recovered, and a failed scan must never be frozen into the cache).
+        if entry.get("overall_status") not in ("SAFE", "LOW_RISK", "WARNING", "DANGEROUS"):
             return None
         return entry
 

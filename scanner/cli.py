@@ -54,9 +54,14 @@ def main(argv: list[str] | None = None) -> int:
     fp_registry = FalsePositiveRegistry(paths.false_positives)
 
     # Version audit: which engines are actually available before scanning?
+    try:
+        import yara as _yara_mod
+        yara_version = _yara_mod.__version__
+    except ImportError:
+        yara_version = None
     engine_versions = {
         "clamav": base.tool_version(["clamscan", "--version"], "clamav"),
-        "yara": base.tool_version(["yara", "--version"], "yara"),
+        "yara": yara_version,
         "semgrep": base.tool_version(["semgrep", "--version"], "semgrep"),
         "gitleaks": base.tool_version(["gitleaks", "version"], "gitleaks"),
         "osv-scanner": base.tool_version(["osv-scanner", "--version"], "osv-scanner"),

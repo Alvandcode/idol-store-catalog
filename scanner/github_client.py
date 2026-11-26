@@ -18,7 +18,7 @@ from typing import Any
 from . import USER_AGENT
 from .config import DOWNLOAD_TIMEOUT_SECONDS, HTTP_RETRIES, MAX_REDIRECTS
 
-_ALLOWED_HOSTS = {"github.com", "www.github.com", "api.github.com", "objects.githubusercontent.com", "raw.githubusercontent.com", "codeload.github.com"}
+_ALLOWED_HOSTS = {"github.com", "www.github.com", "api.github.com", "objects.githubusercontent.com", "raw.githubusercontent.com", "codeload.github.com", "release-assets.githubusercontent.com"}
 _CHUNK = 1024 * 1024
 
 
