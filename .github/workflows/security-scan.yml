@@ -41,7 +41,7 @@ jobs:
       - name: Install scanners
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q clamav clamav-freshclam yara file
+          sudo apt-get install -y -q clamav clamav-freshclam file
           sudo systemctl stop clamav-freshclam.service 2>/dev/null || true
           # Update signatures only if the cached DB is older than 12 hours.
           if [ ! -f /var/lib/clamav/daily.cvd ] || [ -z "$(find /var/lib/clamav/daily.c* -mmin -720 2>/dev/null)" ]; then
@@ -55,7 +55,7 @@ jobs:
 
       - name: Install Python scanners
         run: |
-          python3 -m pip install --quiet --disable-pip-version-check "semgrep>=1.78,<2"
+          python3 -m pip install --quiet --disable-pip-version-check "semgrep>=1.78,<2" "yara-python>=4.3,<5"
 
       - name: Set up Go (for OSV-Scanner / Gitleaks)
         uses: actions/setup-go@v5

@@ -1,15 +1,25 @@
+"""YARA engine tests using yara-python bindings (same library the engine uses).
+
+Runs everywhere yara-python is installed; in CI the workflow installs it.
+No real malware: only the standard EICAR test string and synthetic fixtures.
+"""
+import base64
 import shutil
 import subprocess
 import tempfile
 import unittest
 from pathlib import Path
 
-EICAR = (b"X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*")
+try:
+    import yara as _yara
+except ImportError:
+    _yara = None
 
+HAVE_YARAPY = _yara is not None
 HAVE_CLAMAV = shutil.which("clamscan") is not None
-HAVE_YARA = shutil.which("yara") is not None
 
 RULES = Path(__file__).resolve().parents[1] / "scanner" / "rules"
+EICAR = (b"X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*")
 
 
 @unittest.skipUnless(HAVE_CLAMAV, "clamscan not installed in this environment")
@@ -45,28 +55,57 @@ class ClamAVTest(unittest.TestCase):
             self.assertEqual(clamav.scan(eicar)["status"], "detection")
 
 
-@unittest.skipUnless(HAVE_YARA, "yara not installed in this environment")
-class YaraTest(unittest.TestCase):
-    def test_b64_pe_rule_matches(self):
-        import base64
-        with tempfile.TemporaryDirectory() as tmp:
-            path = Path(tmp) / "encoded.txt"
-            # base64 of 7-byte PE header prefix — must contain the rule's string.
-            path.write_text(base64.b64encode(b"MZ\x90\x00\x03\x00\x00\x00").decode() + "\n")
-            result = subprocess.run(
-                ["yara", "-r", str(RULES / "yara" / "idol_custom.yar"), str(path)],
-                capture_output=True, text=True, timeout=60)
-            self.assertIn("idol_encoded_pe_header", result.stdout)
+@unittest.skipUnless(HAVE_YARAPY, "yara-python not installed in this environment")
+class YaraRulesTest(unittest.TestCase):
+    def _ruleset(self):
+        return _yara.compile(filepaths={"idol_custom": str(RULES / "yara" / "idol_custom.yar")})
 
-    def test_wrapper_parses_json(self):
+    def test_rules_compile(self):
+        self._ruleset()
+
+    def test_eicar_rule_matches(self):
+        matches = [m.rule for m in self._ruleset().match(data=EICAR)]
+        self.assertIn("idol_eicar_test_file", matches)
+
+    def test_b64_pe_rule_matches(self):
+        fixture = base64.b64encode(b"MZ\x90\x00\x03\x00\x00\x00").decode().encode()
+        matches = [m.rule for m in self._ruleset().match(data=fixture)]
+        self.assertIn("idol_encoded_pe_header", matches)
+
+    def test_clean_text_matches_nothing(self):
+        matches = self._ruleset().match(data=b"ordinary harmless text\n" * 10)
+        self.assertEqual(matches, [])
+
+
+@unittest.skipUnless(HAVE_YARAPY, "yara-python not installed in this environment")
+class YaraEngineWrapperTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.root = Path(self.tmp.name)
+
+    def test_wrapper_detects_encoded_pe(self):
         from scanner.engines import yara as yara_engine
-        import base64
-        with tempfile.TemporaryDirectory() as tmp:
-            path = Path(tmp) / "encoded.txt"
-            path.write_text(base64.b64encode(b"MZ\x90\x00\x03\x00\x00\x00").decode())
-            result = yara_engine.scan(path, RULES)
-            self.assertEqual(result["status"], "detection")
-            self.assertTrue(any(d["rule"] == "idol_encoded_pe_header" for d in result["detections"]))
+        target = self.root / "encoded.txt"
+        target.write_text(base64.b64encode(b"MZ\x90\x00\x03\x00\x00\x00").decode())
+        result = yara_engine.scan(target, RULES)
+        self.assertEqual(result["status"], "detection")
+        self.assertTrue(any(d["rule"] == "idol_encoded_pe_header" for d in result["detections"]))
+
+    def test_wrapper_no_detection(self):
+        from scanner.engines import yara as yara_engine
+        target = self.root / "clean.txt"
+        target.write_text("plain safe text\n")
+        result = yara_engine.scan(target, RULES)
+        self.assertEqual(result["status"], "no_detection")
+        self.assertEqual(result["detections"], [])
+
+    def test_wrapper_unavailable_without_rules(self):
+        from scanner.engines import yara as yara_engine
+        target = self.root / "clean.txt"
+        target.write_text("plain\n")
+        result = yara_engine.scan(target, self.root / "no-rules-here")
+        self.assertEqual(result["status"], "scanner_unavailable")
 
 
 if __name__ == "__main__":
