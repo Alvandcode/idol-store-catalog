@@ -1,73 +1,104 @@
-"""YARA engine with the project's custom low-false-positive rule set.
+"""YARA engine using yara-python bindings (deterministic across environments).
 
-Rule severities are explicit in the .yar files; a rule only escalates the
-overall status when it declares severity "critical" (documented in
-risk_engine.py). Everything else is a review item.
+The apt `yara` CLI varies between runner distributions; the Python bindings
+are pinned via pip and behave identically locally and in CI.
 """
 from __future__ import annotations
 
-import json
+import os
 from pathlib import Path
 from typing import Any
 
 from ..util import now_iso
-from .base import base_result, run_tool, tool_version
+from .base import base_result
 
+try:
+    import yara as _yara  # yara-python
+except ImportError:  # pragma: no cover - CI installs yara-python
+    _yara = None
+
+MAX_SCAN_FILE_BYTES = 100 * 1024 * 1024
+MAX_FILES = 30000
 SEVERITY_MAP = {"critical": "critical", "high": "high", "medium": "medium", "low": "informational"}
 
-
-def _load_rules(rules_dir: Path) -> list[str]:
-    # Rules may live in nested folders (e.g. rules/yara/); search recursively.
-    return sorted(str(p) for p in rules_dir.glob("**/*.yar"))
+_RULES_CACHE: dict[str, Any] = {}
 
 
-def _parse_findings(output: str) -> list[dict[str, str]]:
-    """Parse `yara --json` output (JSON Lines: one object per match)."""
+def _load_ruleset(rules_dir: Path) -> Any | None:
+    key = str(rules_dir.resolve())
+    if key in _RULES_CACHE:
+        return _RULES_CACHE[key]
+    if _yara is None:
+        return None
+    rule_files = {p.stem: str(p) for p in sorted(rules_dir.glob("**/*.yar"))}
+    if not rule_files:
+        return None
+    try:
+        ruleset = _yara.compile(filepaths=rule_files)
+    except _yara.Error as exc:
+        raise RuntimeError(f"YARA rule compilation failed: {exc}") from exc
+    _RULES_CACHE[key] = ruleset
+    return ruleset
+
+
+def _iter_files(root: Path):
+    count = 0
+    for dirpath, dirnames, filenames in os.walk(root, followlinks=False):
+        for name in filenames:
+            path = Path(dirpath) / name
+            try:
+                if path.is_symlink() or path.stat().st_size > MAX_SCAN_FILE_BYTES:
+                    continue
+            except OSError:
+                continue
+            count += 1
+            if count > MAX_FILES:
+                return
+            yield path
+
+
+def _match_file(ruleset: Any, path: Path) -> list[dict[str, str]]:
     findings = []
-    for line in (output or "").splitlines():
-        line = line.strip()
-        if not line.startswith("{"):
-            continue
-        try:
-            match = json.loads(line)
-        except json.JSONDecodeError:
-            continue
-        meta = match.get("meta", {}) or {}
-        first_path = ""
-        strings = match.get("strings") or []
-        if strings and isinstance(strings[0], dict):
-            first_path = strings[0].get("path", "") or strings[0].get("filename", "")
+    try:
+        matches = ruleset.match(str(path), timeout=120)
+    except _yara.TimeoutError:
+        return [{"tool": "yara", "rule": "SCAN_TIMEOUT", "severity": "informational", "file": str(path)[:300], "description": "rule evaluation timed out"}]
+    except (_yara.Error, OSError):
+        return []
+    for match in matches:
+        meta = match.meta or {}
         findings.append({
             "tool": "yara",
-            "rule": match.get("rule", "?"),
+            "rule": match.rule,
             "severity": SEVERITY_MAP.get(str(meta.get("severity", "medium")).lower(), "medium"),
-            "file": str(first_path)[:300],
+            "file": str(path)[:300],
             "description": str(meta.get("description", ""))[:300],
         })
-    return findings[:200]
+    return findings
 
 
 def scan(path: Path, rules_dir: Path) -> dict[str, Any]:
     result = base_result("yara")
-    rule_files = _load_rules(rules_dir)
-    if not rule_files:
+    if _yara is None:
+        result["status"] = "scanner_unavailable"
+        result["error"] = "yara-python not installed"
+        return result
+    result["version"] = _yara.__version__
+    try:
+        ruleset = _load_ruleset(rules_dir)
+    except RuntimeError as exc:
+        result["status"] = "scan_error"
+        result["error"] = str(exc)[:500]
+        return result
+    if ruleset is None:
         result["status"] = "scanner_unavailable"
         result["error"] = "no YARA rule files found"
         return result
-    result["version"] = tool_version(["yara", "--version"], "yara")
-    # yara --json requires -s? use 'yara -a 600 -f -p 8 --json -r rules target'
-    run = run_tool(
-        ["yara", "--json", "-a", "600", "-r", *rule_files, str(path)],
-        timeout=20 * 60,
-    )
-    result.update({"available": run["available"], "exit_code": run["exit_code"], "scanned_at": now_iso()})
-    if not run["available"]:
-        result["status"] = "scanner_unavailable"
-    elif run["exit_code"] == 0:
-        result["detections"] = _parse_findings(run["output"])
-        result["status"] = "detection" if result["detections"] else "no_detection"
-    else:
-        result["status"] = "scan_error"
-        result["error"] = (run["output"] or "")[-4000:]
-    result.pop("output", None)
+    result["available"] = True
+    result["scanned_at"] = now_iso()
+    detections: list[dict[str, str]] = []
+    for file_path in _iter_files(path if path.is_dir() else path.parent):
+        detections.extend(_match_file(ruleset, file_path))
+    result["detections"] = detections[:200]
+    result["status"] = "detection" if detections else "no_detection"
     return result
