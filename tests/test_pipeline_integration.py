@@ -9,6 +9,7 @@ import tempfile
 import unittest
 import zipfile
 from pathlib import Path
+from unittest import mock
 
 from scanner import models
 from scanner.cache import ResultCache
@@ -59,8 +60,26 @@ class PipelineIntegrationTest(unittest.TestCase):
         self.fp = FalsePositiveRegistry(self.root / "fp.json")
         self.config = AppConfig(max_asset_bytes=700 * 1024 * 1024, max_source_bytes=300 * 1024 * 1024)
 
+    def _tools_missing(self):
+        """Deterministically simulate unavailable scanner engines.
+
+        CI installs all engines, so tests must not assume their absence —
+        they force it instead (unit-test the policy, not the environment).
+        """
+        def unavailable(command, **kwargs):
+            return {"available": False, "exit_code": None, "output": "not installed"}
+        return (
+            mock.patch("scanner.engines.clamav.run_tool", unavailable),
+            mock.patch("scanner.engines.osv.run_tool", unavailable),
+            mock.patch("scanner.engines.semgrep.run_tool", unavailable),
+            mock.patch("scanner.engines.gitleaks.run_tool", unavailable),
+            mock.patch("scanner.engines.yara._yara", None),
+        )
+
     def test_full_flow_marks_incomplete_when_tools_missing(self):
-        entry = scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
+        contexts = self._tools_missing()
+        with contexts[0], contexts[1], contexts[2], contexts[3], contexts[4]:
+            entry = scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
         self.assertEqual(entry["overall_status"], models.INCOMPLETE)
         self.assertEqual(entry["status"], "incomplete")
         self.assertEqual(entry["release_version"], "v1.2.3")
@@ -70,10 +89,12 @@ class PipelineIntegrationTest(unittest.TestCase):
         self.assertTrue(entry["scan_errors"])
 
     def test_second_run_rejects_incomplete_cache(self):
-        # First run here ends INCOMPLETE (engines unavailable in tests);
+        # First run here ends INCOMPLETE (forced engines unavailable);
         # incomplete results must never be frozen into the cache.
-        scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
-        entry2 = scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
+        contexts = self._tools_missing()
+        with contexts[0], contexts[1], contexts[2], contexts[3], contexts[4]:
+            scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
+            entry2 = scan_app(APP, FakeClient(), self.config, self.root, self.cache, self.fp)
         self.assertFalse(entry2["from_cache"])
 
     def test_complete_results_are_reused(self):
