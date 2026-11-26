@@ -1,82 +1,87 @@
 {
-    "apps": [
-        {
-            "id": "com.idol.store",
-            "name": "Idol Store",
-            "developer": "Idol",
-            "category": "ابزارها",
-            "description": "استور شخصی اپلیکیشن‌ها؛ آخرین ریلیز پایدار از گیت‌هاب گرفته و APK یونیورسال آن برای دانلود گذاشته می‌شود.",
-            "iconUrl": "https://raw.githubusercontent.com/Alvandcode/idol-store-catalog/main/icons/idol-store.png",
-            "packageName": "com.idol.store",
-            "github": "https://github.com/Alvandcode/idol-store",
-            "website": "https://example.com",
-            "email": "admin@example.com",
-            "telegram": "https://t.me/idolstore"
-        },
-        {
-            "id": "V2rayng.Idolteam",
-            "name": "V2rayNG",
-            "developer": "2dust",
-            "category": "ابزارها",
-            "description": "V2RayNG یک اپلیکیشن متن‌باز اندرویدی برای اتصال به سرویس‌های VPN مبتنی بر پروتکل‌های V2Ray و Xray است.\nبا پشتیبانی از پروتکل‌هایی مانند VMess، VLESS، Trojan و Shadowsocks، امکان مدیریت کانفیگ‌ها و اتصال امن و پایدار به اینترنت را فراهم می‌کند.",
-            "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJOFCE3T0RWSCuY4mmhPWpHY3sj3WR4EXlxOOyIxHIQ&s=10",
-            "packageName": "V2rayng",
-            "github": "2dust/v2rayNG",
-            "website": "V2rayng.2dust.Link",
-            "email": "CaptainIronng@protonmail.com",
-            "telegram": "https://t.me/github_2dust"
-        },
-        {
-            "id": "pattng",
-            "name": "PattNG",
-            "developer": "patterniha",
-            "category": "ابزارها",
-            "description": "A V2Ray client for Android, support Xray core and v2fly core",
-            "iconUrl": "https://avatars.githubusercontent.com/u/71074308?v=4",
-            "packageName": "Pattng.Idolteam",
-            "github": "patterniha/PattNG",
-            "telegram": "https://t.me/VPN_PattNG"
-        },
-        {
-            "id": "zedsecure",
-            "name": "ZedSecure",
-            "developer": "CluvexStudio",
-            "category": "ابزارها",
-            "description": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2",
-            "iconUrl": "https://avatars.githubusercontent.com/u/125141320?v=4",
-            "packageName": "Zedsecure.Idolteam",
-            "github": "CluvexStudio/ZedSecure",
-            "telegram": "https://t.me/CluvexStudio"
-        },
-        {
-            "id": "hiddify-app",
-            "name": "hiddify-app",
-            "developer": "hiddify",
-            "category": "ابزارها",
-            "description": "Multi-platform auto-proxy client, supporting Sing-box, X-ray, TUIC, Hysteria, Reality, Trojan, SSH etc. It’s an open-source, secure and ad-free.",
-            "iconUrl": "https://avatars.githubusercontent.com/u/126981719?v=4",
-            "packageName": "Hiddify.Idolteam",
-            "github": "hiddify/hiddify-app",
-            "website": "https://hiddify.com"
-        },
-        {
-            "id": "happ-android",
-            "name": "happ-android",
-            "developer": "Happ-proxy",
-            "category": "ابزارها",
-            "iconUrl": "https://avatars.githubusercontent.com/u/195639782?v=4",
-            "packageName": "Happ.Idolteam",
-            "github": "Happ-proxy/happ-android",
-            "telegram": "https://t.me/happ_chat"
-        }
-    ],
-    "admins": [
-        "Alvandcode"
-    ],
-    "categories": [
-        "ابزارها",
-        "رسانه",
-        "امنیت و حریم خصوصی"
-    ],
-    "updatedAt": "2026-11-25"
+  "apps": [
+    {
+      "id": "com.idol.store",
+      "name": "Idol Store",
+      "developer": "Idol",
+      "category": "ابزارها",
+      "description": "استور شخصی اپلیکیشن‌ها؛ آخرین ریلیز پایدار از گیت‌هاب گرفته و APK یونیورسال آن برای دانلود گذاشته می‌شود.",
+      "iconUrl": "https://raw.githubusercontent.com/Alvandcode/idol-store-catalog/main/icons/idol-store.png",
+      "packageName": "com.idol.store",
+      "github": "https://github.com/Alvandcode/idol-store",
+      "website": "https://example.com",
+      "email": "admin@example.com",
+      "telegram": "https://t.me/idolstore",
+      "descriptionEn": "personal store of applications; The latest stable release is taken from GitHub and its universal APK is available for download."
+    },
+    {
+      "id": "V2rayng.Idolteam",
+      "name": "V2rayNG",
+      "developer": "2dust",
+      "category": "ابزارها",
+      "description": "V2RayNG یک اپلیکیشن متن‌باز اندرویدی برای اتصال به سرویس‌های VPN مبتنی بر پروتکل‌های V2Ray و Xray است.\nبا پشتیبانی از پروتکل‌هایی مانند VMess، VLESS، Trojan و Shadowsocks، امکان مدیریت کانفیگ‌ها و اتصال امن و پایدار به اینترنت را فراهم می‌کند.",
+      "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJOFCE3T0RWSCuY4mmhPWpHY3sj3WR4EXlxOOyIxHIQ&s=10",
+      "packageName": "V2rayng",
+      "github": "2dust/v2rayNG",
+      "website": "V2rayng.2dust.Link",
+      "email": "CaptainIronng@protonmail.com",
+      "telegram": "https://t.me/github_2dust",
+      "descriptionEn": "V2RayNG is an open source Android application for connecting to VPN services based on V2Ray and Xray protocols.\nWith the support of protocols such as VMess, VLESS, Trojan and Shadowsocks, it provides the possibility of managing configurations and a secure and stable connection to the Internet."
+    },
+    {
+      "id": "pattng",
+      "name": "PattNG",
+      "developer": "patterniha",
+      "category": "ابزارها",
+      "description": "یک کلاینت V2Ray برای اندروید، از هسته Xray و هسته v2fly پشتیبانی می کند",
+      "iconUrl": "https://avatars.githubusercontent.com/u/71074308?v=4",
+      "packageName": "Pattng.Idolteam",
+      "github": "patterniha/PattNG",
+      "telegram": "https://t.me/VPN_PattNG",
+      "descriptionEn": "A V2Ray client for Android, support Xray core and v2fly core"
+    },
+    {
+      "id": "zedsecure",
+      "name": "ZedSecure",
+      "developer": "CluvexStudio",
+      "category": "ابزارها",
+      "description": "کلاینت VPN چند هسته ای برای اندروید و دسکتاپ: Xray، sing-box، Psiphon، Tor، تونل های DNS، WireGuard/AmneziaWG، OpenConnect، IKEv2",
+      "iconUrl": "https://avatars.githubusercontent.com/u/125141320?v=4",
+      "packageName": "Zedsecure.Idolteam",
+      "github": "CluvexStudio/ZedSecure",
+      "telegram": "https://t.me/CluvexStudio",
+      "descriptionEn": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2"
+    },
+    {
+      "id": "hiddify-app",
+      "name": "hiddify-app",
+      "developer": "hiddify",
+      "category": "ابزارها",
+      "description": "سرویس گیرنده پروکسی خودکار چند پلتفرمی، از Sing-box، X-ray، TUIC، Hysteria، Reality، Trojan، SSH و غیره پشتیبانی می کند. این یک منبع باز، ایمن و بدون آگهی است.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/126981719?v=4",
+      "packageName": "Hiddify.Idolteam",
+      "github": "hiddify/hiddify-app",
+      "website": "https://hiddify.com",
+      "descriptionEn": "Multi-platform auto-proxy client, supporting Sing-box, X-ray, TUIC, Hysteria, Reality, Trojan, SSH etc. It’s an open-source, secure and ad-free."
+    },
+    {
+      "id": "happ-android",
+      "name": "happ-android",
+      "developer": "Happ-proxy",
+      "category": "ابزارها",
+      "iconUrl": "https://avatars.githubusercontent.com/u/195639782?v=4",
+      "packageName": "Happ.Idolteam",
+      "github": "Happ-proxy/happ-android",
+      "telegram": "https://t.me/happ_chat"
+    }
+  ],
+  "admins": [
+    "Alvandcode"
+  ],
+  "categories": [
+    "ابزارها",
+    "رسانه",
+    "امنیت و حریم خصوصی"
+  ],
+  "updatedAt": "2026-11-25"
 }
