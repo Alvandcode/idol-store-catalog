@@ -32,6 +32,11 @@ def _entry_target(destination: Path, name: str) -> Path:
     return target
 
 
+def safe_target(destination: Path, name: str) -> Path:
+    """Public helper for other modules: validated in-place target path."""
+    return _entry_target(destination, name)
+
+
 def extract_zip_source(data: bytes, destination: Path, *, max_files: int = 20000) -> Path:
     if not zipfile.is_zipfile(io.BytesIO(data)):
         raise UnsafeArchive("Source archive is not a valid zip file")

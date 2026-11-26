@@ -20,7 +20,7 @@ TOOL_TIMEOUT_SECONDS = 45 * 60
 MAX_REDIRECTS = 3
 API_CALL_BUDGET_PER_APP = 60   # GitHub API calls per app per run
 HTTP_RETRIES = 2
-CACHE_POLICY_KEY = "idol-security-scanner-v2-policy-1"
+CACHE_POLICY_KEY = "idol-security-scanner-v2-policy-2"
 
 
 @dataclass

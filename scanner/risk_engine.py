@@ -15,7 +15,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from . import models
+from . import i18n, models
 
 CRITICAL_YARA = "critical"  # severity value that justifies DANGEROUS
 
@@ -56,10 +56,12 @@ def evaluate(
     blocking: list[str] = []
 
     if technical_error:
-        return models.SCAN_ERROR, "unknown", [], [f"scan failed: {technical_error[:300]}"]
+        return models.SCAN_ERROR, "unknown", [], [
+            {"key": "scan_error.technical", "params": {"reason": technical_error[:200]}}
+        ]
 
     if not had_release:
-        return models.NOT_SCANNED, "unknown", [], ["no stable release found"]
+        return models.NOT_SCANNED, "unknown", [], [{"key": "warning.no_stable_release"}]
 
     # 1) DANGEROUS — ClamAV detection on sources or any asset.
     if _engine_status(source_scan.get("clamav")) == "detection":
@@ -90,29 +92,30 @@ def evaluate(
     osv = source_scan.get("dependency") or {}
     vulns = osv.get("vulnerabilities") or []
     if vulns:
-        warnings.append(f"{len(vulns)} known dependency vulnerabilities (OSV)")
+        warnings.append({"key": "warning.dependency_vulns", "params": {"count": len(vulns)}})
 
     yara_all = _all_yara(source_scan, scanned_assets)
     if yara_all:
-        warnings.append(f"{len(yara_all)} YARA rule matches requiring review")
+        warnings.append({"key": "warning.yara_matches", "params": {"count": len(yara_all)}})
 
     semgrep = source_scan.get("semgrep") or {}
     sg = semgrep.get("findings") or []
     if sg:
-        warnings.append(f"{len(sg)} static analysis findings (semgrep)")
+        warnings.append({"key": "warning.semgrep_findings", "params": {"count": len(sg)}})
 
     gitleaks = source_scan.get("gitleaks") or {}
     secrets = gitleaks.get("findings") or []
     if secrets:
-        warnings.append(f"{len(secrets)} possible exposed secrets (gitleaks)")
+        warnings.append({"key": "warning.gitleaks_secrets", "params": {"count": len(secrets)}})
 
     for asset in scanned_assets:
         binary = asset.get("binary") or {}
         flags = binary.get("flags") or []
         if flags:
-            warnings.append(f"asset {asset.get('name')}: {', '.join(flags)}")
+            warnings.append({"key": "warning.binary_flags", "params": {
+                "name": asset.get("name"), "flags": ", ".join(flags)}})
         if asset.get("status") == "suspicious_content":
-            warnings.append(f"asset {asset.get('name')}: suspicious content needs review")
+            warnings.append({"key": "warning.asset_suspicious", "params": {"name": asset.get("name")}})
 
     if warnings:
         critical = any(v.get("severity") == "high" for v in vulns) or any(

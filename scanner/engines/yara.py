@@ -24,19 +24,25 @@ SEVERITY_MAP = {"critical": "critical", "high": "high", "medium": "medium", "low
 _RULES_CACHE: dict[str, Any] = {}
 
 
+def _compile_ruleset(rule_files: dict[str, str]) -> Any:
+    try:
+        return _yara.compile(filepaths=rule_files)
+    except _yara.Error as exc:
+        raise RuntimeError(f"YARA rule compilation failed: {exc}") from exc
+
+
 def _load_ruleset(rules_dir: Path) -> Any | None:
     key = str(rules_dir.resolve())
     if key in _RULES_CACHE:
         return _RULES_CACHE[key]
     if _yara is None:
         return None
-    rule_files = {p.stem: str(p) for p in sorted(rules_dir.glob("**/*.yar"))}
+    rule_files: dict[str, str] = {}
+    for p in sorted(rules_dir.glob("**/*.yar")):
+        rule_files.setdefault(p.stem, str(p))
     if not rule_files:
         return None
-    try:
-        ruleset = _yara.compile(filepaths=rule_files)
-    except _yara.Error as exc:
-        raise RuntimeError(f"YARA rule compilation failed: {exc}") from exc
+    ruleset = _compile_ruleset(rule_files)
     _RULES_CACHE[key] = ruleset
     return ruleset
 
@@ -57,7 +63,7 @@ def _iter_files(root: Path):
             yield path
 
 
-def _match_file(ruleset: Any, path: Path) -> list[dict[str, str]]:
+def _match_file(ruleset: Any, path: Path, *, severity_cap: str | None = None) -> list[dict[str, str]]:
     findings = []
     try:
         matches = ruleset.match(str(path), timeout=120)
@@ -67,17 +73,22 @@ def _match_file(ruleset: Any, path: Path) -> list[dict[str, str]]:
         return []
     for match in matches:
         meta = match.meta or {}
+        severity = SEVERITY_MAP.get(str(meta.get("severity", "medium")).lower(), "medium")
+        # Community rules are capped at "medium" so third-party rules can
+        # never auto-produce a DANGEROUS verdict — they only request review.
+        if severity_cap == "medium" and severity in ("critical", "high"):
+            severity = "medium"
         findings.append({
             "tool": "yara",
             "rule": match.rule,
-            "severity": SEVERITY_MAP.get(str(meta.get("severity", "medium")).lower(), "medium"),
+            "severity": severity,
             "file": str(path)[:300],
             "description": str(meta.get("description", ""))[:300],
         })
     return findings
 
 
-def scan(path: Path, rules_dir: Path) -> dict[str, Any]:
+def scan(path: Path, rules_dir: Path, community_rules_dir: Path | None = None) -> dict[str, Any]:
     result = base_result("yara")
     if _yara is None:
         result["status"] = "scanner_unavailable"
@@ -94,11 +105,20 @@ def scan(path: Path, rules_dir: Path) -> dict[str, Any]:
         result["status"] = "scanner_unavailable"
         result["error"] = "no YARA rule files found"
         return result
+    community_ruleset = None
+    if community_rules_dir and Path(community_rules_dir).is_dir():
+        try:
+            community_ruleset = _load_ruleset(Path(community_rules_dir))
+        except RuntimeError:
+            community_ruleset = None  # broken community rules never break the scan
     result["available"] = True
     result["scanned_at"] = now_iso()
     detections: list[dict[str, str]] = []
-    for file_path in _iter_files(path if path.is_dir() else path.parent):
+    targets = [path] if path.is_file() else list(_iter_files(path))
+    for file_path in targets:
         detections.extend(_match_file(ruleset, file_path))
+        if community_ruleset is not None:
+            detections.extend(_match_file(community_ruleset, file_path, severity_cap="medium"))
     result["detections"] = detections[:200]
     result["status"] = "detection" if detections else "no_detection"
     return result

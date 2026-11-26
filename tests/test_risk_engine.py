@@ -69,7 +69,7 @@ class RiskEngineTest(unittest.TestCase):
         status, risk, _, warnings = evaluate(source_scan=source, scanned_assets=[ok_asset()], had_release=True)
         self.assertEqual(status, models.WARNING)
         self.assertEqual(risk, "medium")
-        self.assertTrue(any("dependency" in w for w in warnings))
+        self.assertTrue(any(w.get("key") == "warning.dependency_vulns" for w in warnings))
 
     def test_skipped_asset_makes_result_incomplete(self):
         asset = ok_asset(status="not_scanned_size_limit")
