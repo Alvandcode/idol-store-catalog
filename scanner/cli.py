@@ -8,6 +8,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from . import REPORT_SCHEMA_VERSION, SCANNER_NAME, SCANNER_VERSION
+from . import i18n as i18n_mod
 from .cache import ResultCache
 from .config import AppConfig, ScannerPaths, MAX_PARALLEL_APPS
 from .engines import base
@@ -37,7 +38,6 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--cache-dir", default="security-cache")
     parser.add_argument("--max-asset-mb", type=int, default=700)
     parser.add_argument("--max-source-mb", type=int, default=300)
-    parser.add_argument("--include-filenames", action="store_true", default=False)
     args = parser.parse_args(argv)
 
     catalog_path = Path(args.catalog)
@@ -52,11 +52,17 @@ def main(argv: list[str] | None = None) -> int:
     client = GitHubClient(token=None)  # token is injected via env by the workflow, never stored
     cache = ResultCache(paths.cache_dir)
     fp_registry = FalsePositiveRegistry(paths.false_positives)
+    community_rules_dir = paths.cache_dir / "yara-community"
 
     # Version audit: which engines are actually available before scanning?
+    try:
+        import yara as _yara_mod
+        yara_version = _yara_mod.__version__
+    except ImportError:
+        yara_version = None
     engine_versions = {
         "clamav": base.tool_version(["clamscan", "--version"], "clamav"),
-        "yara": base.tool_version(["yara", "--version"], "yara"),
+        "yara": yara_version,
         "semgrep": base.tool_version(["semgrep", "--version"], "semgrep"),
         "gitleaks": base.tool_version(["gitleaks", "version"], "gitleaks"),
         "osv-scanner": base.tool_version(["osv-scanner", "--version"], "osv-scanner"),
@@ -85,7 +91,7 @@ def main(argv: list[str] | None = None) -> int:
             pool.submit(
                 scan_app, app,
                 GitHubClient(token=__import__("os").environ.get("GITHUB_TOKEN")),
-                config, paths.rules_dir, cache, fp_registry,
+                config, paths.rules_dir, cache, fp_registry, community_rules_dir,
             )
             for app in apps
         ]
@@ -124,7 +130,25 @@ def main(argv: list[str] | None = None) -> int:
         "cache_hits": sum(1 for r in results if r.get("from_cache")),
         "rate_limit_hits": rate_limit_hits,
     }
+    policy["communityRules"] = {
+        "enabled": community_rules_dir.is_dir() and any(community_rules_dir.glob("*.yar")),
+        "directory": "security-cache/yara-community",
+        "manifest": "security-cache/yara-sources.json",
+        "note": "community rules are severity-capped at medium (review only)",
+    }
+    policy["i18n"] = {"locales": i18n_mod.available_locales(), "file": paths.output.name.replace(".json", "-i18n.json")}
     atomic_write_json(paths.output, payload)
+
+    # Publish the full translation catalog next to the report so any UI can
+    # render statuses/warnings in any supported locale.
+    i18n_payload = {
+        "schemaVersion": 1,
+        "locales": i18n_mod.available_locales(),
+        "fallbackLocale": "en",
+        "keys": i18n_mod.KEYS,
+        "meaning": i18n_mod.message("meaning.not_absolute", "en"),
+    }
+    atomic_write_json(paths.output.parent / (paths.output.name.replace(".json", "-i18n.json")), i18n_payload)
     print(f"Report written to {paths.output}")
     return 0
 
