@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "scanner": "Idol Security Scanner",
   "scannerVersion": "2.0.0",
-  "generatedAt": "2026-11-26T08:27:45+00:00",
+  "generatedAt": "2026-11-26T09:49:22+00:00",
   "policy": {
     "engines": {
       "clamav": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
@@ -40,36 +40,94 @@
       "id": "com.idol.store",
       "name": "Idol Store",
       "github_repository": "https://github.com/Alvandcode/idol-store",
-      "scan_timestamp": "2026-11-26T08:27:45+00:00",
+      "scan_timestamp": "2026-11-26T09:49:22+00:00",
       "scanner_version": "2.0.0",
       "from_cache": false,
-      "release_version": null,
-      "release_date": null,
-      "overall_status": "NOT_SCANNED",
+      "release_version": "v1.0.1",
+      "release_date": "2026-11-26T09:38:24Z",
+      "overall_status": "INCOMPLETE",
       "risk_level": "unknown",
-      "source_scan": null,
-      "scanned_assets": [],
+      "source_scan": {
+        "sha256_source_archive": "d64222bb34546d0ddc25bfb5ec33af76049e1e88e8dbdac29ba7198699d265fa",
+        "archive_bytes": 2528569,
+        "clamav": {
+          "engine": "clamav",
+          "available": true,
+          "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+          "scanned_at": "2026-11-26T09:49:32+00:00",
+          "exit_code": 0,
+          "status": "no_detection",
+          "detections": []
+        },
+        "dependency": {
+          "engine": "osv-scanner",
+          "available": true,
+          "version": "osv-scanner version: 2.0.3",
+          "scanned_at": "2026-11-26T09:49:32+00:00",
+          "exit_code": 128,
+          "status": "scan_error",
+          "error": "Scanning dir /tmp/idol-scan-v2-t8tdgkw6/source/Alvandcode-idol-store-44ccb86\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+        },
+        "yara": {
+          "engine": "yara",
+          "available": true,
+          "version": "4.5.4",
+          "scanned_at": "2026-11-26T09:49:32+00:00",
+          "exit_code": null,
+          "status": "no_detection",
+          "detections": []
+        },
+        "semgrep": {
+          "engine": "semgrep",
+          "available": true,
+          "version": "1.187.0",
+          "scanned_at": "2026-11-26T09:49:34+00:00",
+          "exit_code": 2,
+          "status": "scan_error",
+          "error": ""
+        },
+        "gitleaks": {
+          "engine": "gitleaks",
+          "available": true,
+          "version": "version is set by build process",
+          "scanned_at": "2026-11-26T09:49:34+00:00",
+          "exit_code": 0,
+          "status": "no_findings",
+          "findings": []
+        }
+      },
+      "scanned_assets": [
+        {
+          "name": "app-debug.apk",
+          "declared_size": 21238126,
+          "status": "download_or_scan_error",
+          "error": "Host not allowed: release-assets.githubusercontent.com",
+          "sha256": null
+        }
+      ],
       "detections": [],
       "vulnerabilities": [],
-      "warnings": [
-        "no stable release found"
+      "warnings": [],
+      "scan_errors": [
+        "source:osv",
+        "asset:app-debug.apk:download_or_scan_error"
       ],
-      "scan_errors": [],
       "skipped_files": [],
       "execution_statistics": {
-        "api_calls": 0,
+        "api_calls": 2,
         "downloaded_bytes": 0,
         "duration_note": "single-run"
       },
-      "status": "not_scanned"
+      "blocking_evidence": [],
+      "status": "incomplete"
     },
     {
       "id": "V2rayng.Idolteam",
       "name": "V2rayNG",
       "github_repository": "2dust/v2rayNG",
-      "scan_timestamp": "2026-11-26T08:27:45+00:00",
+      "scan_timestamp": "2026-11-26T09:49:23+00:00",
       "scanner_version": "2.0.0",
-      "from_cache": false,
+      "from_cache": true,
       "release_version": "2.3.15",
       "release_date": "2026-11-01T06:59:32Z",
       "overall_status": "INCOMPLETE",
@@ -260,7 +318,8 @@
       "execution_statistics": {
         "api_calls": 2,
         "downloaded_bytes": 0,
-        "duration_note": "single-run"
+        "duration_note": "single-run",
+        "cache_hit": true
       },
       "blocking_evidence": [],
       "status": "incomplete"
@@ -269,9 +328,9 @@
       "id": "pattng",
       "name": "PattNG",
       "github_repository": "patterniha/PattNG",
-      "scan_timestamp": "2026-11-26T08:27:45+00:00",
+      "scan_timestamp": "2026-11-26T09:49:23+00:00",
       "scanner_version": "2.0.0",
-      "from_cache": false,
+      "from_cache": true,
       "release_version": "2.4.1-P76",
       "release_date": "2026-11-25T15:01:28Z",
       "overall_status": "INCOMPLETE",
@@ -462,7 +521,8 @@
       "execution_statistics": {
         "api_calls": 2,
         "downloaded_bytes": 0,
-        "duration_note": "single-run"
+        "duration_note": "single-run",
+        "cache_hit": true
       },
       "blocking_evidence": [],
       "status": "incomplete"
@@ -471,9 +531,9 @@
       "id": "zedsecure",
       "name": "ZedSecure",
       "github_repository": "CluvexStudio/ZedSecure",
-      "scan_timestamp": "2026-11-26T08:27:45+00:00",
+      "scan_timestamp": "2026-11-26T09:49:24+00:00",
       "scanner_version": "2.0.0",
-      "from_cache": false,
+      "from_cache": true,
       "release_version": "v3.2.0",
       "release_date": "2026-11-19T20:18:55Z",
       "overall_status": "INCOMPLETE",
@@ -696,7 +756,8 @@
       "execution_statistics": {
         "api_calls": 2,
         "downloaded_bytes": 0,
-        "duration_note": "single-run"
+        "duration_note": "single-run",
+        "cache_hit": true
       },
       "blocking_evidence": [],
       "status": "incomplete"
@@ -705,9 +766,9 @@
       "id": "hiddify-app",
       "name": "hiddify-app",
       "github_repository": "hiddify/hiddify-app",
-      "scan_timestamp": "2026-11-26T08:28:02+00:00",
+      "scan_timestamp": "2026-11-26T09:49:24+00:00",
       "scanner_version": "2.0.0",
-      "from_cache": false,
+      "from_cache": true,
       "release_version": "v5.9.15",
       "release_date": "2026-11-19T07:44:59Z",
       "overall_status": "INCOMPLETE",
@@ -928,7 +989,8 @@
       "execution_statistics": {
         "api_calls": 2,
         "downloaded_bytes": 0,
-        "duration_note": "single-run"
+        "duration_note": "single-run",
+        "cache_hit": true
       },
       "blocking_evidence": [],
       "status": "incomplete"
@@ -937,9 +999,9 @@
       "id": "happ-android",
       "name": "happ-android",
       "github_repository": "Happ-proxy/happ-android",
-      "scan_timestamp": "2026-11-26T08:28:11+00:00",
+      "scan_timestamp": "2026-11-26T09:49:25+00:00",
       "scanner_version": "2.0.0",
-      "from_cache": false,
+      "from_cache": true,
       "release_version": "4.11.2",
       "release_date": "2026-11-16T07:26:25Z",
       "overall_status": "INCOMPLETE",
@@ -1021,7 +1083,8 @@
       "execution_statistics": {
         "api_calls": 2,
         "downloaded_bytes": 0,
-        "duration_note": "single-run"
+        "duration_note": "single-run",
+        "cache_hit": true
       },
       "blocking_evidence": [],
       "status": "incomplete"
@@ -1034,11 +1097,11 @@
       "LOW_RISK": 0,
       "WARNING": 0,
       "DANGEROUS": 0,
-      "INCOMPLETE": 5,
-      "NOT_SCANNED": 1,
+      "INCOMPLETE": 6,
+      "NOT_SCANNED": 0,
       "SCAN_ERROR": 0
     },
-    "cache_hits": 0,
+    "cache_hits": 5,
     "rate_limit_hits": 0
   }
 }
