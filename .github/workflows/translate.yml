@@ -1,0 +1,98 @@
+name: Auto-translate catalog
+
+# ترجمه خودکار توضیحات کاتالوگ:
+# - توضیح فارسی → descriptionEn انگلیسی (ترجمه ماشینی رایگان)
+# - توضیح انگلیسی → description فارسی
+# در انتشار کاتالوگ، هفتگی و دستی اجرا می‌شود. کامیت با [skip ci] تا حلقه نشود.
+
+on:
+  push:
+    paths: ['apps.json']
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Translate descriptions
+        run: |
+          python - <<'PY'
+          import json, re, time, urllib.request, urllib.parse
+
+          PATH = 'apps.json'
+          data = json.load(open(PATH, encoding='utf-8'))
+          apps = data.get('apps', data if isinstance(data, list) else [])
+
+          def is_persian(text):
+              persian = len(re.findall(r'[\u0600-\u06FF]', text))
+              alpha = len(re.findall(r'[A-Za-z\u0600-\u06FF]', text)) or 1
+              return persian / alpha > 0.3
+
+          def translate(text, target):
+              q = urllib.parse.quote(text)
+              url = ('https://translate.googleapis.com/translate_a/single'
+                     f'?client=gtx&sl=auto&tl={target}&dt=t&q={q}')
+              req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  arr = json.loads(r.read().decode('utf-8'))
+              return ''.join(part[0] for part in arr[0] if part and part[0]).strip()
+
+          changed = False
+          for app in apps:
+              desc = (app.get('description') or '').strip()
+              den = (app.get('descriptionEn') or '').strip()
+              if not desc and not den:
+                  continue
+              if is_persian(desc):
+                  if not den:
+                      try:
+                          app['descriptionEn'] = translate(desc, 'en')
+                          changed = True
+                          print('EN:', app.get('id'), '→', app['descriptionEn'][:60])
+                      except Exception as e:
+                          print('skip EN', app.get('id'), e)
+                      time.sleep(0.6)
+              elif desc:
+                  if not den:
+                      app['descriptionEn'] = desc
+                      changed = True
+                  if not is_persian(desc) and not is_persian(den or ''):
+                      # توضیح انگلیسی است → نسخه فارسی بساز
+                      try:
+                          app['description'] = translate(desc, 'fa')
+                          changed = True
+                          print('FA:', app.get('id'), '→', app['description'][:60])
+                      except Exception as e:
+                          print('skip FA', app.get('id'), e)
+                      time.sleep(0.6)
+
+          if changed:
+              json.dump(data, open(PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+              open(PATH, 'a', encoding='utf-8').write('\n')
+              print('CHANGED')
+          else:
+              print('NO CHANGES')
+          PY
+
+      - name: Commit translations
+        run: |
+          if git diff --quiet apps.json; then
+            echo "Nothing to commit"
+          else
+            git config user.name "idol-translate-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add apps.json
+            git commit -m "chore: auto-translate app descriptions [skip ci]"
+            git push
+          fi
