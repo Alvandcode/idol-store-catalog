@@ -1,0 +1,63 @@
+name: Admin approval
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  approve-admin:
+    if: startsWith(github.event.issue.title, '[admin-approve]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Parse and approve admin
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TITLE: ${{ github.event.issue.title }}
+          REQ_NUM: ${{ github.event.issue.number }}
+        run: |
+          set -euo pipefail
+          LOGIN=$(echo "$TITLE" | sed -n 's/.*login=\([^ ]*\).*/\1/p')
+          PERMS=$(echo "$TITLE" | sed -n 's/.*perms=\([^ ]*\).*/\1/p')
+          if [ -z "$LOGIN" ]; then echo "no login found"; exit 0; fi
+          if [ -z "$PERMS" ]; then PERMS="manage_apps"; fi
+
+          # خواندن admins.json فعلی (اگر نبود، از نو بساز)
+          if gh api repos/${{ github.repository }}/contents/admins.json --jq '.content' > /tmp/b64 2>/dev/null; then
+            base64 -d /tmp/b64 > /tmp/admins.json
+            SHA=$(gh api repos/${{ github.repository }}/contents/admins.json --jq '.sha')
+          else
+            echo '{ "schemaVersion": 1, "owner": "Alvandcode", "admins": [] }' > /tmp/admins.json
+            SHA=""
+          fi
+
+          # افزودن/به‌روزرسانی ادمین با jq
+          jq --arg login "$LOGIN" --arg perms "$PERMS" --arg date "$(date -u +%F)" '
+            .admins = (if (.admins | map(select(.login | ascii_downcase == ($login | ascii_downcase))) | length) > 0
+                       then .admins | map(if (.login | ascii_downcase) == ($login | ascii_downcase)
+                                          then .permissions = ($perms | split(",")) | .added_at = $date
+                                          else . end)
+                       else .admins + [{ "login": $login, "permissions": ($perms | split(",")), "added_at": $date }]
+                       end)' /tmp/admins.json > /tmp/new.json
+
+          CONTENT=$(base64 -w0 /tmp/new.json)
+          if [ -n "$SHA" ]; then
+            gh api -X PUT repos/${{ github.repository }}/contents/admins.json \
+              -f message="chore: approve admin $LOGIN [skip ci]" \
+              -f content="$CONTENT" -f sha="$SHA" --silent
+          else
+            gh api -X PUT repos/${{ github.repository }}/contents/admins.json \
+              -f message="chore: approve admin $LOGIN [skip ci]" \
+              -f content="$CONTENT" --silent
+          fi
+
+          # بستن هر دو issue: درخواست اولیه و issue تایید
+          REQ=$(gh api "repos/${{ github.repository }}/issues?state=open&per_page=50" --jq '.[] | select(.title | startswith("[admin-access]")) | select(.title | test("'$LOGIN'"; "i")) | .number' | head -1 || true)
+          if [ -n "$REQ" ]; then
+            gh api -X PATCH repos/${{ github.repository }}/issues/$REQ -f state=closed --silent || true
+            gh api repos/${{ github.repository }}/issues/$REQ/comments -f body="✅ Admin **$LOGIN** approved with permissions: \`$PERMS\`" --silent || true
+          fi
+          gh api -X PATCH repos/${{ github.repository }}/issues/$REQ_NUM -f state=closed --silent
+          gh api repos/${{ github.repository }}/issues/$REQ_NUM/comments -f body="✅ Admin **$LOGIN** approved with permissions: \`$PERMS\` — admins.json updated, [skip ci]" --silent
