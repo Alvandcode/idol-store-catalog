@@ -1,5 +1,12 @@
 {
-  "schemaVersion": 1,
-  "owner": "Alvandcode",
-  "admins": []
+    "owner": "Alvandcode",
+    "admins": [
+        {
+            "login": "Idolvpn",
+            "permissions": [
+                "manage_apps"
+            ],
+            "added_at": "2026-11-27"
+        }
+    ]
 }
