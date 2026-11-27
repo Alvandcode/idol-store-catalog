@@ -1,0 +1,86 @@
+{
+  "id": "com.idol.store",
+  "name": "Idol Store",
+  "github_repository": "https://github.com/Alvandcode/idol-store",
+  "scan_timestamp": "2026-11-27T14:33:25+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v1.0.14",
+  "release_date": "2026-11-27T13:31:02Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "e8a19164852efa8c19690b715174020a0ed8ecb3454f68884e380bf68525fa0a",
+    "archive_bytes": 2557211,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-27T14:33:34+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-27T14:33:34+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-rzbljorb/source/Alvandcode-idol-store-af71772\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-27T14:33:34+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-27T14:33:36+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-27T14:33:36+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "idolstore-1.0.14.apk",
+      "declared_size": 21419205,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:idolstore-1.0.14.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "18b351a06c833440bb8d30e8fb05bd47bebbfc289e04f908116e3dc1a8c6c087",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

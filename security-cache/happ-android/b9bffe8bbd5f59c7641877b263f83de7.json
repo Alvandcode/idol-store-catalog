@@ -1,0 +1,94 @@
+{
+  "id": "happ-android",
+  "name": "happ-android",
+  "github_repository": "Happ-proxy/happ-android",
+  "scan_timestamp": "2026-11-27T14:33:27+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "4.12.0",
+  "release_date": "2026-11-20T06:41:52Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "75b8b01a25d28d173566abcd6e51acb1f35e44a3242ee932a261cd7156cbfba4",
+    "archive_bytes": 3580,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-27T14:33:36+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-27T14:33:36+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-d0u7it6_/source/Happ-proxy-happ-android-ee98be4\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-27T14:33:36+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-27T14:33:38+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-27T14:33:38+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "Happ.apk",
+      "declared_size": 69357640,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Happ_beta.apk",
+      "declared_size": 69357640,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:Happ.apk:download_or_scan_error",
+    "asset:Happ_beta.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "b9bffe8bbd5f59c7641877b263f83de7e00f1bc96b92aaa4d60eb48452ff508e",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}
