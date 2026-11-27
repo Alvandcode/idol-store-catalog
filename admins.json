@@ -4,7 +4,8 @@
         {
             "login": "Idolvpn",
             "permissions": [
-                "manage_apps"
+                "manage_apps",
+                "manage_admins"
             ],
             "added_at": "2026-11-27"
         }
