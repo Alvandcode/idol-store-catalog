@@ -1,320 +1,320 @@
 {
-  "updatedAt": "2026-11-28",
-  "admins": [
-    "Alvandcode"
-  ],
-  "categories": [
-    "ابزارها",
-    "رسانه",
-    "امنیت و حریم خصوصی"
-  ],
-  "apps": [
-    {
-      "id": "com.idol.store",
-      "name": "Idol Store",
-      "developer": "Idol",
-      "category": "ابزارها",
-      "description": "استور شخصی اپلیکیشن‌ها؛ آخرین ریلیز پایدار از گیت‌هاب گرفته و APK یونیورسال آن برای دانلود گذاشته می‌شود.",
-      "descriptionEn": "personal store of applications; The latest stable release is taken from GitHub and its universal APK is available for download.",
-      "iconUrl": "https://raw.githubusercontent.com/Alvandcode/idol-store-catalog/main/icons/idol-store.png",
-      "packageName": "com.idol.store",
-      "github": "https://github.com/Alvandcode/idol-store",
-      "website": "https://example.com",
-      "email": "admin@example.com",
-      "telegram": "https://t.me/idolstore"
-    },
-    {
-      "id": "V2rayng.Idolteam",
-      "name": "V2rayNG",
-      "developer": "2dust",
-      "category": "ابزارها",
-      "description": "V2RayNG یک اپلیکیشن متن‌باز اندرویدی برای اتصال به سرویس‌های VPN مبتنی بر پروتکل‌های V2Ray و Xray است.\nبا پشتیبانی از پروتکل‌هایی مانند VMess، VLESS، Trojan و Shadowsocks، امکان مدیریت کانفیگ‌ها و اتصال امن و پایدار به اینترنت را فراهم می‌کند.",
-      "descriptionEn": "V2RayNG is an open source Android application for connecting to VPN services based on V2Ray and Xray protocols.\nWith the support of protocols such as VMess, VLESS, Trojan and Shadowsocks, it provides the possibility of managing configurations and a secure and stable connection to the Internet.",
-      "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJOFCE3T0RWSCuY4mmhPWpHY3sj3WR4EXlxOOyIxHIQ&s=10",
-      "packageName": "V2rayng",
-      "github": "2dust/v2rayNG",
-      "website": "V2rayng.2dust.Link",
-      "email": "CaptainIronng@protonmail.com",
-      "telegram": "https://t.me/github_2dust"
-    },
-    {
-      "id": "pattng",
-      "name": "PattNG",
-      "developer": "patterniha",
-      "category": "ابزارها",
-      "description": "یک کلاینت V2Ray برای اندروید، از هسته Xray و هسته v2fly پشتیبانی می کند",
-      "descriptionEn": "A V2Ray client for Android, support Xray core and v2fly core",
-      "iconUrl": "https://avatars.githubusercontent.com/u/71074308?v=4",
-      "packageName": "Pattng.Idolteam",
-      "github": "patterniha/PattNG",
-      "telegram": "https://t.me/VPN_PattNG"
-    },
-    {
-      "id": "zedsecure",
-      "name": "ZedSecure",
-      "developer": "CluvexStudio",
-      "category": "ابزارها",
-      "description": "کلاینت VPN چند هسته ای برای اندروید و دسکتاپ: Xray، sing-box، Psiphon، Tor، تونل های DNS، WireGuard/AmneziaWG، OpenConnect، IKEv2",
-      "descriptionEn": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2",
-      "iconUrl": "https://avatars.githubusercontent.com/u/125141320?v=4",
-      "packageName": "Zedsecure.Idolteam",
-      "github": "CluvexStudio/ZedSecure",
-      "telegram": "https://t.me/CluvexStudio"
-    },
-    {
-      "id": "hiddify-app",
-      "name": "hiddify-app",
-      "developer": "hiddify",
-      "category": "ابزارها",
-      "description": "سرویس گیرنده پروکسی خودکار چند پلتفرمی، از Sing-box، X-ray، TUIC، Hysteria، Reality، Trojan، SSH و غیره پشتیبانی می کند. این یک منبع باز، ایمن و بدون آگهی است.",
-      "descriptionEn": "Multi-platform auto-proxy client, supporting Sing-box, X-ray, TUIC, Hysteria, Reality, Trojan, SSH etc. It’s an open-source, secure and ad-free.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/126981719?v=4",
-      "packageName": "Hiddify.Idolteam",
-      "github": "hiddify/hiddify-app",
-      "website": "https://hiddify.com"
-    },
-    {
-      "id": "happ-android",
-      "name": "happ-android",
-      "developer": "Happ-proxy",
-      "category": "ابزارها",
-      "iconUrl": "https://avatars.githubusercontent.com/u/195639782?v=4",
-      "packageName": "Happ.Idolteam",
-      "github": "Happ-proxy/happ-android",
-      "telegram": "https://t.me/happ_chat"
-    },
-    {
-      "id": "msn-guard",
-      "name": "MSN-GUARD",
-      "developer": "mbm110",
-      "category": "ابزارها",
-      "description": "VPN Android در سراسر دستگاه برای شبکه‌های دشوار: WireGuard، MASQUE، WARP-on-WARP، Psiphon، Tor، Foxy و SHARD — با هسته Rust، کشف نقطه پایانی، اسکن MTU، چندین موتور TUN، پروفایل‌ها و اتصالات تأیید شده.",
-      "descriptionEn": "Device-wide Android VPN for difficult networks: WireGuard, MASQUE, WARP-on-WARP, Psiphon, Tor, Foxy and SHARD — with Rust core, endpoint discovery, MTU scanning, multiple TUN engines, profiles and verified connections.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/46137296?v=4",
-      "github": "mbm110/MSN-GUARD",
-      "website": "https://t.me/MSN_GUARD"
-    },
-    {
-      "id": "baranvpn",
-      "name": "BaranVpn",
-      "developer": "AppBaran",
-      "category": "ابزارها",
-      "description": "Baran VPN، فیلترشکن اندروید، Psiphon، V2ray، فیلتر شکن رایگان",
-      "descriptionEn": "Baran VPN, Android Unblocker, Psiphon, V2ray, Free Unblocker",
-      "iconUrl": "https://avatars.githubusercontent.com/u/248134472?v=4",
-      "github": "AppBaran/BaranVpn"
-    },
-    {
-      "id": "bunkervpn",
-      "name": "BunkerVPN",
-      "developer": "ANT1VEN0M",
-      "category": "ابزارها",
-      "description": "🛡️ Bunker VPN (Android) - سرویس گیرنده VPN OLED Stealth با Fail-Safe Cloudflare WARP+ (پورت 880)، Kill-Switch و بیش از 470 گره تأیید شده",
-      "descriptionEn": "🛡️ Bunker VPN (Android) — Minimalist Stealth OLED VPN Client with Fail-Safe Cloudflare WARP+ (Port 880), Kill-Switch, and 470+ verified nodes",
-      "iconUrl": "https://avatars.githubusercontent.com/u/300246312?v=4",
-      "github": "ANT1VEN0M/BunkerVPN",
-      "website": "https://ant1ven0m.github.io/Bunker-Auto-Engine/"
-    },
-    {
-      "id": "firefox-spider-vpn",
-      "name": "firefox-spider-vpn",
-      "developer": "ppj30088-hash",
-      "category": "ابزارها",
-      "iconUrl": "https://avatars.githubusercontent.com/u/317700447?v=4",
-      "github": "ppj30088-hash/firefox-spider-vpn"
-    },
-    {
-      "id": "foxyvpn",
-      "name": "FoxyVPN",
-      "developer": "Vauth",
-      "category": "ابزارها",
-      "description": "مشتری غیر رسمی فایرفاکس VPN بدون اشتراک برای اندروید.",
-      "descriptionEn": "Subscription-free unofficial Firefox VPN client for Android.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/122077080?v=4",
-      "github": "Vauth/FoxyVPN"
-    },
-    {
-      "id": "arman-vpn-client",
-      "name": "arman-vpn-client",
-      "developer": "armanlife",
-      "category": "ابزارها",
-      "description": "کلاینت غیر رسمی فایرفاکس VPN برای اندروید، ویندوز، macOS و لینوکس. با حساب موزیلا شما کار می کند.",
-      "descriptionEn": "Unofficial Firefox VPN client for Android, Windows, macOS, and Linux. Works with your Mozilla account.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/33343170?v=4",
-      "github": "armanlife/arman-vpn-client",
-      "website": "https://t.me/ArmanVPNClient"
-    },
-    {
-      "id": "bpb-vpn",
-      "name": "BPB-VPN",
-      "developer": "bia-pain-bache",
-      "category": "ابزارها",
-      "description": "یک کلاینت منبع باز VPN برای دور زدن سانسور، با Cloudflare Workers، WARP، MASQUE، Psiphon، Tor، حالت DNS و پراکسی های زنجیره ای خود مستقر شده است.",
-      "descriptionEn": "An open-source VPN client for bypassing censorship, with self-deployed Cloudflare Workers, WARP, MASQUE, Psiphon, Tor, DNS mode and Chain proxies.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/155004885?v=4",
-      "github": "bia-pain-bache/BPB-VPN"
-    },
-    {
-      "id": "aetherst",
-      "name": "AetherST",
-      "developer": "immaghzbad",
-      "category": "ابزارها",
-      "description": "سرویس گیرنده VPN چند پروتکلی پیشرفته برای اندروید (MASQUE، WireGuard، Gool، Zero Trust) که توسط Aether Core و موتور HEV SOCKS5 طراحی شده است. عملکرد بالا، دور زدن DPI و رابط کاربری مدرن.",
-      "descriptionEn": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, DPI circumvention, and modern UI.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/134220446?v=4",
-      "github": "immaghzbad/AetherST"
-    },
-    {
-      "id": "ccloud",
-      "name": "CCloud",
-      "github": "code3-dev/CCloud",
-      "developer": "code3-dev",
-      "category": "رسانه",
-      "description": "برنامه پخش فیلم اندروید — کاملا رایگان و بدون آگهی.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/158034265?v=4",
-      "website": "https://github.com/code3-dev/CCloud/releases/latest",
-      "descriptionEn": "Android movie streaming application — completely free and ad-free."
-    },
-    {
-      "id": "aether",
-      "name": "Aether",
-      "github": "QW-AI-Code/Aether",
-      "developer": "QW-AI-Code",
-      "category": "ابزارها",
-      "iconUrl": "https://avatars.githubusercontent.com/u/300384918?v=4"
-    },
-    {
-      "id": "arcveepn",
-      "name": "ArcVeePN",
-      "github": "ProxyArc/ArcVeePN",
-      "developer": "ProxyArc",
-      "category": "ابزارها",
-      "description": "ArcVeePN - برنامه Android VPN، منبع باز (نسخه 1.7)",
-      "iconUrl": "https://avatars.githubusercontent.com/u/129437100?v=4",
-      "descriptionEn": "ArcVeePN - Android VPN app, open source (v1.7)"
-    },
-    {
-      "id": "freeport",
-      "name": "freeport",
-      "github": "mhammaddawudi/freeport",
-      "developer": "mhammaddawudi",
-      "category": "ابزارها",
-      "description": "Android VPN برای Cloudflare WARP، ساخته شده برای شبکه هایی که آن را مسدود می کنند. رابط کاربری انگلیسی، کردی و فارسی، چهار انتقال، مسیریابی هر برنامه.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/223661779?v=4",
-      "descriptionEn": "Android VPN for Cloudflare WARP, built for networks that block it. English, Kurdish and Persian UI, four transports, per-app routing."
-    },
-    {
-      "id": "openrung-mobile-app",
-      "name": "openrung-mobile-app",
-      "github": "openrung/openrung-mobile-app",
-      "developer": "openrung",
-      "category": "ابزارها",
-      "description": "Internet access is a right, not a privilege. 互聯網本非特權。Доступ к интернету — право, а не привилегия. دسترسی به اینترنت حق است، نه امتیاز.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/294078720?v=4",
-      "website": "https://openrung.org",
-      "descriptionEn": "Internet access is a right, not a privilege. 互聯網本非特權。 Доступ к интернету — pravo, а не privilegija. Internet access is a right, not a privilege."
-    },
-    {
-      "id": "niloofar_vpn",
-      "name": "niloofar_vpn",
-      "github": "FossilizedProgrammer/niloofar_vpn",
-      "developer": "FossilizedProgrammer",
-      "category": "ابزارها",
-      "description": "کلاینت اندروید برای موتور فایرفاکس VPN: TUN یا پروکسی محلی، ورود به حساب فایرفاکس، رابط کاربری پنج زبانه. APK های انتشار توسط GitHub Actions ساخته شده اند.",
-      "iconUrl": "https://raw.githubusercontent.com/FossilizedProgrammer/niloofar_vpn/main/Sandstone%20Rosette%20Relief%20Icon.png",
-      "descriptionEn": "Android client for the Firefox VPN engine: TUN or local proxy, Firefox Account sign-in, five-language UI. Release APKs are built by GitHub Actions."
-    },
-    {
-      "id": "uac-sni-spoofer-android",
-      "name": "UAC-SNI-Spoofer-Android",
-      "github": "Floxu1/UAC-SNI-Spoofer-Android",
-      "developer": "Floxu1",
-      "category": "ابزارها",
-      "description": "ابزار VPN جعل SNI Android با اجرای پیکربندی VLESS/Trojan، اسکنر SNI، انتخاب پیکربندی بهترین پینگ خودکار، Xray، tun2socks و لاگ زنده.",
-      "iconUrl": "https://raw.githubusercontent.com/Floxu1/UAC-SNI-Spoofer-Android/main/icon.png",
-      "descriptionEn": "Android SNI spoofing VPN tool with VLESS/Trojan config runner, SNI scanner, auto best-ping config selection, Xray, tun2socks, and live logs."
-    },
-    {
-      "id": "android",
-      "name": "android",
-      "github": "wgtunnel/android",
-      "developer": "wgtunnel",
-      "category": "ابزارها",
-      "description": "یک کلاینت پیشرفته و منبع باز برای WireGuard و AmneziaWG در اندروید.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/207392975?v=4",
-      "website": "https://wgtunnel.com",
-      "descriptionEn": "An advanced, open-source client for WireGuard and AmneziaWG on Android."
-    },
-    {
-      "id": "milinovpn",
-      "name": "Milinovpn",
-      "github": "miladjahani/Milinovpn",
-      "developer": "miladjahani",
-      "category": "ابزارها",
-      "description": "MiliConfig VPN – سرویس گیرنده اندروید Flutter + Go با VLESS، WARP، MASQUE، Psiphon، Tor و یک اسکنر واقعی Cloudflare/WARP.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/84047453?v=4",
-      "descriptionEn": "MiliConfig VPN — Flutter + Go Android client with VLESS, WARP, MASQUE, Psiphon, Tor and a real Cloudflare/WARP scanner."
-    },
-    {
-      "id": "usque-app",
-      "name": "usque-app",
-      "github": "GeorgeXie2333/usque-app",
-      "developer": "GeorgeXie2333",
-      "category": "ابزارها",
-      "description": "کلاینت غیررسمی Cloudflare WARP MASQUE برای Windows، macOS، Linux و Android: سیستم VPN، SOCKS5 و پراکسی HTTP روی MASQUE، با پروکسی زنجیره ای و قوانین مسیریابی.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/65408965?v=4",
-      "website": "https://github.com/GeorgeXie2333/usque-app/wiki",
-      "descriptionEn": "Unofficial Cloudflare WARP MASQUE Client for Windows, macOS, Linux and Android: system VPN, SOCKS5 and HTTP proxy over MASQUE, with chain proxy and routing rules."
-    },
-    {
-      "id": "saman-aether",
-      "name": "saman-aether",
-      "github": "velnox4827/saman-aether",
-      "developer": "velnox4827",
-      "category": "ابزارها",
-      "description": "اندروید مستقل برای Aether Core با SOCKS5، MASQUE، WireGuard و GOOL محلی.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/316973148?v=4",
-      "descriptionEn": "Standalone Android frontend for Aether Core with local SOCKS5, MASQUE, WireGuard and GOOL."
-    },
-    {
-      "id": "concat",
-      "name": "Concat",
-      "github": "jub0t/Concat",
-      "developer": "jub0t",
-      "category": "ابزارها",
-      "description": "جایگزین CapCut منبع باز.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/57962439?v=4",
-      "website": "https://concatapp.com",
-      "descriptionEn": "The open-source CapCut alternative."
-    },
-    {
-      "id": "protasovvpn",
-      "name": "ProtasovVPN",
-      "github": "protasovvpn/ProtasovVPN",
-      "developer": "protasovvpn",
-      "category": "ابزارها",
-      "description": "VPN رایگان برای ویندوز و اندروید",
-      "iconUrl": "https://avatars.githubusercontent.com/u/59310463?v=4",
-      "descriptionEn": "Free VPN for Windows and Android"
-    },
-    {
-      "id": "dicodeping",
-      "name": "dicodePing",
-      "github": "mcodersir/dicodePing",
-      "developer": "mcodersir",
-      "category": "ابزارها",
-      "description": "یک سرویس گیرنده VPN که سرورهای رایگان و اتصال با یک کلیک را ارائه می دهد.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/84375305?v=4",
-      "website": "https://mcodersir.github.io/dicodePing/",
-      "descriptionEn": "A VPN client that offers free servers and one-click connection."
-    },
-    {
-      "id": "vlessforu",
-      "name": "vlessforu",
-      "github": "bobrinaw/vlessforu",
-      "developer": "bobrinaw",
-      "category": "ابزارها",
-      "iconUrl": "https://avatars.githubusercontent.com/u/289422943?v=4"
-    }
-  ]
+    "apps": [
+        {
+            "id": "com.idol.store",
+            "name": "Idol Store",
+            "developer": "Idol",
+            "category": "ابزارها",
+            "description": "استور شخصی اپلیکیشن‌ها؛ آخرین ریلیز پایدار از گیت‌هاب گرفته و APK یونیورسال آن برای دانلود گذاشته می‌شود.",
+            "descriptionEn": "personal store of applications; The latest stable release is taken from GitHub and its universal APK is available for download.",
+            "iconUrl": "https://raw.githubusercontent.com/Alvandcode/idol-store-catalog/main/icons/idol-store.png",
+            "packageName": "com.idol.store",
+            "github": "https://github.com/Alvandcode/idol-store",
+            "website": "https://example.com",
+            "email": "admin@example.com",
+            "telegram": "https://t.me/idolstore"
+        },
+        {
+            "id": "V2rayng.Idolteam",
+            "name": "V2rayNG",
+            "developer": "2dust",
+            "category": "ابزارها",
+            "description": "V2RayNG یک اپلیکیشن متن‌باز اندرویدی برای اتصال به سرویس‌های VPN مبتنی بر پروتکل‌های V2Ray و Xray است.\nبا پشتیبانی از پروتکل‌هایی مانند VMess، VLESS، Trojan و Shadowsocks، امکان مدیریت کانفیگ‌ها و اتصال امن و پایدار به اینترنت را فراهم می‌کند.",
+            "descriptionEn": "V2RayNG is an open source Android application for connecting to VPN services based on V2Ray and Xray protocols.\nWith the support of protocols such as VMess, VLESS, Trojan and Shadowsocks, it provides the possibility of managing configurations and a secure and stable connection to the Internet.",
+            "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJOFCE3T0RWSCuY4mmhPWpHY3sj3WR4EXlxOOyIxHIQ&s=10",
+            "packageName": "V2rayng",
+            "github": "2dust/v2rayNG",
+            "website": "V2rayng.2dust.Link",
+            "email": "CaptainIronng@protonmail.com",
+            "telegram": "https://t.me/github_2dust"
+        },
+        {
+            "id": "pattng",
+            "name": "PattNG",
+            "developer": "patterniha",
+            "category": "ابزارها",
+            "description": "یک کلاینت V2Ray برای اندروید، از هسته Xray و هسته v2fly پشتیبانی می کند",
+            "descriptionEn": "A V2Ray client for Android, support Xray core and v2fly core",
+            "iconUrl": "https://avatars.githubusercontent.com/u/71074308?v=4",
+            "packageName": "Pattng.Idolteam",
+            "github": "patterniha/PattNG",
+            "telegram": "https://t.me/VPN_PattNG"
+        },
+        {
+            "id": "zedsecure",
+            "name": "ZedSecure",
+            "developer": "CluvexStudio",
+            "category": "ابزارها",
+            "description": "کلاینت VPN چند هسته ای برای اندروید و دسکتاپ: Xray، sing-box، Psiphon، Tor، تونل های DNS، WireGuard/AmneziaWG، OpenConnect، IKEv2",
+            "descriptionEn": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2",
+            "iconUrl": "https://avatars.githubusercontent.com/u/125141320?v=4",
+            "packageName": "Zedsecure.Idolteam",
+            "github": "CluvexStudio/ZedSecure",
+            "telegram": "https://t.me/CluvexStudio"
+        },
+        {
+            "id": "hiddify-app",
+            "name": "hiddify-app",
+            "developer": "hiddify",
+            "category": "ابزارها",
+            "description": "سرویس گیرنده پروکسی خودکار چند پلتفرمی، از Sing-box، X-ray، TUIC، Hysteria، Reality، Trojan، SSH و غیره پشتیبانی می کند. این یک منبع باز، ایمن و بدون آگهی است.",
+            "descriptionEn": "Multi-platform auto-proxy client, supporting Sing-box, X-ray, TUIC, Hysteria, Reality, Trojan, SSH etc. It’s an open-source, secure and ad-free.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/126981719?v=4",
+            "packageName": "Hiddify.Idolteam",
+            "github": "hiddify/hiddify-app",
+            "website": "https://hiddify.com"
+        },
+        {
+            "id": "happ-android",
+            "name": "happ-android",
+            "developer": "Happ-proxy",
+            "category": "ابزارها",
+            "iconUrl": "https://avatars.githubusercontent.com/u/195639782?v=4",
+            "packageName": "Happ.Idolteam",
+            "github": "Happ-proxy/happ-android",
+            "telegram": "https://t.me/happ_chat"
+        },
+        {
+            "id": "msn-guard",
+            "name": "MSN-GUARD",
+            "developer": "mbm110",
+            "category": "ابزارها",
+            "description": "VPN Android در سراسر دستگاه برای شبکه‌های دشوار: WireGuard، MASQUE، WARP-on-WARP، Psiphon، Tor، Foxy و SHARD — با هسته Rust، کشف نقطه پایانی، اسکن MTU، چندین موتور TUN، پروفایل‌ها و اتصالات تأیید شده.",
+            "descriptionEn": "Device-wide Android VPN for difficult networks: WireGuard, MASQUE, WARP-on-WARP, Psiphon, Tor, Foxy and SHARD — with Rust core, endpoint discovery, MTU scanning, multiple TUN engines, profiles and verified connections.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/46137296?v=4",
+            "github": "mbm110/MSN-GUARD",
+            "website": "https://t.me/MSN_GUARD"
+        },
+        {
+            "id": "baranvpn",
+            "name": "BaranVpn",
+            "developer": "AppBaran",
+            "category": "ابزارها",
+            "description": "Baran VPN، فیلترشکن اندروید، Psiphon، V2ray، فیلتر شکن رایگان",
+            "descriptionEn": "Baran VPN, Android Unblocker, Psiphon, V2ray, Free Unblocker",
+            "iconUrl": "https://avatars.githubusercontent.com/u/248134472?v=4",
+            "github": "AppBaran/BaranVpn"
+        },
+        {
+            "id": "bunkervpn",
+            "name": "BunkerVPN",
+            "developer": "ANT1VEN0M",
+            "category": "ابزارها",
+            "description": "🛡️ Bunker VPN (Android) - سرویس گیرنده VPN OLED Stealth با Fail-Safe Cloudflare WARP+ (پورت 880)، Kill-Switch و بیش از 470 گره تأیید شده",
+            "descriptionEn": "🛡️ Bunker VPN (Android) — Minimalist Stealth OLED VPN Client with Fail-Safe Cloudflare WARP+ (Port 880), Kill-Switch, and 470+ verified nodes",
+            "iconUrl": "https://avatars.githubusercontent.com/u/300246312?v=4",
+            "github": "ANT1VEN0M/BunkerVPN",
+            "website": "https://ant1ven0m.github.io/Bunker-Auto-Engine/"
+        },
+        {
+            "id": "firefox-spider-vpn",
+            "name": "firefox-spider-vpn",
+            "developer": "ppj30088-hash",
+            "category": "ابزارها",
+            "iconUrl": "https://avatars.githubusercontent.com/u/317700447?v=4",
+            "github": "ppj30088-hash/firefox-spider-vpn"
+        },
+        {
+            "id": "foxyvpn",
+            "name": "FoxyVPN",
+            "developer": "Vauth",
+            "category": "ابزارها",
+            "description": "مشتری غیر رسمی فایرفاکس VPN بدون اشتراک برای اندروید.",
+            "descriptionEn": "Subscription-free unofficial Firefox VPN client for Android.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/122077080?v=4",
+            "github": "Vauth/FoxyVPN"
+        },
+        {
+            "id": "arman-vpn-client",
+            "name": "arman-vpn-client",
+            "developer": "armanlife",
+            "category": "ابزارها",
+            "description": "کلاینت غیر رسمی فایرفاکس VPN برای اندروید، ویندوز، macOS و لینوکس. با حساب موزیلا شما کار می کند.",
+            "descriptionEn": "Unofficial Firefox VPN client for Android, Windows, macOS, and Linux. Works with your Mozilla account.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/33343170?v=4",
+            "github": "armanlife/arman-vpn-client",
+            "website": "https://t.me/ArmanVPNClient"
+        },
+        {
+            "id": "bpb-vpn",
+            "name": "BPB-VPN",
+            "developer": "bia-pain-bache",
+            "category": "ابزارها",
+            "description": "یک کلاینت منبع باز VPN برای دور زدن سانسور، با Cloudflare Workers، WARP، MASQUE، Psiphon، Tor، حالت DNS و پراکسی های زنجیره ای خود مستقر شده است.",
+            "descriptionEn": "An open-source VPN client for bypassing censorship, with self-deployed Cloudflare Workers, WARP, MASQUE, Psiphon, Tor, DNS mode and Chain proxies.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/155004885?v=4",
+            "github": "bia-pain-bache/BPB-VPN"
+        },
+        {
+            "id": "aetherst",
+            "name": "AetherST",
+            "developer": "immaghzbad",
+            "category": "ابزارها",
+            "description": "سرویس گیرنده VPN چند پروتکلی پیشرفته برای اندروید (MASQUE، WireGuard، Gool، Zero Trust) که توسط Aether Core و موتور HEV SOCKS5 طراحی شده است. عملکرد بالا، دور زدن DPI و رابط کاربری مدرن.",
+            "descriptionEn": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, DPI circumvention, and modern UI.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/134220446?v=4",
+            "github": "immaghzbad/AetherST"
+        },
+        {
+            "id": "ccloud",
+            "name": "CCloud",
+            "developer": "code3-dev",
+            "category": "رسانه",
+            "description": "برنامه پخش فیلم اندروید — کاملا رایگان و بدون آگهی.",
+            "descriptionEn": "Android movie streaming application — completely free and ad-free.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/158034265?v=4",
+            "github": "code3-dev/CCloud",
+            "website": "https://github.com/code3-dev/CCloud/releases/latest"
+        },
+        {
+            "id": "aether",
+            "name": "Aether",
+            "developer": "QW-AI-Code",
+            "category": "ابزارها",
+            "iconUrl": "https://avatars.githubusercontent.com/u/300384918?v=4",
+            "github": "QW-AI-Code/Aether"
+        },
+        {
+            "id": "arcveepn",
+            "name": "ArcVeePN",
+            "developer": "ProxyArc",
+            "category": "ابزارها",
+            "description": "ArcVeePN - برنامه Android VPN، منبع باز (نسخه 1.7)",
+            "descriptionEn": "ArcVeePN - Android VPN app, open source (v1.7)",
+            "iconUrl": "https://avatars.githubusercontent.com/u/129437100?v=4",
+            "github": "ProxyArc/ArcVeePN"
+        },
+        {
+            "id": "freeport",
+            "name": "freeport",
+            "developer": "mhammaddawudi",
+            "category": "ابزارها",
+            "description": "Android VPN برای Cloudflare WARP، ساخته شده برای شبکه هایی که آن را مسدود می کنند. رابط کاربری انگلیسی، کردی و فارسی، چهار انتقال، مسیریابی هر برنامه.",
+            "descriptionEn": "Android VPN for Cloudflare WARP, built for networks that block it. English, Kurdish and Persian UI, four transports, per-app routing.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/223661779?v=4",
+            "github": "mhammaddawudi/freeport"
+        },
+        {
+            "id": "openrung-mobile-app",
+            "name": "openrung-mobile-app",
+            "developer": "openrung",
+            "category": "ابزارها",
+            "description": "Internet access is a right, not a privilege. 互聯網本非特權。Доступ к интернету — право, а не привилегия. دسترسی به اینترنت حق است، نه امتیاز.",
+            "descriptionEn": "Internet access is a right, not a privilege. 互聯網本非特權。 Доступ к интернету — pravo, а не privilegija. Internet access is a right, not a privilege.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/294078720?v=4",
+            "github": "openrung/openrung-mobile-app",
+            "website": "https://openrung.org"
+        },
+        {
+            "id": "niloofar_vpn",
+            "name": "niloofar_vpn",
+            "developer": "FossilizedProgrammer",
+            "category": "ابزارها",
+            "description": "کلاینت اندروید برای موتور فایرفاکس VPN: TUN یا پروکسی محلی، ورود به حساب فایرفاکس، رابط کاربری پنج زبانه. APK های انتشار توسط GitHub Actions ساخته شده اند.",
+            "descriptionEn": "Android client for the Firefox VPN engine: TUN or local proxy, Firefox Account sign-in, five-language UI. Release APKs are built by GitHub Actions.",
+            "iconUrl": "https://raw.githubusercontent.com/FossilizedProgrammer/niloofar_vpn/main/Sandstone%20Rosette%20Relief%20Icon.png",
+            "github": "FossilizedProgrammer/niloofar_vpn"
+        },
+        {
+            "id": "uac-sni-spoofer-android",
+            "name": "UAC-SNI-Spoofer-Android",
+            "developer": "Floxu1",
+            "category": "ابزارها",
+            "description": "ابزار VPN جعل SNI Android با اجرای پیکربندی VLESS/Trojan، اسکنر SNI، انتخاب پیکربندی بهترین پینگ خودکار، Xray، tun2socks و لاگ زنده.",
+            "descriptionEn": "Android SNI spoofing VPN tool with VLESS/Trojan config runner, SNI scanner, auto best-ping config selection, Xray, tun2socks, and live logs.",
+            "iconUrl": "https://raw.githubusercontent.com/Floxu1/UAC-SNI-Spoofer-Android/main/icon.png",
+            "github": "Floxu1/UAC-SNI-Spoofer-Android"
+        },
+        {
+            "id": "android",
+            "name": "android",
+            "developer": "wgtunnel",
+            "category": "ابزارها",
+            "description": "یک کلاینت پیشرفته و منبع باز برای WireGuard و AmneziaWG در اندروید.",
+            "descriptionEn": "An advanced, open-source client for WireGuard and AmneziaWG on Android.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/207392975?v=4",
+            "github": "wgtunnel/android",
+            "website": "https://wgtunnel.com"
+        },
+        {
+            "id": "milinovpn",
+            "name": "Milinovpn",
+            "developer": "miladjahani",
+            "category": "ابزارها",
+            "description": "MiliConfig VPN – سرویس گیرنده اندروید Flutter + Go با VLESS، WARP، MASQUE، Psiphon، Tor و یک اسکنر واقعی Cloudflare/WARP.",
+            "descriptionEn": "MiliConfig VPN — Flutter + Go Android client with VLESS, WARP, MASQUE, Psiphon, Tor and a real Cloudflare/WARP scanner.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/84047453?v=4",
+            "github": "miladjahani/Milinovpn"
+        },
+        {
+            "id": "usque-app",
+            "name": "usque-app",
+            "developer": "GeorgeXie2333",
+            "category": "ابزارها",
+            "description": "کلاینت غیررسمی Cloudflare WARP MASQUE برای Windows، macOS، Linux و Android: سیستم VPN، SOCKS5 و پراکسی HTTP روی MASQUE، با پروکسی زنجیره ای و قوانین مسیریابی.",
+            "descriptionEn": "Unofficial Cloudflare WARP MASQUE Client for Windows, macOS, Linux and Android: system VPN, SOCKS5 and HTTP proxy over MASQUE, with chain proxy and routing rules.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/65408965?v=4",
+            "github": "GeorgeXie2333/usque-app",
+            "website": "https://github.com/GeorgeXie2333/usque-app/wiki"
+        },
+        {
+            "id": "saman-aether",
+            "name": "saman-aether",
+            "developer": "velnox4827",
+            "category": "ابزارها",
+            "description": "اندروید مستقل برای Aether Core با SOCKS5، MASQUE، WireGuard و GOOL محلی.",
+            "descriptionEn": "Standalone Android frontend for Aether Core with local SOCKS5, MASQUE, WireGuard and GOOL.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/316973148?v=4",
+            "github": "velnox4827/saman-aether"
+        },
+        {
+            "id": "concat",
+            "name": "Concat",
+            "developer": "jub0t",
+            "category": "ابزارها",
+            "description": "جایگزین CapCut منبع باز.",
+            "descriptionEn": "The open-source CapCut alternative.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/57962439?v=4",
+            "github": "jub0t/Concat",
+            "website": "https://concatapp.com"
+        },
+        {
+            "id": "protasovvpn",
+            "name": "ProtasovVPN",
+            "developer": "protasovvpn",
+            "category": "ابزارها",
+            "description": "VPN رایگان برای ویندوز و اندروید",
+            "descriptionEn": "Free VPN for Windows and Android",
+            "iconUrl": "https://avatars.githubusercontent.com/u/59310463?v=4",
+            "github": "protasovvpn/ProtasovVPN"
+        },
+        {
+            "id": "dicodeping",
+            "name": "dicodePing",
+            "developer": "mcodersir",
+            "category": "ابزارها",
+            "description": "یک سرویس گیرنده VPN که سرورهای رایگان و اتصال با یک کلیک را ارائه می دهد.",
+            "descriptionEn": "A VPN client that offers free servers and one-click connection.",
+            "iconUrl": "https://avatars.githubusercontent.com/u/84375305?v=4",
+            "github": "mcodersir/dicodePing",
+            "website": "https://mcodersir.github.io/dicodePing/"
+        },
+        {
+            "id": "vlessforu",
+            "name": "vlessforu",
+            "developer": "bobrinaw",
+            "category": "ابزارها",
+            "iconUrl": "https://avatars.githubusercontent.com/u/289422943?v=4",
+            "github": "bobrinaw/vlessforu"
+        }
+    ],
+    "admins": [
+        "Alvandcode"
+    ],
+    "categories": [
+        "ابزارها",
+        "رسانه",
+        "امنیت و حریم خصوصی"
+    ],
+    "updatedAt": "2026-11-28"
 }
