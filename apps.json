@@ -116,16 +116,6 @@
       "category": "ابزارها"
     },
     {
-      "id": "lml-vpn",
-      "name": "LML-VPN",
-      "github": "nukesamp-crypto/LML-VPN",
-      "developer": "nukesamp-crypto",
-      "description": "LML VPN؛ موتورهای اتصال، کانفیگ‌های عمومی و TheFeed",
-      "iconUrl": "https://avatars.githubusercontent.com/u/262647901?v=4",
-      "descriptionEn": "LML VPN; Connection Engines, General Configs and TheFeed",
-      "category": "ابزارها"
-    },
-    {
       "id": "firefox-spider-vpn",
       "name": "firefox-spider-vpn",
       "github": "ppj30088-hash/firefox-spider-vpn",
