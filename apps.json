@@ -91,7 +91,8 @@
       "description": "VPN Android در سراسر دستگاه برای شبکه‌های دشوار: WireGuard، MASQUE، WARP-on-WARP، Psiphon، Tor، Foxy و SHARD — با هسته Rust، کشف نقطه پایانی، اسکن MTU، چندین موتور TUN، پروفایل‌ها و اتصالات تأیید شده.",
       "iconUrl": "https://avatars.githubusercontent.com/u/46137296?v=4",
       "website": "https://t.me/MSN_GUARD",
-      "descriptionEn": "Device-wide Android VPN for difficult networks: WireGuard, MASQUE, WARP-on-WARP, Psiphon, Tor, Foxy and SHARD — with Rust core, endpoint discovery, MTU scanning, multiple TUN engines, profiles and verified connections."
+      "descriptionEn": "Device-wide Android VPN for difficult networks: WireGuard, MASQUE, WARP-on-WARP, Psiphon, Tor, Foxy and SHARD — with Rust core, endpoint discovery, MTU scanning, multiple TUN engines, profiles and verified connections.",
+      "category": "ابزارها"
     },
     {
       "id": "baranvpn",
@@ -100,7 +101,8 @@
       "developer": "AppBaran",
       "description": "Baran VPN، فیلترشکن اندروید، Psiphon، V2ray، فیلتر شکن رایگان",
       "iconUrl": "https://avatars.githubusercontent.com/u/248134472?v=4",
-      "descriptionEn": "Baran VPN, Android Unblocker, Psiphon, V2ray, Free Unblocker"
+      "descriptionEn": "Baran VPN, Android Unblocker, Psiphon, V2ray, Free Unblocker",
+      "category": "ابزارها"
     },
     {
       "id": "bunkervpn",
@@ -110,7 +112,8 @@
       "description": "🛡️ Bunker VPN (Android) - سرویس گیرنده VPN OLED Stealth با Fail-Safe Cloudflare WARP+ (پورت 880)، Kill-Switch و بیش از 470 گره تأیید شده",
       "iconUrl": "https://avatars.githubusercontent.com/u/300246312?v=4",
       "website": "https://ant1ven0m.github.io/Bunker-Auto-Engine/",
-      "descriptionEn": "🛡️ Bunker VPN (Android) — Minimalist Stealth OLED VPN Client with Fail-Safe Cloudflare WARP+ (Port 880), Kill-Switch, and 470+ verified nodes"
+      "descriptionEn": "🛡️ Bunker VPN (Android) — Minimalist Stealth OLED VPN Client with Fail-Safe Cloudflare WARP+ (Port 880), Kill-Switch, and 470+ verified nodes",
+      "category": "ابزارها"
     },
     {
       "id": "lml-vpn",
@@ -119,14 +122,16 @@
       "developer": "nukesamp-crypto",
       "description": "LML VPN؛ موتورهای اتصال، کانفیگ‌های عمومی و TheFeed",
       "iconUrl": "https://avatars.githubusercontent.com/u/262647901?v=4",
-      "descriptionEn": "LML VPN; Connection Engines, General Configs and TheFeed"
+      "descriptionEn": "LML VPN; Connection Engines, General Configs and TheFeed",
+      "category": "ابزارها"
     },
     {
       "id": "firefox-spider-vpn",
       "name": "firefox-spider-vpn",
       "github": "ppj30088-hash/firefox-spider-vpn",
       "developer": "ppj30088-hash",
-      "iconUrl": "https://avatars.githubusercontent.com/u/317700447?v=4"
+      "iconUrl": "https://avatars.githubusercontent.com/u/317700447?v=4",
+      "category": "ابزارها"
     },
     {
       "id": "foxyvpn",
@@ -135,7 +140,8 @@
       "developer": "Vauth",
       "description": "مشتری غیر رسمی فایرفاکس VPN بدون اشتراک برای اندروید.",
       "iconUrl": "https://avatars.githubusercontent.com/u/122077080?v=4",
-      "descriptionEn": "Subscription-free unofficial Firefox VPN client for Android."
+      "descriptionEn": "Subscription-free unofficial Firefox VPN client for Android.",
+      "category": "ابزارها"
     },
     {
       "id": "arman-vpn-client",
@@ -145,7 +151,8 @@
       "description": "کلاینت غیر رسمی فایرفاکس VPN برای اندروید، ویندوز، macOS و لینوکس. با حساب موزیلا شما کار می کند.",
       "iconUrl": "https://avatars.githubusercontent.com/u/33343170?v=4",
       "website": "https://t.me/ArmanVPNClient",
-      "descriptionEn": "Unofficial Firefox VPN client for Android, Windows, macOS, and Linux. Works with your Mozilla account."
+      "descriptionEn": "Unofficial Firefox VPN client for Android, Windows, macOS, and Linux. Works with your Mozilla account.",
+      "category": "ابزارها"
     },
     {
       "id": "whitevpn-desktop",
@@ -154,7 +161,8 @@
       "developer": "WhiteDNS",
       "description": "WhiteVPN Desktop – برنامه Wails که همان موتور mihomo WhiteVPN را برای اندروید اجرا می کند",
       "iconUrl": "https://avatars.githubusercontent.com/u/294980615?v=4",
-      "descriptionEn": "WhiteVPN Desktop — Wails app running the same mihomo engine as WhiteVPN for Android"
+      "descriptionEn": "WhiteVPN Desktop — Wails app running the same mihomo engine as WhiteVPN for Android",
+      "category": "ابزارها"
     },
     {
       "id": "bpb-vpn",
@@ -163,7 +171,8 @@
       "developer": "bia-pain-bache",
       "description": "یک کلاینت منبع باز VPN برای دور زدن سانسور، با Cloudflare Workers، WARP، MASQUE، Psiphon، Tor، حالت DNS و پراکسی های زنجیره ای خود مستقر شده است.",
       "iconUrl": "https://avatars.githubusercontent.com/u/155004885?v=4",
-      "descriptionEn": "An open-source VPN client for bypassing censorship, with self-deployed Cloudflare Workers, WARP, MASQUE, Psiphon, Tor, DNS mode and Chain proxies."
+      "descriptionEn": "An open-source VPN client for bypassing censorship, with self-deployed Cloudflare Workers, WARP, MASQUE, Psiphon, Tor, DNS mode and Chain proxies.",
+      "category": "ابزارها"
     },
     {
       "id": "aetherst",
@@ -172,7 +181,8 @@
       "developer": "immaghzbad",
       "description": "سرویس گیرنده VPN چند پروتکلی پیشرفته برای اندروید (MASQUE، WireGuard، Gool، Zero Trust) که توسط Aether Core و موتور HEV SOCKS5 طراحی شده است. عملکرد بالا، دور زدن DPI و رابط کاربری مدرن.",
       "iconUrl": "https://avatars.githubusercontent.com/u/134220446?v=4",
-      "descriptionEn": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, DPI circumvention, and modern UI."
+      "descriptionEn": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, DPI circumvention, and modern UI.",
+      "category": "ابزارها"
     }
   ]
 }
