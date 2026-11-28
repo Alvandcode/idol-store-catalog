@@ -1,0 +1,109 @@
+{
+  "id": "bunkervpn",
+  "name": "BunkerVPN",
+  "github_repository": "ANT1VEN0M/BunkerVPN",
+  "scan_timestamp": "2026-11-28T09:34:14+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v1.4.9",
+  "release_date": "2026-11-27T10:23:30Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "2f6401b0c11f081d67d5ff2c9a9c00636c2d42ad332bedd801ce020dbeeb925c",
+    "archive_bytes": 2560232,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T09:34:33+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T09:34:33+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-itqhzxo5/source/ANT1VEN0M-BunkerVPN-78d66e9\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T09:34:33+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T09:34:36+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T09:34:38+00:00",
+      "exit_code": 1,
+      "status": "secrets_found",
+      "findings": [
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-itqhzxo5/source/ANT1VEN0M-BunkerVPN-78d66e9/V2rayNG/app/src/main/java/com/v2ray/ang/handler/TelegramSosManager.kt",
+          "line": 13,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-itqhzxo5/source/ANT1VEN0M-BunkerVPN-78d66e9/V2rayNG/app/src/test/java/com/v2ray/ang/fmt/WireguardFmtTest.kt",
+          "line": 16,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        }
+      ]
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "BunkerVPN-arm64-v8a.apk",
+      "declared_size": 33785509,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "BunkerVPN-universal.apk",
+      "declared_size": 73457958,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:BunkerVPN-arm64-v8a.apk:download_or_scan_error",
+    "asset:BunkerVPN-universal.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "e355505843ccb5d93ef10db7de06530021b939b9e7d666031f1fcb693a54bf10",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

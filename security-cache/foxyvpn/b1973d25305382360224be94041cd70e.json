@@ -1,0 +1,107 @@
+{
+  "id": "foxyvpn",
+  "name": "FoxyVPN",
+  "github_repository": "Vauth/FoxyVPN",
+  "scan_timestamp": "2026-11-28T09:34:38+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v2.0.5",
+  "release_date": "2026-11-27T20:01:10Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "19cbf73a90c8c565269f7c4aac9355eb6953563102c60ac6c2ebdfbdb96afa01",
+    "archive_bytes": 175530,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T09:34:53+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T09:34:53+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-fx1pjf_q/source/Vauth-FoxyVPN-c3ebf6c\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T09:34:53+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T09:34:57+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T09:34:58+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "app-arm64-v8a-release.apk",
+      "declared_size": 17213978,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "app-armeabi-v7a-release.apk",
+      "declared_size": 17555738,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "app-universal-release.apk",
+      "declared_size": 65474911,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:app-arm64-v8a-release.apk:download_or_scan_error",
+    "asset:app-armeabi-v7a-release.apk:download_or_scan_error",
+    "asset:app-universal-release.apk:download_or_scan_error"
+  ],
+  "skipped_files": [
+    {
+      "name": "SHA256SUMS",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "b1973d25305382360224be94041cd70e9c7612dc954715dfbef6310066bfe0f7",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

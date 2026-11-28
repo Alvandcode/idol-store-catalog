@@ -1,0 +1,74 @@
+{
+  "id": "msn-guard",
+  "name": "MSN-GUARD",
+  "github_repository": "mbm110/MSN-GUARD",
+  "scan_timestamp": "2026-11-28T09:34:04+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v3.4.5",
+  "release_date": "2026-11-27T11:45:58Z",
+  "overall_status": "SCAN_ERROR",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "6450c1a7dec5963e6c2ef3860323c5406d8ea95051579139b1444524c874f348",
+    "archive_bytes": 126118085,
+    "status": "extraction_rejected"
+  },
+  "scanned_assets": [
+    {
+      "name": "MSN-GUARD-v3.4.5-arm64-v8a.apk",
+      "declared_size": 87383508,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "MSN-GUARD-v3.4.5-armeabi-v7a.apk",
+      "declared_size": 86882825,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "MSN-GUARD-v3.4.5-universal.apk",
+      "declared_size": 236321903,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "MSN-GUARD-v3.4.5-x86_64-emulator.apk",
+      "declared_size": 92101807,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [
+    "source:clamav",
+    "source:osv",
+    "asset:MSN-GUARD-v3.4.5-arm64-v8a.apk:download_or_scan_error",
+    "asset:MSN-GUARD-v3.4.5-armeabi-v7a.apk:download_or_scan_error",
+    "asset:MSN-GUARD-v3.4.5-universal.apk:download_or_scan_error",
+    "asset:MSN-GUARD-v3.4.5-x86_64-emulator.apk:download_or_scan_error"
+  ],
+  "scan_errors": [
+    "Symlink entry rejected: mbm110-MSN-GUARD-060ab68/app/src/main/cpp/hev/include/hev-socks5-tunnel.h"
+  ],
+  "skipped_files": [
+    {
+      "name": "SHA256SUMS.txt",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "scan_error",
+  "cache_key": "c764e2278d900629c8e0241b441de76b1b5be763164e1744db6be270e6fa7839",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

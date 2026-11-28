@@ -1,0 +1,118 @@
+{
+  "id": "aetherst",
+  "name": "AetherST",
+  "github_repository": "immaghzbad/AetherST",
+  "scan_timestamp": "2026-11-28T09:35:35+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v1.7.1-android",
+  "release_date": "2026-09-14T21:00:49Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "575688a3c24f466bbb906a3cc4717eede0516985992d5d7fa2910efd08026c70",
+    "archive_bytes": 79066348,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T09:36:45+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T09:36:47+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-vrulhtsg/source/immaghzbad-AetherST-d816a3b\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T09:36:47+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T09:36:49+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T09:36:51+00:00",
+      "exit_code": 1,
+      "status": "secrets_found",
+      "findings": [
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-vrulhtsg/source/immaghzbad-AetherST-d816a3b/app/src/main/java/io/github/immaghzbad/aetherst/core/PsiphonController.kt",
+          "line": 141,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        }
+      ]
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "AetherST-Tunnel-v1.7.1-android-arm64-v8a.apk",
+      "declared_size": 23988520,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "AetherST-Tunnel-v1.7.1-android-armeabi-v7a.apk",
+      "declared_size": 23469787,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "AetherST-Tunnel-v1.7.1-android-universal.apk",
+      "declared_size": 74330347,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "AetherST-Tunnel-v1.7.1-android-x86_64.apk",
+      "declared_size": 25425832,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:AetherST-Tunnel-v1.7.1-android-arm64-v8a.apk:download_or_scan_error",
+    "asset:AetherST-Tunnel-v1.7.1-android-armeabi-v7a.apk:download_or_scan_error",
+    "asset:AetherST-Tunnel-v1.7.1-android-universal.apk:download_or_scan_error",
+    "asset:AetherST-Tunnel-v1.7.1-android-x86_64.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "84583f57d94e71f82a4da42cef852aaf26a47d5cd6f08c570945a723444f0be8",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

@@ -1,0 +1,102 @@
+{
+  "id": "baranvpn",
+  "name": "BaranVpn",
+  "github_repository": "AppBaran/BaranVpn",
+  "scan_timestamp": "2026-11-28T09:34:04+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v.3.0.0",
+  "release_date": "2026-11-22T05:49:32Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "788dd6846a4d31ca8ea272be74275e998f2cad3e1ee7be0561d90a56984d7075",
+    "archive_bytes": 73581554,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T09:35:51+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T09:35:52+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-65h1hidk/source/AppBaran-BaranVpn-b8c6513\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T09:35:52+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T09:35:54+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T09:35:54+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "Baran.vpn.v.3.0.0.All.device.apk",
+      "declared_size": 128235517,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Baran.vpn.v.3.0.0.v7a.apk",
+      "declared_size": 44867503,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Baran.vpn.v.3.0.0.v8a.apk",
+      "declared_size": 46794737,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:Baran.vpn.v.3.0.0.All.device.apk:download_or_scan_error",
+    "asset:Baran.vpn.v.3.0.0.v7a.apk:download_or_scan_error",
+    "asset:Baran.vpn.v.3.0.0.v8a.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "aa42d54f55ac3248ce1f9636011aaa6e8134c4603337018eb1628858768809aa",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}
