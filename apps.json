@@ -155,16 +155,6 @@
       "category": "ابزارها"
     },
     {
-      "id": "whitevpn-desktop",
-      "name": "WhiteVPN-Desktop",
-      "github": "WhiteDNS/WhiteVPN-Desktop",
-      "developer": "WhiteDNS",
-      "description": "WhiteVPN Desktop – برنامه Wails که همان موتور mihomo WhiteVPN را برای اندروید اجرا می کند",
-      "iconUrl": "https://avatars.githubusercontent.com/u/294980615?v=4",
-      "descriptionEn": "WhiteVPN Desktop — Wails app running the same mihomo engine as WhiteVPN for Android",
-      "category": "ابزارها"
-    },
-    {
       "id": "bpb-vpn",
       "name": "BPB-VPN",
       "github": "bia-pain-bache/BPB-VPN",
