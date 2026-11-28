@@ -223,6 +223,108 @@
       "description": "کلاینت اندروید برای موتور فایرفاکس VPN: TUN یا پروکسی محلی، ورود به حساب فایرفاکس، رابط کاربری پنج زبانه. APK های انتشار توسط GitHub Actions ساخته شده اند.",
       "iconUrl": "https://raw.githubusercontent.com/FossilizedProgrammer/niloofar_vpn/main/Sandstone%20Rosette%20Relief%20Icon.png",
       "descriptionEn": "Android client for the Firefox VPN engine: TUN or local proxy, Firefox Account sign-in, five-language UI. Release APKs are built by GitHub Actions."
+    },
+    {
+      "id": "uac-sni-spoofer-android",
+      "name": "UAC-SNI-Spoofer-Android",
+      "github": "Floxu1/UAC-SNI-Spoofer-Android",
+      "developer": "Floxu1",
+      "category": "ابزارها",
+      "description": "Android SNI spoofing VPN tool with VLESS/Trojan config runner, SNI scanner, auto best-ping config selection, Xray, tun2socks, and live logs.",
+      "iconUrl": "https://raw.githubusercontent.com/Floxu1/UAC-SNI-Spoofer-Android/main/icon.png"
+    },
+    {
+      "id": "android",
+      "name": "android",
+      "github": "wgtunnel/android",
+      "developer": "wgtunnel",
+      "category": "ابزارها",
+      "description": "An advanced, open-source client for WireGuard and AmneziaWG on Android.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/207392975?v=4",
+      "website": "https://wgtunnel.com"
+    },
+    {
+      "id": "mischiefpingu",
+      "name": "mischiefpingu",
+      "github": "FossilizedProgrammer/mischiefpingu",
+      "developer": "FossilizedProgrammer",
+      "category": "ابزارها",
+      "description": "Multi-core VPN client (Flutter) — Psiphon, Tor, SSTP, WireGuard, Firefox VPN.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/328447975?v=4"
+    },
+    {
+      "id": "milinovpn",
+      "name": "Milinovpn",
+      "github": "miladjahani/Milinovpn",
+      "developer": "miladjahani",
+      "category": "ابزارها",
+      "description": "MiliConfig VPN — Flutter + Go Android client with VLESS, WARP, MASQUE, Psiphon, Tor and a real Cloudflare/WARP scanner.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/84047453?v=4"
+    },
+    {
+      "id": "usque-app",
+      "name": "usque-app",
+      "github": "GeorgeXie2333/usque-app",
+      "developer": "GeorgeXie2333",
+      "category": "ابزارها",
+      "description": "Unofficial Cloudflare WARP MASQUE Client for Windows, macOS, Linux and Android: system VPN, SOCKS5 and HTTP proxy over MASQUE, with chain proxy and routing rules.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/65408965?v=4",
+      "website": "https://github.com/GeorgeXie2333/usque-app/wiki"
+    },
+    {
+      "id": "auroravpn",
+      "name": "AuroraVPN",
+      "github": "abapqlcm/AuroraVPN",
+      "developer": "abapqlcm",
+      "category": "ابزارها",
+      "description": "AuroraVPN - Advanced Multi-Protocol VPN Client for Android (MASQUE/WireGuard/Gool) powered by Aether Core",
+      "iconUrl": "https://avatars.githubusercontent.com/u/319687702?v=4"
+    },
+    {
+      "id": "saman-aether",
+      "name": "saman-aether",
+      "github": "velnox4827/saman-aether",
+      "developer": "velnox4827",
+      "category": "ابزارها",
+      "description": "Standalone Android frontend for Aether Core with local SOCKS5, MASQUE, WireGuard and GOOL.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/316973148?v=4"
+    },
+    {
+      "id": "concat",
+      "name": "Concat",
+      "github": "jub0t/Concat",
+      "developer": "jub0t",
+      "category": "ابزارها",
+      "description": "The open-source CapCut alternative.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/57962439?v=4",
+      "website": "https://concatapp.com"
+    },
+    {
+      "id": "protasovvpn",
+      "name": "ProtasovVPN",
+      "github": "protasovvpn/ProtasovVPN",
+      "developer": "protasovvpn",
+      "category": "ابزارها",
+      "description": "Free VPN for Windows and Android",
+      "iconUrl": "https://avatars.githubusercontent.com/u/59310463?v=4"
+    },
+    {
+      "id": "dicodeping",
+      "name": "dicodePing",
+      "github": "mcodersir/dicodePing",
+      "developer": "mcodersir",
+      "category": "ابزارها",
+      "description": "A VPN client that offers free servers and one-click connection.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/84375305?v=4",
+      "website": "https://mcodersir.github.io/dicodePing/"
+    },
+    {
+      "id": "vlessforu",
+      "name": "vlessforu",
+      "github": "bobrinaw/vlessforu",
+      "developer": "bobrinaw",
+      "category": "ابزارها",
+      "iconUrl": "https://avatars.githubusercontent.com/u/289422943?v=4"
     }
   ]
 }
