@@ -1,0 +1,190 @@
+{
+  "id": "milinovpn",
+  "name": "Milinovpn",
+  "github_repository": "miladjahani/Milinovpn",
+  "scan_timestamp": "2026-11-28T10:43:08+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v2.4.9",
+  "release_date": "2026-11-24T07:29:35Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "8052e8cdade46bba7bd2bf081e053453aa827fd93297a3d5f25b58609e699547",
+    "archive_bytes": 3463323,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:43:29+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:43:33+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": "ng/go.mod file and found 5 packages\nScanned /tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/psiphon/go.mod file and found 99 packages\nScanned /tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/pubspec.lock file and found 76 packages\nScanned /tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/scanner/go.mod file and found 1 package\nScanned /tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/xray/go.mod file and found 55 packages\nFiltered 2 local/unscannable package/s from the scan.\npanic: unexpected expr: *ast.KeyValueExpr\n\ngoroutine 1893 [running]:\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x209f09d7efc0?, 0x209f04873a00?, {0x2ed78c0?, 0x209ef45e8e10?}, {0x0, {0x0, 0x0}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:960 +0x206e\ngolang.org/x/tools/go/ssa.(*builder).expr(0x209f09d7efc0, 0x209f04873a00, {0x2ed78c0, 0x209ef45e8e10})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).assign(0x2ed3398?, 0x209f04873a00, {0x2ed9fe8, 0x209f0a6e0fc0}, {0x2ed78c0?, 0x209ef45e8e10?}, 0x58?, 0x209f055b1598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:608 +0x3a5\ngolang.org/x/tools/go/ssa.(*builder).compLit(0x209f09d7efc0, 0x209f04873a00, {0x2edfd28, 0x209f0a6e4600}, 0x209ef45eb0c0, 0x1, 0x209f055b1598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:1306 +0x1252\ngolang.org/x/tools/go/ssa.(*builder).addr(0x209f09d7efc0, 0x209f04873a00, {0x2ed7890?, 0x209ef45eb0c0}, 0x1)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:455 +0xc7b\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x209f09d7efc0, 0x209f04873a00, {0x2ed79b0?, 0x209ef45ed2e0}, {0x7, {0x2ed3370, 0x209ef4d21460}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:725 +0xce\ngolang.org/x/tools/go/ssa.(*builder).expr(0x209f09d7efc0, 0x209f04873a00, {0x2ed79b0, 0x209ef45ed2e0})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).returnStmt(0x209f09d7efc0, 0x209f04873a00, 0x209ef45ed300)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2841 +0x15a\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x209f09d7efc0, 0x209f04873a00, {0x2ed7b00?, 0x209ef45ed300?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2741 +0x53e\ngolang.org/x/tools/go/ssa.(*builder).stmtList(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:966\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x209f09d7efc0, 0x209f04873a00, {0x2ed7b60?, 0x209ef45e8ed0?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2747 +0x10f1\ngolang.org/x/tools/go/ssa.(*builder).buildFromSyntax(0x209f09d7efc0, 0x209f04873a00)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2953 +0x25a\ngolang.org/x/tools/go/ssa.(*builder).buildFunction(0xffffffffffffffff?, 0x209f04873a00)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2906 +0x185\ngolang.org/x/tools/go/ssa.(*builder).iterate(0x209f09d7efc0)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2891 +0x25\ngolang.org/x/tools/go/ssa.(*Package).build(0x209f04597480)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3174 +0xdc\nsync.(*Once).doSlow(0x209f04bea460?, 0xffffffffffffffff?)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:78 +0xab\nsync.(*Once).Do(...)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:69\ngolang.org/x/tools/go/ssa.(*Package).Build(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3163\ngolang.org/x/tools/go/ssa.(*Program).Build.func1(0x209ef70eefa8?)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3142 +0x45\ncreated by golang.org/x/tools/go/ssa.(*Program).Build in goroutine 1701\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3141 +0x1b4\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:43:33+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:43:36+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:43:38+00:00",
+      "exit_code": 1,
+      "status": "secrets_found",
+      "findings": [
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/test/usage_test.dart",
+          "line": 8,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/test/cloudflare_api_test.dart",
+          "line": 11,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/test/chain_proxy_test.dart",
+          "line": 8,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/test/chain_proxy_test.dart",
+          "line": 15,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/test/cf_deploy_test.dart",
+          "line": 9,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/scripts/test_worker_protocol.mjs",
+          "line": 89,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/test/xray_config_test.dart",
+          "line": 67,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/test/xray_config_test.dart",
+          "line": 74,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/test/xray_config_test.dart",
+          "line": 1809,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1wh_t38p/source/miladjahani-Milinovpn-fd11a78/test/xray_config_test.dart",
+          "line": 1814,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        }
+      ]
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "miliconfig-2.4.9-arm64-v8a.apk",
+      "declared_size": 72567580,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "miliconfig-2.4.9-armeabi-v7a.apk",
+      "declared_size": 73724558,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "miliconfig-2.4.9-universal.apk",
+      "declared_size": 190483575,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "miliconfig-2.4.9-x86_64.apk",
+      "declared_size": 77114717,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:miliconfig-2.4.9-arm64-v8a.apk:download_or_scan_error",
+    "asset:miliconfig-2.4.9-armeabi-v7a.apk:download_or_scan_error",
+    "asset:miliconfig-2.4.9-universal.apk:download_or_scan_error",
+    "asset:miliconfig-2.4.9-x86_64.apk:download_or_scan_error"
+  ],
+  "skipped_files": [
+    {
+      "name": "SHA256SUMS",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SIGNING_CERT.txt",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "8726597bc684e3fdf2ec2dea2f0ab90d0f3d61effc1d15424f645778b402db04",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

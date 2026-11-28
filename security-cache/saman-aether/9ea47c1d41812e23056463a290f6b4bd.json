@@ -1,0 +1,119 @@
+{
+  "id": "saman-aether",
+  "name": "saman-aether",
+  "github_repository": "velnox4827/saman-aether",
+  "scan_timestamp": "2026-11-28T10:43:44+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v2.1.0",
+  "release_date": "2026-10-13T00:36:24Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "5bac08ae36fa5ffce13b698a82d192cd4ff8ce3a8ff58ae97dc473d361d65f60",
+    "archive_bytes": 4076245,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:44:00+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:44:00+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-lacf6a6o/source/velnox4827-saman-aether-0c54f74\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:44:00+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:44:03+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:44:04+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "Saman-Tunnel-v2.1.0-arm64-v8a.apk",
+      "declared_size": 21656185,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Saman-Tunnel-v2.1.0-armeabi-v7a.apk",
+      "declared_size": 20814551,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Saman-Tunnel-v2.1.0-universal-arm.apk",
+      "declared_size": 37921968,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:Saman-Tunnel-v2.1.0-arm64-v8a.apk:download_or_scan_error",
+    "asset:Saman-Tunnel-v2.1.0-armeabi-v7a.apk:download_or_scan_error",
+    "asset:Saman-Tunnel-v2.1.0-universal-arm.apk:download_or_scan_error"
+  ],
+  "skipped_files": [
+    {
+      "name": "Saman-Tunnel-v2.1.0-arm64-v8a.apk.sha256",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Saman-Tunnel-v2.1.0-armeabi-v7a.apk.sha256",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Saman-Tunnel-v2.1.0-universal-arm.apk.sha256",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "9ea47c1d41812e23056463a290f6b4bde2399adbed0dd0f70e9c08e7c75b1e34",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

@@ -1,0 +1,222 @@
+{
+  "id": "usque-app",
+  "name": "usque-app",
+  "github_repository": "GeorgeXie2333/usque-app",
+  "scan_timestamp": "2026-11-28T10:43:38+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v0.3.5",
+  "release_date": "2026-11-17T17:08:27Z",
+  "overall_status": "SCAN_ERROR",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "06e89f63d5b17c8a87de4744133952eb4390d9a064b57dd4ea6d989f76318011",
+    "archive_bytes": 42200976,
+    "status": "extraction_rejected"
+  },
+  "scanned_assets": [
+    {
+      "name": "usque-v0.3.5-android-arm64-v8a.apk",
+      "declared_size": 19476065,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "usque-v0.3.5-android-armeabi-v7a.apk",
+      "declared_size": 18273627,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "usque-v0.3.5-android-universal.apk",
+      "declared_size": 53770124,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "usque-v0.3.5-android-x86_64.apk",
+      "declared_size": 20093934,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "usque-v0.3.5-windows-arm64.exe",
+      "declared_size": 24921544,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "usque-v0.3.5-windows-arm64.msi",
+      "declared_size": 23916544,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "usque-v0.3.5-windows-x64-v2.exe",
+      "declared_size": 26721696,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "usque-v0.3.5-windows-x64-v2.msi",
+      "declared_size": 25681920,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [
+    "source:clamav",
+    "source:osv",
+    "asset:usque-v0.3.5-android-arm64-v8a.apk:download_or_scan_error",
+    "asset:usque-v0.3.5-android-armeabi-v7a.apk:download_or_scan_error",
+    "asset:usque-v0.3.5-android-universal.apk:download_or_scan_error",
+    "asset:usque-v0.3.5-android-x86_64.apk:download_or_scan_error",
+    "asset:usque-v0.3.5-windows-arm64.exe:download_or_scan_error",
+    "asset:usque-v0.3.5-windows-arm64.msi:download_or_scan_error",
+    "asset:usque-v0.3.5-windows-x64-v2.exe:download_or_scan_error",
+    "asset:usque-v0.3.5-windows-x64-v2.msi:download_or_scan_error"
+  ],
+  "scan_errors": [
+    "Symlink entry rejected: GeorgeXie2333-usque-app-2a71826/fastlane/metadata/android/en-US/changelogs/defau"
+  ],
+  "skipped_files": [
+    {
+      "name": "release-manifest.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-android-arm64-v8a.apk.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-android-armeabi-v7a.apk.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-android-universal.apk.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-android-x86_64.apk.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-amd64.AppImage",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-amd64.AppImage.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-amd64.deb",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-amd64.deb.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-amd64.manifest.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-amd64.manifest.json.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-amd64.rpm",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-amd64.rpm.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-arm64.AppImage",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-arm64.AppImage.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-arm64.deb",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-arm64.deb.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-arm64.manifest.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-arm64.manifest.json.sig",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-arm64.rpm",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-linux-arm64.rpm.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-macos-arm64.dmg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-macos-arm64.dmg.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-macos-x86_64.dmg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-macos-x86_64.dmg.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-windows-arm64.exe.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-windows-arm64.msi.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-windows-x64-v2.exe.spdx.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "usque-v0.3.5-windows-x64-v2.msi.spdx.json",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "scan_error",
+  "cache_key": "9c3c0ac07b7d141dcd2367f2354b96387de0d832fa5ab2b60864db9e2ff6406d",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

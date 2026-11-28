@@ -1,0 +1,126 @@
+{
+  "id": "android",
+  "name": "android",
+  "github_repository": "wgtunnel/android",
+  "scan_timestamp": "2026-11-28T10:42:40+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "5.9.1",
+  "release_date": "2026-11-22T18:38:58Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "a7f43228b0bd3da594bb4d1c8c1a03582481133b261cc230f30a23c060c02480",
+    "archive_bytes": 2702312,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:43:03+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:43:03+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-j8259vkc/source/wgtunnel-android-b2373cb\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:43:03+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:43:06+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:43:08+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "wgtunnel-fdroid-v5.9.1-arm64.apk",
+      "declared_size": 18893713,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "wgtunnel-fdroid-v5.9.1-armv7.apk",
+      "declared_size": 18433541,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "wgtunnel-fdroid-v5.9.1.apk",
+      "declared_size": 56300286,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "wgtunnel-standalone-v5.9.1-arm64.apk",
+      "declared_size": 18916313,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "wgtunnel-standalone-v5.9.1-armv7.apk",
+      "declared_size": 18456141,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "wgtunnel-standalone-v5.9.1.apk",
+      "declared_size": 56322886,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:wgtunnel-fdroid-v5.9.1-arm64.apk:download_or_scan_error",
+    "asset:wgtunnel-fdroid-v5.9.1-armv7.apk:download_or_scan_error",
+    "asset:wgtunnel-fdroid-v5.9.1.apk:download_or_scan_error",
+    "asset:wgtunnel-standalone-v5.9.1-arm64.apk:download_or_scan_error",
+    "asset:wgtunnel-standalone-v5.9.1-armv7.apk:download_or_scan_error",
+    "asset:wgtunnel-standalone-v5.9.1.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "24107e12ad372155bf54b24a610bd91cd5d3098ce14971dfbf63e7e454c2bbd9",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

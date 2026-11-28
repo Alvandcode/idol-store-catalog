@@ -1,0 +1,392 @@
+{
+  "id": "concat",
+  "name": "Concat",
+  "github_repository": "jub0t/Concat",
+  "scan_timestamp": "2026-11-28T10:44:04+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v0.2.13",
+  "release_date": "2026-11-27T09:10:30Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "4d5b4b0f23c27e263d762d2fd93dac3111180de33329d0a86bb85f1187ab42cf",
+    "archive_bytes": 50873846,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:44:48+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:44:50+00:00",
+      "exit_code": 1,
+      "status": "vulnerabilities_found",
+      "vulnerabilities": [
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0374",
+          "package": "crates.io/basic-toml",
+          "installed_version": "0.1.10",
+          "fixed_versions": [],
+          "summary": "`basic-toml` is unmaintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2025-0141",
+          "package": "crates.io/bincode",
+          "installed_version": "2.0.1",
+          "fixed_versions": [],
+          "summary": "Bincode is unmaintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0543",
+          "package": "crates.io/chrono",
+          "installed_version": "0.4.45",
+          "fixed_versions": [],
+          "summary": "chrono is unmaintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2024-0436",
+          "package": "crates.io/paste",
+          "installed_version": "1.0.15",
+          "fixed_versions": [],
+          "summary": "paste - no longer maintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0441",
+          "package": "crates.io/pin-utils",
+          "installed_version": "0.1.0",
+          "fixed_versions": [],
+          "summary": "`pin-utils` is unmaintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0486",
+          "package": "crates.io/rustix",
+          "installed_version": "1.1.4",
+          "fixed_versions": [],
+          "summary": "xattr functions mark unwritten bytes as initialized when given a zero-length buffer",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0206",
+          "package": "crates.io/rustybuzz",
+          "installed_version": "0.20.1",
+          "fixed_versions": [],
+          "summary": "`rustybuzz` is unmaintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0192",
+          "package": "crates.io/ttf-parser",
+          "installed_version": "0.25.1",
+          "fixed_versions": [],
+          "summary": "`ttf-parser` is unmaintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0592",
+          "package": "crates.io/url",
+          "installed_version": "2.5.8",
+          "fixed_versions": [],
+          "summary": "Stack overflow in `Url::origin()` on nested `blob:` URLs",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0371",
+          "package": "crates.io/zbus_names",
+          "installed_version": "4.3.4",
+          "fixed_versions": [],
+          "summary": "`zbus_names` is unmaintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0370",
+          "package": "crates.io/zvariant",
+          "installed_version": "5.15.0",
+          "fixed_versions": [],
+          "summary": "`zvariant` is unmaintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0372",
+          "package": "crates.io/zvariant_derive",
+          "installed_version": "5.15.0",
+          "fixed_versions": [],
+          "summary": "`zvariant_derive` is unmaintained",
+          "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+          "severity": "medium"
+        }
+      ]
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:44:50+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:44:55+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:45:06+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "Concat-0.2.13-android-arm64.apk",
+      "declared_size": 46486574,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Concat-0.2.13-windows-x86_64-setup.exe",
+      "declared_size": 103116717,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Concat-0.2.13-windows-x86_64.msi",
+      "declared_size": 119717888,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0374",
+      "package": "crates.io/basic-toml",
+      "installed_version": "0.1.10",
+      "fixed_versions": [],
+      "summary": "`basic-toml` is unmaintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2025-0141",
+      "package": "crates.io/bincode",
+      "installed_version": "2.0.1",
+      "fixed_versions": [],
+      "summary": "Bincode is unmaintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0543",
+      "package": "crates.io/chrono",
+      "installed_version": "0.4.45",
+      "fixed_versions": [],
+      "summary": "chrono is unmaintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2024-0436",
+      "package": "crates.io/paste",
+      "installed_version": "1.0.15",
+      "fixed_versions": [],
+      "summary": "paste - no longer maintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0441",
+      "package": "crates.io/pin-utils",
+      "installed_version": "0.1.0",
+      "fixed_versions": [],
+      "summary": "`pin-utils` is unmaintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0486",
+      "package": "crates.io/rustix",
+      "installed_version": "1.1.4",
+      "fixed_versions": [],
+      "summary": "xattr functions mark unwritten bytes as initialized when given a zero-length buffer",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0206",
+      "package": "crates.io/rustybuzz",
+      "installed_version": "0.20.1",
+      "fixed_versions": [],
+      "summary": "`rustybuzz` is unmaintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0192",
+      "package": "crates.io/ttf-parser",
+      "installed_version": "0.25.1",
+      "fixed_versions": [],
+      "summary": "`ttf-parser` is unmaintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0592",
+      "package": "crates.io/url",
+      "installed_version": "2.5.8",
+      "fixed_versions": [],
+      "summary": "Stack overflow in `Url::origin()` on nested `blob:` URLs",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0371",
+      "package": "crates.io/zbus_names",
+      "installed_version": "4.3.4",
+      "fixed_versions": [],
+      "summary": "`zbus_names` is unmaintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0370",
+      "package": "crates.io/zvariant",
+      "installed_version": "5.15.0",
+      "fixed_versions": [],
+      "summary": "`zvariant` is unmaintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0372",
+      "package": "crates.io/zvariant_derive",
+      "installed_version": "5.15.0",
+      "fixed_versions": [],
+      "summary": "`zvariant_derive` is unmaintained",
+      "source": "/tmp/idol-scan-v2-81jdub1t/source/jub0t-Concat-0fab8e2/src/Cargo.lock",
+      "severity": "medium"
+    }
+  ],
+  "warnings": [],
+  "scan_errors": [
+    "asset:Concat-0.2.13-android-arm64.apk:download_or_scan_error",
+    "asset:Concat-0.2.13-windows-x86_64-setup.exe:download_or_scan_error",
+    "asset:Concat-0.2.13-windows-x86_64.msi:download_or_scan_error"
+  ],
+  "skipped_files": [
+    {
+      "name": "Concat-0.2.13-aarch64.AppImage",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Concat-0.2.13-linux-aarch64.deb",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Concat-0.2.13-linux-aarch64.pkg.tar.zst",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Concat-0.2.13-linux-aarch64.rpm",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Concat-0.2.13-linux-x86_64.deb",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Concat-0.2.13-linux-x86_64.pkg.tar.zst",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Concat-0.2.13-linux-x86_64.rpm",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Concat-0.2.13-macos-arm64.dmg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Concat-0.2.13-macos-x86_64.dmg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "Concat-0.2.13-x86_64.AppImage",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "manifest.json",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "22923f30545241742ccd66156c7845281fda36963491f83c3286b0353319d748",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

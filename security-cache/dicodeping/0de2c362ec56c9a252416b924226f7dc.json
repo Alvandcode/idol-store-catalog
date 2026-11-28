@@ -1,0 +1,1227 @@
+{
+  "id": "dicodeping",
+  "name": "dicodePing",
+  "github_repository": "mcodersir/dicodePing",
+  "scan_timestamp": "2026-11-28T10:44:26+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v5.0.8",
+  "release_date": "2026-11-23T20:40:06Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "fb1a7ad08e9f32eedf98575042d108de0fab291ad4f32085960e1a471ec5c2a3",
+    "archive_bytes": 12561167,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:45:06+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:45:13+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f\nNot in a Git repository, ignoring .gitignores\nScanned /tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/fox-helper/go.mod file and found 11 packages\npanic: unexpected expr: *ast.KeyValueExpr\n\ngoroutine 2558 [running]:\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x908313b9a70?, 0x9083d926200?, {0x2ed78c0?, 0x9081daab830?}, {0x0, {0x0, 0x0}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:960 +0x206e\ngolang.org/x/tools/go/ssa.(*builder).expr(0x908313b9a70, 0x9083d926200, {0x2ed78c0, 0x9081daab830})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).assign(0x28?, 0x9083d926200, {0x2ed9fe8, 0x9083edca300}, {0x2ed78c0?, 0x9081daab830?}, 0x58?, 0x9084575f598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:608 +0x3a5\ngolang.org/x/tools/go/ssa.(*builder).compLit(0x908313b9a70, 0x9083d926200, {0x2edfd28, 0x9081ac69bc0}, 0x9081dab1c80, 0x1, 0x9084575f598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:1306 +0x1252\ngolang.org/x/tools/go/ssa.(*builder).addr(0x908313b9a70, 0x9083d926200, {0x2ed7890?, 0x9081dab1c80}, 0x1)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:455 +0xc7b\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x908313b9a70, 0x9083d926200, {0x2ed79b0?, 0x9081dab33a0}, {0x7, {0x2ed3370, 0x9081e4ad990}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:725 +0xce\ngolang.org/x/tools/go/ssa.(*builder).expr(0x908313b9a70, 0x9083d926200, {0x2ed79b0, 0x9081dab33a0})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).returnStmt(0x908313b9a70, 0x9083d926200, 0x9081dab33c0)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2841 +0x15a\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x908313b9a70, 0x9083d926200, {0x2ed7b00?, 0x9081dab33c0?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2741 +0x53e\ngolang.org/x/tools/go/ssa.(*builder).stmtList(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:966\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x908313b9a70, 0x9083d926200, {0x2ed7b60?, 0x9081daab8f0?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2747 +0x10f1\ngolang.org/x/tools/go/ssa.(*builder).buildFromSyntax(0x908313b9a70, 0x9083d926200)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2953 +0x25a\ngolang.org/x/tools/go/ssa.(*builder).buildFunction(0x908313b9a70?, 0x9083d926200)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2906 +0x185\ngolang.org/x/tools/go/ssa.(*builder).iterate(0x908313b9a70)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2891 +0x25\ngolang.org/x/tools/go/ssa.(*Package).build(0x9083d755b00)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3174 +0xdc\nsync.(*Once).doSlow(0x9083dc3ab50?, 0xffffffffffffffff?)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:78 +0xab\nsync.(*Once).Do(...)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:69\ngolang.org/x/tools/go/ssa.(*Package).Build(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3163\ngolang.org/x/tools/go/ssa.(*Program).Build.func1(0x9083c65ffa8?)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3142 +0x45\ncreated by golang.org/x/tools/go/ssa.(*Program).Build in goroutine 2261\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3141 +0x1b4\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:45:13+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:45:17+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:45:25+00:00",
+      "exit_code": 1,
+      "status": "secrets_found",
+      "findings": [
+        {
+          "tool": "gitleaks",
+          "rule": "private-key",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/android/app/src/androidTest/assets/native-fixture-key.pem.txt",
+          "line": 1,
+          "description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/.github/workflows/desktop-5.0.6.yml",
+          "line": 19,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/.github/workflows/desktop-5.0.6.yml",
+          "line": 28,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/.github/workflows/desktop-5.0.6.yml",
+          "line": 37,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/.github/workflows/desktop-5.0.6.yml",
+          "line": 46,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/.github/workflows/release.yml",
+          "line": 35,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/.github/workflows/release.yml",
+          "line": 44,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/.github/workflows/release.yml",
+          "line": 53,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/.github/workflows/release.yml",
+          "line": 62,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/fox-helper/UPSTREAM.json",
+          "line": 29,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/fox-helper/UPSTREAM.json",
+          "line": 33,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/fox-helper/UPSTREAM.json",
+          "line": 81,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/fox-helper/UPSTREAM.json",
+          "line": 84,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/fox-helper/UPSTREAM.json",
+          "line": 123,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/fox-helper/UPSTREAM.json",
+          "line": 125,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/fox-helper/UPSTREAM.json",
+          "line": 127,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/apps/fox-helper/UPSTREAM.json",
+          "line": 185,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.1.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.1.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.1.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.1.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.2.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.2.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.2.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.2.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.5.0.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.5.0.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.5.0.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.5.0.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.0.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.0.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.0.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.0.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.3.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.3.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.3.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.3.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.7.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.7.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.7.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.7.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.8.0.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.8.0.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.8.0.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.8.0.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.92.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.92.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.92.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.92.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.2.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.2.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.2.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.2.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.4.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.4.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.4.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.4.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.0.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.0.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.0.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.7.0.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.8.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.8.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.8.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.8.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.6.0.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.6.0.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.6.0.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.6.0.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.983.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.983.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.983.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.983.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.4.0.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.4.0.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.4.0.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.4.0.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.5.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.5.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.5.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.5.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.9.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.9.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.9.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.9.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.91.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.91.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.91.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.91.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.6.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.6.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.6.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.6.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.2.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.2.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.2.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.2.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.3.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.3.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.3.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.3.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.1.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.1.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.1.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.1.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.98.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.98.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.98.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.98.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.985.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.985.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.985.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.985.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.99.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.99.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.99.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.99.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.1.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.1.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.1.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.1.json",
+          "line": 10,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.0.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.0.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.0.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.0.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.981.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.981.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.981.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.981.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.991.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.991.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.991.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-4.9.991.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.5.json",
+          "line": 6,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.5.json",
+          "line": 7,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.5.json",
+          "line": 8,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "jfrog-identity-token",
+          "file": "/tmp/idol-scan-v2-d2o6tk4e/source/mcodersir-dicodePing-ef2686f/scripts/runtime-pins-5.0.5.json",
+          "line": 9,
+          "description": "Discovered a JFrog Identity Token, potentially compromising access to JFrog services and sensitive software artifacts."
+        }
+      ]
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "DicodePing-5.0.8-arm64-v8a.apk",
+      "declared_size": 96177379,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-armeabi-v7a.apk",
+      "declared_size": 98066917,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-linux-x64-cli.zip",
+      "declared_size": 138208392,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-linux-x64-portable.zip",
+      "declared_size": 187875566,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-macos-arm64-cli.zip",
+      "declared_size": 138221609,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-macos-arm64-portable.zip",
+      "declared_size": 182629545,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-macos-x64-cli.zip",
+      "declared_size": 147953047,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-macos-x64-portable.zip",
+      "declared_size": 195698669,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-tv-arm64-v8a.apk",
+      "declared_size": 96176994,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-tv-armeabi-v7a.apk",
+      "declared_size": 98066531,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-tv-universal.apk",
+      "declared_size": 245023303,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-universal.apk",
+      "declared_size": 245023695,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-windows-x64-cli.zip",
+      "declared_size": 171292513,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-windows-x64-installer.exe",
+      "declared_size": 154532778,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-windows-x64-portable.zip",
+      "declared_size": 225030855,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-x86.apk",
+      "declared_size": 79247599,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "DicodePing-5.0.8-x86_64.apk",
+      "declared_size": 102399354,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:DicodePing-5.0.8-arm64-v8a.apk:download_or_scan_error",
+    "asset:DicodePing-5.0.8-armeabi-v7a.apk:download_or_scan_error",
+    "asset:DicodePing-5.0.8-linux-x64-cli.zip:download_or_scan_error",
+    "asset:DicodePing-5.0.8-linux-x64-portable.zip:download_or_scan_error",
+    "asset:DicodePing-5.0.8-macos-arm64-cli.zip:download_or_scan_error",
+    "asset:DicodePing-5.0.8-macos-arm64-portable.zip:download_or_scan_error",
+    "asset:DicodePing-5.0.8-macos-x64-cli.zip:download_or_scan_error",
+    "asset:DicodePing-5.0.8-macos-x64-portable.zip:download_or_scan_error",
+    "asset:DicodePing-5.0.8-tv-arm64-v8a.apk:download_or_scan_error",
+    "asset:DicodePing-5.0.8-tv-armeabi-v7a.apk:download_or_scan_error",
+    "asset:DicodePing-5.0.8-tv-universal.apk:download_or_scan_error",
+    "asset:DicodePing-5.0.8-universal.apk:download_or_scan_error",
+    "asset:DicodePing-5.0.8-windows-x64-cli.zip:download_or_scan_error",
+    "asset:DicodePing-5.0.8-windows-x64-installer.exe:download_or_scan_error",
+    "asset:DicodePing-5.0.8-windows-x64-portable.zip:download_or_scan_error",
+    "asset:DicodePing-5.0.8-x86.apk:download_or_scan_error",
+    "asset:DicodePing-5.0.8-x86_64.apk:download_or_scan_error"
+  ],
+  "skipped_files": [
+    {
+      "name": "DicodePing-5.0.8-linux-x64.AppImage",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "DicodePing-5.0.8-linux-x64.deb",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "DicodePing-5.0.8-macos-arm64.dmg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "DicodePing-5.0.8-macos-x64.dmg",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-android.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-linux-x64-cli.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-linux-x64.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-macos-arm64-cli.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-macos-arm64.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-macos-x64-cli.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-macos-x64.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-windows-x64-cli.txt",
+      "reason": "unsupported_file_type"
+    },
+    {
+      "name": "SHA256SUMS-windows-x64.txt",
+      "reason": "unsupported_file_type"
+    }
+  ],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "0de2c362ec56c9a252416b924226f7dc6276dbc2c97109ff6b31870debd5dd8a",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

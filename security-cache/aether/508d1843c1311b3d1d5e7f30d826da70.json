@@ -1,0 +1,1146 @@
+{
+  "id": "aether",
+  "name": "Aether",
+  "github_repository": "QW-AI-Code/Aether",
+  "scan_timestamp": "2026-11-28T10:41:26+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v1.7.0-build.26",
+  "release_date": "2026-11-26T14:26:07Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "4a48bb566b9542240c27e16628c88ce936d35f50d108e0b58d7700e34b48685a",
+    "archive_bytes": 8177144,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:41:56+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:41:57+00:00",
+      "exit_code": 1,
+      "status": "vulnerabilities_found",
+      "vulnerabilities": [
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2025-0141",
+          "package": "crates.io/bincode",
+          "installed_version": "2.0.1",
+          "fixed_versions": [],
+          "summary": "Bincode is unmaintained",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0543",
+          "package": "crates.io/chrono",
+          "installed_version": "0.4.45",
+          "fixed_versions": [],
+          "summary": "chrono is unmaintained",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0594",
+          "package": "crates.io/cookie",
+          "installed_version": "0.18.2",
+          "fixed_versions": [],
+          "summary": "Private cookie nonces can repeat in processes that fork",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0387",
+          "package": "crates.io/crypto-bigint",
+          "installed_version": "0.5.5",
+          "fixed_versions": [],
+          "summary": "Multiple timing variability issues in operations intended to be constant-time",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0385",
+          "package": "crates.io/ctutils",
+          "installed_version": "0.4.2",
+          "fixed_versions": [],
+          "summary": "Non-constant-time mask generation and `u128` comparisons",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0574",
+          "package": "crates.io/heapless",
+          "installed_version": "0.8.0",
+          "fixed_versions": [],
+          "summary": "`FindMutView::pop` after mutating the value would lead to a use after free",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0575",
+          "package": "crates.io/heapless",
+          "installed_version": "0.8.0",
+          "fixed_versions": [],
+          "summary": "`Spsc::peek` used `Relaxed` ordering where it should have use `Acquire`",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0576",
+          "package": "crates.io/heapless",
+          "installed_version": "0.8.0",
+          "fixed_versions": [],
+          "summary": "`IndexMap::truncate` could lead to an inconsistent state",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0577",
+          "package": "crates.io/heapless",
+          "installed_version": "0.8.0",
+          "fixed_versions": [],
+          "summary": "Panicking `Drop` implementation could lead to UB",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0578",
+          "package": "crates.io/heapless",
+          "installed_version": "0.8.0",
+          "fixed_versions": [],
+          "summary": "`SortedLinkedList::zeroize` lead to an inconsistent state",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0579",
+          "package": "crates.io/heapless",
+          "installed_version": "0.8.0",
+          "fixed_versions": [],
+          "summary": "The `Deque` implementation from `TryFrom` was wrong when the `Deque` ended up full",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0580",
+          "package": "crates.io/heapless",
+          "installed_version": "0.8.0",
+          "fixed_versions": [],
+          "summary": "The treiber stack implementation in heapless had a race condition",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0581",
+          "package": "crates.io/heapless",
+          "installed_version": "0.8.0",
+          "fixed_versions": [],
+          "summary": "`Deque::make_contiguous` could lead to broken invariants",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0582",
+          "package": "crates.io/heapless",
+          "installed_version": "0.8.0",
+          "fixed_versions": [],
+          "summary": "On maps of `u16::MAX` elements, `IndexMap::insert` could lead to a broken invariant",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0542",
+          "package": "crates.io/humantime",
+          "installed_version": "2.4.0",
+          "fixed_versions": [],
+          "summary": "humantime is unmaintained",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0459",
+          "package": "crates.io/libsqlite3-sys",
+          "installed_version": "0.37.0",
+          "fixed_versions": [],
+          "summary": "`libsqlite3-sys` via C SQLite CVE-2026-119375",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2024-0436",
+          "package": "crates.io/paste",
+          "installed_version": "1.0.15",
+          "fixed_versions": [],
+          "summary": "paste - no longer maintained",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0338",
+          "package": "crates.io/quinn-proto",
+          "installed_version": "0.11.17",
+          "fixed_versions": [],
+          "summary": "Remote peer can panic quinn-proto with zero-length STREAM frames during unordered reads",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0340",
+          "package": "crates.io/quinn-proto",
+          "installed_version": "0.11.17",
+          "fixed_versions": [],
+          "summary": "Peer minimum ACK delay can panic quinn-proto when ACK_FREQUENCY transmission is enabled",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0343",
+          "package": "crates.io/quinn-proto",
+          "installed_version": "0.11.17",
+          "fixed_versions": [],
+          "summary": "Outgoing datagram buffer accounting can panic the sender in quinn-proto",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0523",
+          "package": "crates.io/quinn-proto",
+          "installed_version": "0.11.17",
+          "fixed_versions": [],
+          "summary": "MAX_STREAM_DATA frame can open streams beyond the stream limit",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0524",
+          "package": "crates.io/quinn-proto",
+          "installed_version": "0.11.17",
+          "fixed_versions": [],
+          "summary": "Long Retry token can panic or exhaust memory in a QUIC client",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0538",
+          "package": "crates.io/quinn-udp",
+          "installed_version": "0.5.15",
+          "fixed_versions": [],
+          "summary": "Receive loop can spin after a truncated datagram",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2023-0071",
+          "package": "crates.io/rsa",
+          "installed_version": "0.9.10",
+          "fixed_versions": [],
+          "summary": "Marvin Attack: potential key recovery through timing sidechannels",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0486",
+          "package": "crates.io/rustix",
+          "installed_version": "1.1.4",
+          "fixed_versions": [],
+          "summary": "xattr functions mark unwritten bytes as initialized when given a zero-length buffer",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "GHSA-2mjx-qc3c-rqvc",
+          "package": "crates.io/rustls",
+          "installed_version": "0.23.43",
+          "fixed_versions": [],
+          "summary": "Rustls: TLS 1.3 handshake messages incorrectly accepted across encryption level boundaries",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "GHSA-c8m5-c952-6cm4",
+          "package": "crates.io/rustls",
+          "installed_version": "0.23.43",
+          "fixed_versions": [],
+          "summary": "Rustls: Session Debug formatting exposes TLS master secrets and resumption PSKs",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "GHSA-h2v8-394m-p7vv",
+          "package": "crates.io/rustls",
+          "installed_version": "0.23.43",
+          "fixed_versions": [],
+          "summary": "Rustls: Brotli certificate decompression can allocate an attacker-controlled amount of memory up to 1 GiB before authentication.",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "GHSA-w44r-93j7-qv28",
+          "package": "crates.io/rustls",
+          "installed_version": "0.23.43",
+          "fixed_versions": [],
+          "summary": "rustls: An unauthenticated ServerHello poisons the per-name key-exchange record, so later ClientHellos carry only a classical X25519 share",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0285",
+          "package": "crates.io/rustls",
+          "installed_version": "0.23.43",
+          "fixed_versions": [],
+          "summary": "TLS 1.3 handshake messages incorrectly accepted across encryption level boundaries",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0346",
+          "package": "crates.io/rustls",
+          "installed_version": "0.23.43",
+          "fixed_versions": [],
+          "summary": "`Debug` impls for client session values expose TLS secrets",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0348",
+          "package": "crates.io/rustls",
+          "installed_version": "0.23.43",
+          "fixed_versions": [],
+          "summary": "Brotli certificate decompression can allocate up to 1 GiB before authentication",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0349",
+          "package": "crates.io/rustls",
+          "installed_version": "0.23.43",
+          "fixed_versions": [],
+          "summary": "Unauthenticated ServerHello can downgrade later connections to classical key exchange",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0382",
+          "package": "crates.io/rustls-webpki",
+          "installed_version": "0.103.15",
+          "fixed_versions": [],
+          "summary": "Certificate verification may accept distrusted intermediates",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0386",
+          "package": "crates.io/tokio",
+          "installed_version": "1.53.1",
+          "fixed_versions": [],
+          "summary": "`AsyncFd::new` and related constructors violate I/O safety",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0592",
+          "package": "crates.io/url",
+          "installed_version": "2.5.8",
+          "fixed_versions": [],
+          "summary": "Stack overflow in `Url::origin()` on nested `blob:` URLs",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0381",
+          "package": "crates.io/webpki-roots",
+          "installed_version": "1.0.9",
+          "fixed_versions": [],
+          "summary": "Bundled root certificates allow trust in distrusted emSign intermediates",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0391",
+          "package": "crates.io/zstd",
+          "installed_version": "0.14.0",
+          "fixed_versions": [],
+          "summary": "Data from an abandoned stream leaks into the next stream on a reused context",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0395",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "Use-after-free with `CParameter::StableInBuffer`",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0396",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "`Seekable` reads a NULL or out-of-bounds seek table",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0397",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "`OutBuffer::around_pos` exposes uninitialized memory",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0398",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "`Seekable::decompress` sets a `Vec` length beyond its capacity for offsets past the end",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0399",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "Use-after-free through `init_using_cdict` and `init_using_ddict`",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0400",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "Use-after-free of a dictionary after a one-shot call on a context with an open stream",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0401",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "Out-of-bounds read in `train_from_buffer` when sample sizes overflow",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0402",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "Heap buffer overflow in `CCtx::try_clone` on a multithreaded context",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0403",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "Uninitialized memory exposed when streaming decompression of a legacy frame fails",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0404",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "Double free in `DCtx::try_clone`",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0405",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "Out-of-bounds read with an out-of-range `InBuffer::pos`",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0406",
+          "package": "crates.io/zstd-safe",
+          "installed_version": "8.0.0",
+          "fixed_versions": [],
+          "summary": "Use-after-free when changing a multithreaded context with an unfinished frame",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0410",
+          "package": "crates.io/zstd-sys",
+          "installed_version": "2.1.0+zstd.1.5.7",
+          "fixed_versions": [],
+          "summary": "WebAssembly allocator shim corrupts memory on allocation failure",
+          "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+          "severity": "medium"
+        }
+      ]
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:41:57+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:42:01+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:42:10+00:00",
+      "exit_code": 1,
+      "status": "secrets_found",
+      "findings": [
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/app/src/test/java/studio/cluvex/aether/custom/ConfigPingTest.kt",
+          "line": 132,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/app/src/test/java/studio/cluvex/aether/custom/ConfigPingTest.kt",
+          "line": 133,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        }
+      ]
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "Aether-1.7.0-arm64-v8a.apk",
+      "declared_size": 62623387,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Aether-1.7.0-armeabi-v7a.apk",
+      "declared_size": 62636879,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Aether-1.7.0-universal.apk",
+      "declared_size": 156656875,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "Aether-1.7.0-x86_64.apk",
+      "declared_size": 66477805,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2025-0141",
+      "package": "crates.io/bincode",
+      "installed_version": "2.0.1",
+      "fixed_versions": [],
+      "summary": "Bincode is unmaintained",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0543",
+      "package": "crates.io/chrono",
+      "installed_version": "0.4.45",
+      "fixed_versions": [],
+      "summary": "chrono is unmaintained",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0594",
+      "package": "crates.io/cookie",
+      "installed_version": "0.18.2",
+      "fixed_versions": [],
+      "summary": "Private cookie nonces can repeat in processes that fork",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0387",
+      "package": "crates.io/crypto-bigint",
+      "installed_version": "0.5.5",
+      "fixed_versions": [],
+      "summary": "Multiple timing variability issues in operations intended to be constant-time",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0385",
+      "package": "crates.io/ctutils",
+      "installed_version": "0.4.2",
+      "fixed_versions": [],
+      "summary": "Non-constant-time mask generation and `u128` comparisons",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0574",
+      "package": "crates.io/heapless",
+      "installed_version": "0.8.0",
+      "fixed_versions": [],
+      "summary": "`FindMutView::pop` after mutating the value would lead to a use after free",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0575",
+      "package": "crates.io/heapless",
+      "installed_version": "0.8.0",
+      "fixed_versions": [],
+      "summary": "`Spsc::peek` used `Relaxed` ordering where it should have use `Acquire`",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0576",
+      "package": "crates.io/heapless",
+      "installed_version": "0.8.0",
+      "fixed_versions": [],
+      "summary": "`IndexMap::truncate` could lead to an inconsistent state",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0577",
+      "package": "crates.io/heapless",
+      "installed_version": "0.8.0",
+      "fixed_versions": [],
+      "summary": "Panicking `Drop` implementation could lead to UB",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0578",
+      "package": "crates.io/heapless",
+      "installed_version": "0.8.0",
+      "fixed_versions": [],
+      "summary": "`SortedLinkedList::zeroize` lead to an inconsistent state",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0579",
+      "package": "crates.io/heapless",
+      "installed_version": "0.8.0",
+      "fixed_versions": [],
+      "summary": "The `Deque` implementation from `TryFrom` was wrong when the `Deque` ended up full",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0580",
+      "package": "crates.io/heapless",
+      "installed_version": "0.8.0",
+      "fixed_versions": [],
+      "summary": "The treiber stack implementation in heapless had a race condition",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0581",
+      "package": "crates.io/heapless",
+      "installed_version": "0.8.0",
+      "fixed_versions": [],
+      "summary": "`Deque::make_contiguous` could lead to broken invariants",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0582",
+      "package": "crates.io/heapless",
+      "installed_version": "0.8.0",
+      "fixed_versions": [],
+      "summary": "On maps of `u16::MAX` elements, `IndexMap::insert` could lead to a broken invariant",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0542",
+      "package": "crates.io/humantime",
+      "installed_version": "2.4.0",
+      "fixed_versions": [],
+      "summary": "humantime is unmaintained",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0459",
+      "package": "crates.io/libsqlite3-sys",
+      "installed_version": "0.37.0",
+      "fixed_versions": [],
+      "summary": "`libsqlite3-sys` via C SQLite CVE-2026-119375",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2024-0436",
+      "package": "crates.io/paste",
+      "installed_version": "1.0.15",
+      "fixed_versions": [],
+      "summary": "paste - no longer maintained",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0338",
+      "package": "crates.io/quinn-proto",
+      "installed_version": "0.11.17",
+      "fixed_versions": [],
+      "summary": "Remote peer can panic quinn-proto with zero-length STREAM frames during unordered reads",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0340",
+      "package": "crates.io/quinn-proto",
+      "installed_version": "0.11.17",
+      "fixed_versions": [],
+      "summary": "Peer minimum ACK delay can panic quinn-proto when ACK_FREQUENCY transmission is enabled",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0343",
+      "package": "crates.io/quinn-proto",
+      "installed_version": "0.11.17",
+      "fixed_versions": [],
+      "summary": "Outgoing datagram buffer accounting can panic the sender in quinn-proto",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0523",
+      "package": "crates.io/quinn-proto",
+      "installed_version": "0.11.17",
+      "fixed_versions": [],
+      "summary": "MAX_STREAM_DATA frame can open streams beyond the stream limit",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0524",
+      "package": "crates.io/quinn-proto",
+      "installed_version": "0.11.17",
+      "fixed_versions": [],
+      "summary": "Long Retry token can panic or exhaust memory in a QUIC client",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0538",
+      "package": "crates.io/quinn-udp",
+      "installed_version": "0.5.15",
+      "fixed_versions": [],
+      "summary": "Receive loop can spin after a truncated datagram",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2023-0071",
+      "package": "crates.io/rsa",
+      "installed_version": "0.9.10",
+      "fixed_versions": [],
+      "summary": "Marvin Attack: potential key recovery through timing sidechannels",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0486",
+      "package": "crates.io/rustix",
+      "installed_version": "1.1.4",
+      "fixed_versions": [],
+      "summary": "xattr functions mark unwritten bytes as initialized when given a zero-length buffer",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "GHSA-2mjx-qc3c-rqvc",
+      "package": "crates.io/rustls",
+      "installed_version": "0.23.43",
+      "fixed_versions": [],
+      "summary": "Rustls: TLS 1.3 handshake messages incorrectly accepted across encryption level boundaries",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "GHSA-c8m5-c952-6cm4",
+      "package": "crates.io/rustls",
+      "installed_version": "0.23.43",
+      "fixed_versions": [],
+      "summary": "Rustls: Session Debug formatting exposes TLS master secrets and resumption PSKs",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "GHSA-h2v8-394m-p7vv",
+      "package": "crates.io/rustls",
+      "installed_version": "0.23.43",
+      "fixed_versions": [],
+      "summary": "Rustls: Brotli certificate decompression can allocate an attacker-controlled amount of memory up to 1 GiB before authentication.",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "GHSA-w44r-93j7-qv28",
+      "package": "crates.io/rustls",
+      "installed_version": "0.23.43",
+      "fixed_versions": [],
+      "summary": "rustls: An unauthenticated ServerHello poisons the per-name key-exchange record, so later ClientHellos carry only a classical X25519 share",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0285",
+      "package": "crates.io/rustls",
+      "installed_version": "0.23.43",
+      "fixed_versions": [],
+      "summary": "TLS 1.3 handshake messages incorrectly accepted across encryption level boundaries",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0346",
+      "package": "crates.io/rustls",
+      "installed_version": "0.23.43",
+      "fixed_versions": [],
+      "summary": "`Debug` impls for client session values expose TLS secrets",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0348",
+      "package": "crates.io/rustls",
+      "installed_version": "0.23.43",
+      "fixed_versions": [],
+      "summary": "Brotli certificate decompression can allocate up to 1 GiB before authentication",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0349",
+      "package": "crates.io/rustls",
+      "installed_version": "0.23.43",
+      "fixed_versions": [],
+      "summary": "Unauthenticated ServerHello can downgrade later connections to classical key exchange",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0382",
+      "package": "crates.io/rustls-webpki",
+      "installed_version": "0.103.15",
+      "fixed_versions": [],
+      "summary": "Certificate verification may accept distrusted intermediates",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0386",
+      "package": "crates.io/tokio",
+      "installed_version": "1.53.1",
+      "fixed_versions": [],
+      "summary": "`AsyncFd::new` and related constructors violate I/O safety",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0592",
+      "package": "crates.io/url",
+      "installed_version": "2.5.8",
+      "fixed_versions": [],
+      "summary": "Stack overflow in `Url::origin()` on nested `blob:` URLs",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0381",
+      "package": "crates.io/webpki-roots",
+      "installed_version": "1.0.9",
+      "fixed_versions": [],
+      "summary": "Bundled root certificates allow trust in distrusted emSign intermediates",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0391",
+      "package": "crates.io/zstd",
+      "installed_version": "0.14.0",
+      "fixed_versions": [],
+      "summary": "Data from an abandoned stream leaks into the next stream on a reused context",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0395",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "Use-after-free with `CParameter::StableInBuffer`",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0396",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "`Seekable` reads a NULL or out-of-bounds seek table",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0397",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "`OutBuffer::around_pos` exposes uninitialized memory",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0398",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "`Seekable::decompress` sets a `Vec` length beyond its capacity for offsets past the end",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0399",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "Use-after-free through `init_using_cdict` and `init_using_ddict`",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0400",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "Use-after-free of a dictionary after a one-shot call on a context with an open stream",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0401",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "Out-of-bounds read in `train_from_buffer` when sample sizes overflow",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0402",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "Heap buffer overflow in `CCtx::try_clone` on a multithreaded context",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0403",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "Uninitialized memory exposed when streaming decompression of a legacy frame fails",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0404",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "Double free in `DCtx::try_clone`",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0405",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "Out-of-bounds read with an out-of-range `InBuffer::pos`",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0406",
+      "package": "crates.io/zstd-safe",
+      "installed_version": "8.0.0",
+      "fixed_versions": [],
+      "summary": "Use-after-free when changing a multithreaded context with an unfinished frame",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0410",
+      "package": "crates.io/zstd-sys",
+      "installed_version": "2.1.0+zstd.1.5.7",
+      "fixed_versions": [],
+      "summary": "WebAssembly allocator shim corrupts memory on allocation failure",
+      "source": "/tmp/idol-scan-v2-ccq388pt/source/QW-AI-Code-Aether-d957246/native/aether/aether/Cargo.lock",
+      "severity": "medium"
+    }
+  ],
+  "warnings": [],
+  "scan_errors": [
+    "asset:Aether-1.7.0-arm64-v8a.apk:download_or_scan_error",
+    "asset:Aether-1.7.0-armeabi-v7a.apk:download_or_scan_error",
+    "asset:Aether-1.7.0-universal.apk:download_or_scan_error",
+    "asset:Aether-1.7.0-x86_64.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "508d1843c1311b3d1d5e7f30d826da708043037ea9bea07a165fb7987931db80",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

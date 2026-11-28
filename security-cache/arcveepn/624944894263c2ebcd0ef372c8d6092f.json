@@ -1,0 +1,94 @@
+{
+  "id": "arcveepn",
+  "name": "ArcVeePN",
+  "github_repository": "ProxyArc/ArcVeePN",
+  "scan_timestamp": "2026-11-28T10:41:38+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v3.1",
+  "release_date": "2026-11-22T17:06:16Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "2dae3fd6fb6777ad57b6c6dcd8e90aa0d104780b7056575d1a77351b77193ae9",
+    "archive_bytes": 16199180,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:41:54+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:41:54+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-0agl25wm/source/ProxyArc-ArcVeePN-40f5c3f\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:41:54+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:41:57+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:41:57+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "ArcVeePN-3.1-arm64.apk",
+      "declared_size": 16143888,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ArcVeePN-3.1-arm7.apk",
+      "declared_size": 16508434,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:ArcVeePN-3.1-arm64.apk:download_or_scan_error",
+    "asset:ArcVeePN-3.1-arm7.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "624944894263c2ebcd0ef372c8d6092f4b1cda6a66608b087703ceac73bbbb68",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

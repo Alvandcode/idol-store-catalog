@@ -1,0 +1,102 @@
+{
+  "id": "protasovvpn",
+  "name": "ProtasovVPN",
+  "github_repository": "protasovvpn/ProtasovVPN",
+  "scan_timestamp": "2026-11-28T10:44:09+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "ProtasovVPN_0_6_9",
+  "release_date": "2026-11-28T09:25:29Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "d90b848908084431c70f9006548d2e9be27d039565bd6ac635decc9d0bcc78c0",
+    "archive_bytes": 1000,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:44:23+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:44:23+00:00",
+      "exit_code": 128,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-6sddw48o/source/protasovvpn-ProtasovVPN-d2dc921\nNot in a Git repository, ignoring .gitignores\nNo package sources found, --help for usage information.\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:44:23+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:44:26+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:44:26+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "ProtasovVPN-0.6.9-0861-Android.apk",
+      "declared_size": 126396067,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ProtasovVPN-0.6.9-0861-Windows-Portable-x64.zip",
+      "declared_size": 54430901,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "ProtasovVPN-0.6.9-0861-Windows-Setup-x64.exe",
+      "declared_size": 40841874,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:ProtasovVPN-0.6.9-0861-Android.apk:download_or_scan_error",
+    "asset:ProtasovVPN-0.6.9-0861-Windows-Portable-x64.zip:download_or_scan_error",
+    "asset:ProtasovVPN-0.6.9-0861-Windows-Setup-x64.exe:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "a3ca57c4201d33b222db63f471b3bba685230b4a66ea567cfa5d3d4a8cb7c4bf",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

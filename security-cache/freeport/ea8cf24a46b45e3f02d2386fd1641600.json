@@ -1,0 +1,423 @@
+{
+  "id": "freeport",
+  "name": "freeport",
+  "github_repository": "mhammaddawudi/freeport",
+  "scan_timestamp": "2026-11-28T10:41:40+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "v3.2.21",
+  "release_date": "2026-11-19T00:41:12Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "6d8b5b55334422d37535a6b0963355bc6865a1144b4dc559afde3cdb36c518e5",
+    "archive_bytes": 132123942,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:42:35+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:42:36+00:00",
+      "exit_code": 1,
+      "status": "vulnerabilities_found",
+      "vulnerabilities": [
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0543",
+          "package": "crates.io/chrono",
+          "installed_version": "0.4.45",
+          "fixed_versions": [],
+          "summary": "chrono is unmaintained",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0594",
+          "package": "crates.io/cookie",
+          "installed_version": "0.18.2",
+          "fixed_versions": [],
+          "summary": "Private cookie nonces can repeat in processes that fork",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "GHSA-wrw7-89jp-8q8g",
+          "package": "crates.io/glib",
+          "installed_version": "0.18.5",
+          "fixed_versions": [],
+          "summary": "Unsoundness in `Iterator` and `DoubleEndedIterator` impls for `glib::VariantStrIter`",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2024-0429",
+          "package": "crates.io/glib",
+          "installed_version": "0.18.5",
+          "fixed_versions": [],
+          "summary": "Unsoundness in `Iterator` and `DoubleEndedIterator` impls for `glib::VariantStrIter`",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0574",
+          "package": "crates.io/heapless",
+          "installed_version": "0.9.3",
+          "fixed_versions": [],
+          "summary": "`FindMutView::pop` after mutating the value would lead to a use after free",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0575",
+          "package": "crates.io/heapless",
+          "installed_version": "0.9.3",
+          "fixed_versions": [],
+          "summary": "`Spsc::peek` used `Relaxed` ordering where it should have use `Acquire`",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0576",
+          "package": "crates.io/heapless",
+          "installed_version": "0.9.3",
+          "fixed_versions": [],
+          "summary": "`IndexMap::truncate` could lead to an inconsistent state",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0577",
+          "package": "crates.io/heapless",
+          "installed_version": "0.9.3",
+          "fixed_versions": [],
+          "summary": "Panicking `Drop` implementation could lead to UB",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0578",
+          "package": "crates.io/heapless",
+          "installed_version": "0.9.3",
+          "fixed_versions": [],
+          "summary": "`SortedLinkedList::zeroize` lead to an inconsistent state",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0579",
+          "package": "crates.io/heapless",
+          "installed_version": "0.9.3",
+          "fixed_versions": [],
+          "summary": "The `Deque` implementation from `TryFrom` was wrong when the `Deque` ended up full",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0580",
+          "package": "crates.io/heapless",
+          "installed_version": "0.9.3",
+          "fixed_versions": [],
+          "summary": "The treiber stack implementation in heapless had a race condition",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0581",
+          "package": "crates.io/heapless",
+          "installed_version": "0.9.3",
+          "fixed_versions": [],
+          "summary": "`Deque::make_contiguous` could lead to broken invariants",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0582",
+          "package": "crates.io/heapless",
+          "installed_version": "0.9.3",
+          "fixed_versions": [],
+          "summary": "On maps of `u16::MAX` elements, `IndexMap::insert` could lead to a broken invariant",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0542",
+          "package": "crates.io/humantime",
+          "installed_version": "2.4.0",
+          "fixed_versions": [],
+          "summary": "humantime is unmaintained",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2024-0370",
+          "package": "crates.io/proc-macro-error",
+          "installed_version": "1.0.4",
+          "fixed_versions": [],
+          "summary": "proc-macro-error is unmaintained",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        },
+        {
+          "tool": "osv-scanner",
+          "id": "RUSTSEC-2026-0592",
+          "package": "crates.io/url",
+          "installed_version": "2.5.8",
+          "fixed_versions": [],
+          "summary": "Stack overflow in `Url::origin()` on nested `blob:` URLs",
+          "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+          "severity": "medium"
+        }
+      ]
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:42:36+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:42:39+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:42:39+00:00",
+      "exit_code": 0,
+      "status": "no_findings",
+      "findings": []
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "freeport-3.2.21-arm64-v8a.apk",
+      "declared_size": 36673306,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "freeport-3.2.21-armeabi-v7a.apk",
+      "declared_size": 36609878,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "freeport-3.2.21-universal.apk",
+      "declared_size": 71151962,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0543",
+      "package": "crates.io/chrono",
+      "installed_version": "0.4.45",
+      "fixed_versions": [],
+      "summary": "chrono is unmaintained",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0594",
+      "package": "crates.io/cookie",
+      "installed_version": "0.18.2",
+      "fixed_versions": [],
+      "summary": "Private cookie nonces can repeat in processes that fork",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "GHSA-wrw7-89jp-8q8g",
+      "package": "crates.io/glib",
+      "installed_version": "0.18.5",
+      "fixed_versions": [],
+      "summary": "Unsoundness in `Iterator` and `DoubleEndedIterator` impls for `glib::VariantStrIter`",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2024-0429",
+      "package": "crates.io/glib",
+      "installed_version": "0.18.5",
+      "fixed_versions": [],
+      "summary": "Unsoundness in `Iterator` and `DoubleEndedIterator` impls for `glib::VariantStrIter`",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0574",
+      "package": "crates.io/heapless",
+      "installed_version": "0.9.3",
+      "fixed_versions": [],
+      "summary": "`FindMutView::pop` after mutating the value would lead to a use after free",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0575",
+      "package": "crates.io/heapless",
+      "installed_version": "0.9.3",
+      "fixed_versions": [],
+      "summary": "`Spsc::peek` used `Relaxed` ordering where it should have use `Acquire`",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0576",
+      "package": "crates.io/heapless",
+      "installed_version": "0.9.3",
+      "fixed_versions": [],
+      "summary": "`IndexMap::truncate` could lead to an inconsistent state",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0577",
+      "package": "crates.io/heapless",
+      "installed_version": "0.9.3",
+      "fixed_versions": [],
+      "summary": "Panicking `Drop` implementation could lead to UB",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0578",
+      "package": "crates.io/heapless",
+      "installed_version": "0.9.3",
+      "fixed_versions": [],
+      "summary": "`SortedLinkedList::zeroize` lead to an inconsistent state",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0579",
+      "package": "crates.io/heapless",
+      "installed_version": "0.9.3",
+      "fixed_versions": [],
+      "summary": "The `Deque` implementation from `TryFrom` was wrong when the `Deque` ended up full",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0580",
+      "package": "crates.io/heapless",
+      "installed_version": "0.9.3",
+      "fixed_versions": [],
+      "summary": "The treiber stack implementation in heapless had a race condition",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0581",
+      "package": "crates.io/heapless",
+      "installed_version": "0.9.3",
+      "fixed_versions": [],
+      "summary": "`Deque::make_contiguous` could lead to broken invariants",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0582",
+      "package": "crates.io/heapless",
+      "installed_version": "0.9.3",
+      "fixed_versions": [],
+      "summary": "On maps of `u16::MAX` elements, `IndexMap::insert` could lead to a broken invariant",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0542",
+      "package": "crates.io/humantime",
+      "installed_version": "2.4.0",
+      "fixed_versions": [],
+      "summary": "humantime is unmaintained",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2024-0370",
+      "package": "crates.io/proc-macro-error",
+      "installed_version": "1.0.4",
+      "fixed_versions": [],
+      "summary": "proc-macro-error is unmaintained",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    },
+    {
+      "tool": "osv-scanner",
+      "id": "RUSTSEC-2026-0592",
+      "package": "crates.io/url",
+      "installed_version": "2.5.8",
+      "fixed_versions": [],
+      "summary": "Stack overflow in `Url::origin()` on nested `blob:` URLs",
+      "source": "/tmp/idol-scan-v2-svlz08dh/source/mhammaddawudi-freeport-8d44c09/desktop/Cargo.lock",
+      "severity": "medium"
+    }
+  ],
+  "warnings": [],
+  "scan_errors": [
+    "asset:freeport-3.2.21-arm64-v8a.apk:download_or_scan_error",
+    "asset:freeport-3.2.21-armeabi-v7a.apk:download_or_scan_error",
+    "asset:freeport-3.2.21-universal.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "ea8cf24a46b45e3f02d2386fd1641600963caa5a4a1e19d5fb30e22d02aa4b52",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}

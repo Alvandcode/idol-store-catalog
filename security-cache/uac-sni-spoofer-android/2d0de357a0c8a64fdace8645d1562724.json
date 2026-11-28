@@ -1,0 +1,196 @@
+{
+  "id": "uac-sni-spoofer-android",
+  "name": "UAC-SNI-Spoofer-Android",
+  "github_repository": "Floxu1/UAC-SNI-Spoofer-Android",
+  "scan_timestamp": "2026-11-28T10:42:26+00:00",
+  "scanner_version": "2.0.0",
+  "release_version": "2.1.4",
+  "release_date": "2026-11-21T20:56:23Z",
+  "overall_status": "INCOMPLETE",
+  "risk_level": "unknown",
+  "source_scan": {
+    "sha256_source_archive": "25d5d430d38fd8fdd3f9dd8e4a23d2311c5d28fa5b388b6f6c96695bacc08f41",
+    "archive_bytes": 202288039,
+    "clamav": {
+      "engine": "clamav",
+      "available": true,
+      "version": "ClamAV 1.5.4/28194/Wed Nov 25 06:26:59 2026",
+      "scanned_at": "2026-11-28T10:45:26+00:00",
+      "exit_code": 0,
+      "status": "no_detection",
+      "detections": []
+    },
+    "dependency": {
+      "engine": "osv-scanner",
+      "available": true,
+      "version": "osv-scanner version: 2.0.3",
+      "scanned_at": "2026-11-28T10:45:29+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": "Scanning dir /tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1\nNot in a Git repository, ignoring .gitignores\nScanned /tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/core/aether/Cargo.lock file and found 304 packages\nScanned /tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/core/direct/Cargo.lock file and found 305 packages\nScanned /tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/third_party/webtunnel-client/go.mod file and found 3 packages\npanic: unexpected expr: *ast.KeyValueExpr\n\ngoroutine 2011 [running]:\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x24635c61edb0?, 0x24634f0bda00?, {0x2ed78c0?, 0x2463487d1770?}, {0x0, {0x0, 0x0}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:960 +0x206e\ngolang.org/x/tools/go/ssa.(*builder).expr(0x24635c61edb0, 0x24634f0bda00, {0x2ed78c0, 0x2463487d1770})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).assign(0x2ed3398?, 0x24634f0bda00, {0x2ed9fe8, 0x24635ce2a000}, {0x2ed78c0?, 0x2463487d1770?}, 0x58?, 0x246345ed1598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:608 +0x3a5\ngolang.org/x/tools/go/ssa.(*builder).compLit(0x24635c61edb0, 0x24634f0bda00, {0x2edfd28, 0x24635ce23c20}, 0x2463487dc740, 0x1, 0x246345ed1598)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:1306 +0x1252\ngolang.org/x/tools/go/ssa.(*builder).addr(0x24635c61edb0, 0x24634f0bda00, {0x2ed7890?, 0x2463487dc740}, 0x1)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:455 +0xc7b\ngolang.org/x/tools/go/ssa.(*builder).expr0(0x24635c61edb0, 0x24634f0bda00, {0x2ed79b0?, 0x2463487de080}, {0x7, {0x2ed3370, 0x246349962060}, {0x0, 0x0}})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:725 +0xce\ngolang.org/x/tools/go/ssa.(*builder).expr(0x24635c61edb0, 0x24634f0bda00, {0x2ed79b0, 0x2463487de080})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:635 +0x13a\ngolang.org/x/tools/go/ssa.(*builder).returnStmt(0x24635c61edb0, 0x24634f0bda00, 0x2463487de0a0)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2841 +0x15a\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x24635c61edb0, 0x24634f0bda00, {0x2ed7b00?, 0x2463487de0a0?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2741 +0x53e\ngolang.org/x/tools/go/ssa.(*builder).stmtList(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:966\ngolang.org/x/tools/go/ssa.(*builder).stmt(0x24635c61edb0, 0x24634f0bda00, {0x2ed7b60?, 0x2463487d1830?})\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2747 +0x10f1\ngolang.org/x/tools/go/ssa.(*builder).buildFromSyntax(0x24635c61edb0, 0x24634f0bda00)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2953 +0x25a\ngolang.org/x/tools/go/ssa.(*builder).buildFunction(0xffffffffffffffff?, 0x24634f0bda00)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2906 +0x185\ngolang.org/x/tools/go/ssa.(*builder).iterate(0x24635c61edb0)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:2891 +0x25\ngolang.org/x/tools/go/ssa.(*Package).build(0x24634efd8680)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3174 +0xdc\nsync.(*Once).doSlow(0x24633e0cb208?, 0x2ec6c48?)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:78 +0xab\nsync.(*Once).Do(...)\n\t/opt/hostedtoolcache/go/1.27.4/x64/src/sync/once.go:69\ngolang.org/x/tools/go/ssa.(*Package).Build(...)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3163\ngolang.org/x/tools/go/ssa.(*Program).Build.func1(0x24633e41bfa8?)\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3142 +0x45\ncreated by golang.org/x/tools/go/ssa.(*Program).Build in goroutine 1881\n\t/home/runner/go/pkg/mod/golang.org/x/tools@v0.33.0/go/ssa/builder.go:3141 +0x1b4\n"
+    },
+    "yara": {
+      "engine": "yara",
+      "available": true,
+      "version": "4.5.4",
+      "scanned_at": "2026-11-28T10:45:29+00:00",
+      "exit_code": null,
+      "status": "no_detection",
+      "detections": []
+    },
+    "semgrep": {
+      "engine": "semgrep",
+      "available": true,
+      "version": "1.187.0",
+      "scanned_at": "2026-11-28T10:45:32+00:00",
+      "exit_code": 2,
+      "status": "scan_error",
+      "error": ""
+    },
+    "gitleaks": {
+      "engine": "gitleaks",
+      "available": true,
+      "version": "version is set by build process",
+      "scanned_at": "2026-11-28T10:45:37+00:00",
+      "exit_code": 1,
+      "status": "secrets_found",
+      "findings": [
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/app/src/main/java/com/uacspoofer/mobile/engine/pow/PowAdaptiveObfuscation.kt",
+          "line": 14,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/app/src/main/java/com/uacspoofer/mobile/engine/pow/PowEngineStore.kt",
+          "line": 280,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/app/src/main/java/com/uacspoofer/mobile/engine/pow/PowEngineStore.kt",
+          "line": 297,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/app/src/main/java/com/uacspoofer/mobile/mci/MciConfig.kt",
+          "line": 61,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/app/src/main/java/com/uacspoofer/mobile/profiles/ProfileStore.kt",
+          "line": 310,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/app/src/main/java/com/uacspoofer/mobile/profiles/ProxyProfile.kt",
+          "line": 129,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/app/src/main/java/com/uacspoofer/mobile/engine/pow/PowPsiphonProtocols.kt",
+          "line": 181,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "generic-api-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/app/src/main/java/com/uacspoofer/mobile/settings/AdvancedSettingsStore.kt",
+          "line": 35,
+          "description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "private-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/core/quiche/apps/src/bin/cert.key",
+          "line": 1,
+          "description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "private-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/core/quiche/quiche/examples/cert.key",
+          "line": 1,
+          "description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+        },
+        {
+          "tool": "gitleaks",
+          "rule": "private-key",
+          "file": "/tmp/idol-scan-v2-1p9e8e9l/source/Floxu1-UAC-SNI-Spoofer-Android-07ca5e1/core/quiche/tokio-quiche/examples/cert.key",
+          "line": 1,
+          "description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+        }
+      ]
+    }
+  },
+  "scanned_assets": [
+    {
+      "name": "UAC-2.1.4-arm64-v8a.apk",
+      "declared_size": 71166670,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "UAC-2.1.4-armeabi-v7a.apk",
+      "declared_size": 71301872,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "UAC-2.1.4-universal.apk",
+      "declared_size": 203196468,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "UAC-2.1.4-x86.apk",
+      "declared_size": 54417688,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    },
+    {
+      "name": "UAC-2.1.4-x86_64.apk",
+      "declared_size": 75045531,
+      "status": "download_or_scan_error",
+      "error": "Host not allowed: release-assets.githubusercontent.com",
+      "sha256": null
+    }
+  ],
+  "detections": [],
+  "vulnerabilities": [],
+  "warnings": [],
+  "scan_errors": [
+    "source:osv",
+    "asset:UAC-2.1.4-arm64-v8a.apk:download_or_scan_error",
+    "asset:UAC-2.1.4-armeabi-v7a.apk:download_or_scan_error",
+    "asset:UAC-2.1.4-universal.apk:download_or_scan_error",
+    "asset:UAC-2.1.4-x86.apk:download_or_scan_error",
+    "asset:UAC-2.1.4-x86_64.apk:download_or_scan_error"
+  ],
+  "skipped_files": [],
+  "execution_statistics": {
+    "api_calls": 2,
+    "downloaded_bytes": 0,
+    "duration_note": "single-run"
+  },
+  "blocking_evidence": [],
+  "status": "incomplete",
+  "cache_key": "2d0de357a0c8a64fdace8645d15627248f1880799272686bc0a8efbae7e42e0c",
+  "policy_key": "idol-security-scanner-v2-policy-1"
+}
