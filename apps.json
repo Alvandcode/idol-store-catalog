@@ -170,9 +170,10 @@
       "github": "code3-dev/CCloud",
       "developer": "code3-dev",
       "category": "رسانه",
-      "description": "Android movie streaming application — completely free and ad-free.",
+      "description": "برنامه پخش فیلم اندروید — کاملا رایگان و بدون آگهی.",
       "iconUrl": "https://avatars.githubusercontent.com/u/158034265?v=4",
-      "website": "https://github.com/code3-dev/CCloud/releases/latest"
+      "website": "https://github.com/code3-dev/CCloud/releases/latest",
+      "descriptionEn": "Android movie streaming application — completely free and ad-free."
     },
     {
       "id": "aether",
@@ -188,8 +189,9 @@
       "github": "ProxyArc/ArcVeePN",
       "developer": "ProxyArc",
       "category": "ابزارها",
-      "description": "ArcVeePN - Android VPN app, open source (v1.7)",
-      "iconUrl": "https://avatars.githubusercontent.com/u/129437100?v=4"
+      "description": "ArcVeePN - برنامه Android VPN، منبع باز (نسخه 1.7)",
+      "iconUrl": "https://avatars.githubusercontent.com/u/129437100?v=4",
+      "descriptionEn": "ArcVeePN - Android VPN app, open source (v1.7)"
     },
     {
       "id": "freeport",
@@ -197,8 +199,9 @@
       "github": "mhammaddawudi/freeport",
       "developer": "mhammaddawudi",
       "category": "ابزارها",
-      "description": "Android VPN for Cloudflare WARP, built for networks that block it. English, Kurdish and Persian UI, four transports, per-app routing.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/223661779?v=4"
+      "description": "Android VPN برای Cloudflare WARP، ساخته شده برای شبکه هایی که آن را مسدود می کنند. رابط کاربری انگلیسی، کردی و فارسی، چهار انتقال، مسیریابی هر برنامه.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/223661779?v=4",
+      "descriptionEn": "Android VPN for Cloudflare WARP, built for networks that block it. English, Kurdish and Persian UI, four transports, per-app routing."
     },
     {
       "id": "openrung-mobile-app",
@@ -208,7 +211,8 @@
       "category": "ابزارها",
       "description": "Internet access is a right, not a privilege. 互聯網本非特權。Доступ к интернету — право, а не привилегия. دسترسی به اینترنت حق است، نه امتیاز.",
       "iconUrl": "https://avatars.githubusercontent.com/u/294078720?v=4",
-      "website": "https://openrung.org"
+      "website": "https://openrung.org",
+      "descriptionEn": "Internet access is a right, not a privilege. 互聯網本非特權。 Доступ к интернету — pravo, а не privilegija. Internet access is a right, not a privilege."
     },
     {
       "id": "niloofar_vpn",
@@ -216,8 +220,9 @@
       "github": "FossilizedProgrammer/niloofar_vpn",
       "developer": "FossilizedProgrammer",
       "category": "ابزارها",
-      "description": "Android client for the Firefox VPN engine: TUN or local proxy, Firefox Account sign-in, five-language UI. Release APKs are built by GitHub Actions.",
-      "iconUrl": "https://raw.githubusercontent.com/FossilizedProgrammer/niloofar_vpn/main/Sandstone%20Rosette%20Relief%20Icon.png"
+      "description": "کلاینت اندروید برای موتور فایرفاکس VPN: TUN یا پروکسی محلی، ورود به حساب فایرفاکس، رابط کاربری پنج زبانه. APK های انتشار توسط GitHub Actions ساخته شده اند.",
+      "iconUrl": "https://raw.githubusercontent.com/FossilizedProgrammer/niloofar_vpn/main/Sandstone%20Rosette%20Relief%20Icon.png",
+      "descriptionEn": "Android client for the Firefox VPN engine: TUN or local proxy, Firefox Account sign-in, five-language UI. Release APKs are built by GitHub Actions."
     }
   ]
 }
