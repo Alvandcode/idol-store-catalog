@@ -246,16 +246,6 @@
       "descriptionEn": "An advanced, open-source client for WireGuard and AmneziaWG on Android."
     },
     {
-      "id": "mischiefpingu",
-      "name": "mischiefpingu",
-      "github": "FossilizedProgrammer/mischiefpingu",
-      "developer": "FossilizedProgrammer",
-      "category": "ابزارها",
-      "description": "سرویس گیرنده VPN چند هسته ای (Flutter) - Psiphon، Tor، SSTP، WireGuard، Firefox VPN.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/328447975?v=4",
-      "descriptionEn": "Multi-core VPN client (Flutter) — Psiphon, Tor, SSTP, WireGuard, Firefox VPN."
-    },
-    {
       "id": "milinovpn",
       "name": "Milinovpn",
       "github": "miladjahani/Milinovpn",
@@ -275,16 +265,6 @@
       "iconUrl": "https://avatars.githubusercontent.com/u/65408965?v=4",
       "website": "https://github.com/GeorgeXie2333/usque-app/wiki",
       "descriptionEn": "Unofficial Cloudflare WARP MASQUE Client for Windows, macOS, Linux and Android: system VPN, SOCKS5 and HTTP proxy over MASQUE, with chain proxy and routing rules."
-    },
-    {
-      "id": "auroravpn",
-      "name": "AuroraVPN",
-      "github": "abapqlcm/AuroraVPN",
-      "developer": "abapqlcm",
-      "category": "ابزارها",
-      "description": "AuroraVPN - سرویس گیرنده VPN چند پروتکلی پیشرفته برای Android (MASQUE/WireGuard/Gool) که توسط Aether Core طراحی شده است",
-      "iconUrl": "https://avatars.githubusercontent.com/u/319687702?v=4",
-      "descriptionEn": "AuroraVPN - Advanced Multi-Protocol VPN Client for Android (MASQUE/WireGuard/Gool) powered by Aether Core"
     },
     {
       "id": "saman-aether",
