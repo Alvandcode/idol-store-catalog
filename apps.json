@@ -322,18 +322,20 @@
       "github": "GFW-knocker/MahsaNG",
       "developer": "GFW-knocker",
       "category": "ابزارها",
-      "description": "a V2RayNG with Fragment , DoH , Rotating Configs , & free VPN servers",
+      "description": "یک V2RayNG با Fragment، DoH، تنظیمات چرخشی، و سرورهای رایگان VPN",
       "iconUrl": "https://avatars.githubusercontent.com/u/123458121?v=4",
-      "website": "https://t.me/mahsa_net"
+      "website": "https://t.me/mahsa_net",
+      "descriptionEn": "a V2RayNG with Fragment , DoH , Rotating Configs , & free VPN servers"
     },
     {
       "id": "nikang",
       "name": "NikaNG",
       "github": "mahsanet/NikaNG",
       "developer": "mahsanet",
-      "description": "A fork of v2rayng with customized core. (mahsa-core)",
+      "description": "چنگال v2rayng با هسته سفارشی شده. (mahsa-core)",
       "iconUrl": "https://avatars.githubusercontent.com/u/139262108?v=4",
-      "website": "https://www.mahsaserver.com"
+      "website": "https://www.mahsaserver.com",
+      "descriptionEn": "A fork of v2rayng with customized core. (mahsa-core)"
     },
     {
       "id": "sing-box",
@@ -341,9 +343,10 @@
       "github": "SagerNet/sing-box",
       "developer": "SagerNet",
       "category": "ابزارها",
-      "description": "The universal proxy platform",
+      "description": "پلت فرم پروکسی جهانی",
       "iconUrl": "https://avatars.githubusercontent.com/u/83217677?v=4",
-      "website": "https://sing-box.sagernet.org/"
+      "website": "https://sing-box.sagernet.org/",
+      "descriptionEn": "The universal proxy platform"
     },
     {
       "id": "exclave",
@@ -351,8 +354,9 @@
       "github": "dyhkwong/Exclave",
       "developer": "ExclaveNetwork",
       "category": "ابزارها",
-      "description": "Proxy client",
-      "iconUrl": "https://avatars.githubusercontent.com/u/287472751?v=4"
+      "description": "مشتری پروکسی",
+      "iconUrl": "https://avatars.githubusercontent.com/u/287472751?v=4",
+      "descriptionEn": "Proxy client"
     },
     {
       "id": "begzarapp",
@@ -360,9 +364,10 @@
       "github": "Begzar/BegzarApp",
       "developer": "Begzar",
       "category": "ابزارها",
-      "description": "Begzar, is a vpn software made for internet freedom.",
+      "description": "Begzar، یک نرم افزار vpn است که برای آزادی اینترنت ساخته شده است.",
       "iconUrl": "https://avatars.githubusercontent.com/u/185405785?v=4",
-      "website": "https://begzar.app"
+      "website": "https://begzar.app",
+      "descriptionEn": "Begzar, is a vpn software made for internet freedom."
     },
     {
       "id": "nekoboxforandroid",
@@ -370,9 +375,10 @@
       "github": "MatsuriDayo/NekoBoxForAndroid",
       "developer": "MatsuriDayo",
       "category": "ابزارها",
-      "description": "NekoBox for Android / sing-box / universal proxy toolchain for Android",
+      "description": "NekoBox برای اندروید / sing-box / زنجیره ابزار پروکسی جهانی برای اندروید",
       "iconUrl": "https://avatars.githubusercontent.com/u/95122236?v=4",
-      "website": "https://matsuridayo.github.io/project-archive/"
+      "website": "https://matsuridayo.github.io/project-archive/",
+      "descriptionEn": "NekoBox for Android / sing-box / universal proxy toolchain for Android"
     },
     {
       "id": "flclash",
@@ -380,9 +386,10 @@
       "github": "chen08209/FlClash",
       "developer": "Vialibrex",
       "category": "ابزارها",
-      "description": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.",
+      "description": "یک کلاینت پروکسی چند پلتفرمی مبتنی بر ClashMeta، ساده و آسان برای استفاده، منبع باز و بدون آگهی.",
       "iconUrl": "https://avatars.githubusercontent.com/u/361377415?v=4",
-      "website": "https://vialibrex.github.io/FlClash/"
+      "website": "https://vialibrex.github.io/FlClash/",
+      "descriptionEn": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free."
     },
     {
       "id": "clashmetaforandroid",
@@ -390,8 +397,9 @@
       "github": "MetaCubeX/ClashMetaForAndroid",
       "developer": "MetaCubeX",
       "category": "ابزارها",
-      "description": "A rule-based tunnel for Android.",
-      "iconUrl": "https://avatars.githubusercontent.com/u/84378451?v=4"
+      "description": "یک تونل مبتنی بر قانون برای اندروید.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/84378451?v=4",
+      "descriptionEn": "A rule-based tunnel for Android."
     },
     {
       "id": "fg_mobile",
@@ -399,9 +407,10 @@
       "github": "Freedom-Guard/FG_MOBILE",
       "developer": "Freedom-Guard",
       "category": "ابزارها",
-      "description": "Freedom Guard Mobile – VPN for free internet access, including Freedom Browser, Freedom Link, and Freedom Vibe.",
+      "description": "Freedom Guard Mobile – VPN برای دسترسی رایگان به اینترنت، از جمله مرورگر Freedom، Freedom Link و Freedom Vibe.",
       "iconUrl": "https://avatars.githubusercontent.com/u/185515670?v=4",
-      "website": "https://freedom-guard.github.io"
+      "website": "https://freedom-guard.github.io",
+      "descriptionEn": "Freedom Guard Mobile – VPN for free internet access, including Freedom Browser, Freedom Link, and Freedom Vibe."
     },
     {
       "id": "husi",
@@ -409,9 +418,10 @@
       "github": "xchacha20-poly1305/husi",
       "developer": "xchacha20-poly1305",
       "category": "ابزارها",
-      "description": "Husi is a non-professional proxy-set-based multiplatform proxy tool set and dashboard.",
+      "description": "Husi یک مجموعه ابزار و داشبورد پراکسی چند پلتفرمی مبتنی بر مجموعه پراکسی غیر حرفه ای است.",
       "iconUrl": "https://avatars.githubusercontent.com/u/139959885?v=4",
-      "website": "https://xchacha20-poly1305.github.io/husi/"
+      "website": "https://xchacha20-poly1305.github.io/husi/",
+      "descriptionEn": "Husi is a non-professional proxy-set-based multiplatform proxy tool set and dashboard."
     },
     {
       "id": "wgtunnel",
@@ -419,9 +429,10 @@
       "github": "wgtunnel/wgtunnel",
       "developer": "wgtunnel",
       "category": "ابزارها",
-      "description": "An advanced, open-source client for WireGuard and AmneziaWG on Android.",
+      "description": "یک کلاینت پیشرفته و منبع باز برای WireGuard و AmneziaWG در اندروید.",
       "iconUrl": "https://avatars.githubusercontent.com/u/207392975?v=4",
-      "website": "https://wgtunnel.com"
+      "website": "https://wgtunnel.com",
+      "descriptionEn": "An advanced, open-source client for WireGuard and AmneziaWG on Android."
     },
     {
       "id": "warpscanner-android-gui",
@@ -429,9 +440,10 @@
       "github": "arshiacomplus/WarpScanner-android-GUI",
       "developer": "arshiacomplus",
       "category": "ابزارها",
-      "description": "This is an Warp IP Scanner and you can get wireguard config too",
+      "description": "این یک اسکنر IP Warp است و می توانید پیکربندی wireguard را نیز دریافت کنید",
       "iconUrl": "https://avatars.githubusercontent.com/u/163334604?v=4",
-      "website": "https://t.me/arshiacomplus"
+      "website": "https://t.me/arshiacomplus",
+      "descriptionEn": "This is an Warp IP Scanner and you can get wireguard config too"
     },
     {
       "id": "proxycloud",
@@ -439,9 +451,10 @@
       "github": "code3-dev/ProxyCloud",
       "developer": "code3-dev",
       "category": "ابزارها",
-      "description": "Proxy Cloud is an open-source VPN that’s fast, unlimited, secure, and completely free.",
+      "description": "Proxy Cloud یک VPN منبع باز است که سریع، نامحدود، ایمن و کاملا رایگان است.",
       "iconUrl": "https://avatars.githubusercontent.com/u/158034265?v=4",
-      "website": "https://t.me/irdevs_dns"
+      "website": "https://t.me/irdevs_dns",
+      "descriptionEn": "Proxy Cloud is an open-source VPN that’s fast, unlimited, secure, and completely free."
     },
     {
       "id": "amnezia-client",
@@ -449,9 +462,10 @@
       "github": "amnezia-vpn/amnezia-client",
       "developer": "amnezia-vpn",
       "category": "ابزارها",
-      "description": "Amnezia VPN Client (Desktop+Mobile)",
+      "description": "Amnesia VPN Client (رومیزی + موبایل)",
       "iconUrl": "https://avatars.githubusercontent.com/u/74861536?v=4",
-      "website": "https://amnezia.org"
+      "website": "https://amnezia.org",
+      "descriptionEn": "Amnezia VPN Client (Desktop+Mobile)"
     },
     {
       "id": "amneziawg-android",
@@ -459,8 +473,9 @@
       "github": "amnezia-vpn/amneziawg-android",
       "developer": "amnezia-vpn",
       "category": "ابزارها",
-      "description": "AmneziaWG for Android",
-      "iconUrl": "https://avatars.githubusercontent.com/u/74861536?v=4"
+      "description": "AmneziaWG برای اندروید",
+      "iconUrl": "https://avatars.githubusercontent.com/u/74861536?v=4",
+      "descriptionEn": "AmneziaWG for Android"
     },
     {
       "id": "karing",
@@ -468,9 +483,10 @@
       "github": "KaringX/karing",
       "developer": "KaringX",
       "category": "ابزارها",
-      "description": "Simple & Powerful proxy utility, Support routing rules for clash/sing-box",
+      "description": "ابزار ساده و قدرتمند پروکسی، پشتیبانی از قوانین مسیریابی برای Clash/sing-box",
       "iconUrl": "https://raw.githubusercontent.com/KaringX/karing/main/logo.png",
-      "website": "https://karing.app"
+      "website": "https://karing.app",
+      "descriptionEn": "Simple & Powerful proxy utility, Support routing rules for clash/sing-box"
     },
     {
       "id": "clashmi",
@@ -478,9 +494,10 @@
       "github": "KaringX/clashmi",
       "developer": "KaringX",
       "category": "ابزارها",
-      "description": "Clash Mihomo for iOS/MacOS/Android/Windows/Linux",
+      "description": "Clash Mihomo برای iOS/MacOS/Android/Windows/Linux",
       "iconUrl": "https://raw.githubusercontent.com/KaringX/clashmi/main/logo.png",
-      "website": "https://clashmi.app/"
+      "website": "https://clashmi.app/",
+      "descriptionEn": "Clash Mihomo for iOS/MacOS/Android/Windows/Linux"
     },
     {
       "id": "oblivion",
@@ -488,8 +505,9 @@
       "github": "bepass-org/oblivion",
       "developer": "bepass-org",
       "category": "ابزارها",
-      "description": "Unofficial warp client for android",
-      "iconUrl": "https://avatars.githubusercontent.com/u/146542574?v=4"
+      "description": "کلاینت غیر رسمی Warp برای اندروید",
+      "iconUrl": "https://avatars.githubusercontent.com/u/146542574?v=4",
+      "descriptionEn": "Unofficial warp client for android"
     },
     {
       "id": "purvpn",
@@ -505,9 +523,10 @@
       "github": "Mahdi-zarei/nekoray",
       "developer": "throneproj",
       "category": "ابزارها",
-      "description": "Cross-platform GUI proxy utility (Empowered by sing-box)",
+      "description": "ابزار پروکسی رابط کاربری گرافیکی متقابل پلتفرم (تقویت شده توسط sing-box)",
       "iconUrl": "https://avatars.githubusercontent.com/u/220557208?v=4",
-      "website": "https://throneproj.github.io"
+      "website": "https://throneproj.github.io",
+      "descriptionEn": "Cross-platform GUI proxy utility (Empowered by sing-box)"
     },
     {
       "id": "invizible",
@@ -515,9 +534,10 @@
       "github": "Gedsh/InviZible",
       "developer": "Gedsh",
       "category": "ابزارها",
-      "description": "Android application for online privacy and security",
+      "description": "نرم افزار اندروید برای حفظ حریم خصوصی و امنیت آنلاین",
       "iconUrl": "https://avatars.githubusercontent.com/u/48843569?v=4",
-      "website": "https://invizible.net"
+      "website": "https://invizible.net",
+      "descriptionEn": "Android application for online privacy and security"
     },
     {
       "id": "neko-ray",
@@ -525,9 +545,10 @@
       "github": "MRT-project/Neko-ray",
       "developer": "MRT-project",
       "category": "ابزارها",
-      "description": "A V2Ray client for Android, support Xray core and v2fly core. With a beautiful UI style from the UWU team",
+      "description": "یک کلاینت V2Ray برای اندروید، از هسته Xray و هسته v2fly پشتیبانی می کند. با سبک UI زیبا از تیم UWU",
       "iconUrl": "https://avatars.githubusercontent.com/u/204975795?v=4",
-      "website": "https://nekorayrelease.pages.dev"
+      "website": "https://nekorayrelease.pages.dev",
+      "descriptionEn": "A V2Ray client for Android, support Xray core and v2fly core. With a beautiful UI style from the UWU team"
     },
     {
       "id": "orbot-android",
@@ -535,9 +556,10 @@
       "github": "guardianproject/orbot-android",
       "developer": "guardianproject",
       "category": "ابزارها",
-      "description": "The Github home of Orbot: Tor on Android (Also available on gitlab!)",
+      "description": "خانه Github Orbot: Tor در اندروید (در gitlab نیز موجود است!)",
       "iconUrl": "https://avatars.githubusercontent.com/u/218109?v=4",
-      "website": "https://gitlab.com/guardianproject/orbot"
+      "website": "https://gitlab.com/guardianproject/orbot",
+      "descriptionEn": "The Github home of Orbot: Tor on Android (Also available on gitlab!)"
     },
     {
       "id": "ultimatum",
@@ -545,8 +567,9 @@
       "github": "gonzazoid/Ultimatum",
       "developer": "gonzazoid",
       "category": "ابزارها",
-      "description": "Ultimatum is a chromium fork with webextensions support on Android, anti-detect browser capabilities, web3.0 support and much more",
-      "iconUrl": "https://avatars.githubusercontent.com/u/12472060?v=4"
+      "description": "Ultimatum یک فورک کرومیوم با پشتیبانی از افزونه های وب در اندروید، قابلیت های ضد شناسایی مرورگر، پشتیبانی از web3.0 و موارد دیگر است.",
+      "iconUrl": "https://avatars.githubusercontent.com/u/12472060?v=4",
+      "descriptionEn": "Ultimatum is a chromium fork with webextensions support on Android, anti-detect browser capabilities, web3.0 support and much more"
     },
     {
       "id": "rethink-app",
@@ -554,9 +577,10 @@
       "github": "celzero/rethink-app",
       "developer": "celzero",
       "category": "ابزارها",
-      "description": "DNS over HTTPS / DNS over Tor / DNSCrypt client, WireGuard proxifier, firewall, and connection tracker for Android.",
+      "description": "DNS از طریق HTTPS / DNS از طریق کلاینت Tor / DNSCrypt، پروکسی فایر WireGuard، فایروال و ردیاب اتصال برای اندروید.",
       "iconUrl": "https://avatars.githubusercontent.com/u/68689239?v=4",
-      "website": "https://rethinkfirewall.com/"
+      "website": "https://rethinkfirewall.com/",
+      "descriptionEn": "DNS over HTTPS / DNS over Tor / DNSCrypt client, WireGuard proxifier, firewall, and connection tracker for Android."
     },
     {
       "id": "throne",
@@ -564,9 +588,10 @@
       "github": "throneproj/Throne",
       "developer": "throneproj",
       "category": "ابزارها",
-      "description": "Cross-platform GUI proxy utility (Empowered by sing-box)",
+      "description": "ابزار پروکسی رابط کاربری گرافیکی متقابل پلتفرم (تقویت شده توسط sing-box)",
       "iconUrl": "https://avatars.githubusercontent.com/u/220557208?v=4",
-      "website": "https://throneproj.github.io"
+      "website": "https://throneproj.github.io",
+      "descriptionEn": "Cross-platform GUI proxy utility (Empowered by sing-box)"
     },
     {
       "id": "defyxvpn",
@@ -574,9 +599,10 @@
       "github": "UnboundTechCo/defyxVPN",
       "developer": "UnboundTechCo",
       "category": "ابزارها",
-      "description": "A modern, secure VPN application built with Flutter that provides internet freedom and privacy protection.",
+      "description": "یک برنامه VPN مدرن و ایمن ساخته شده با Flutter که آزادی اینترنت و محافظت از حریم خصوصی را فراهم می کند.",
       "iconUrl": "https://avatars.githubusercontent.com/u/205142505?v=4",
-      "website": "https://defyxvpn.com/privacy-policy.html"
+      "website": "https://defyxvpn.com/privacy-policy.html",
+      "descriptionEn": "A modern, secure VPN application built with Flutter that provides internet freedom and privacy protection."
     },
     {
       "id": "omidvpn",
@@ -584,9 +610,10 @@
       "github": "code3-dev/OmidVPN",
       "developer": "code3-dev",
       "category": "ابزارها",
-      "description": "A simple openVPN client for public VPN servers that allows users to connect to VPN services easily.",
+      "description": "یک کلاینت openVPN ساده برای سرورهای عمومی VPN که به کاربران امکان می دهد به راحتی به خدمات VPN متصل شوند.",
       "iconUrl": "https://avatars.githubusercontent.com/u/158034265?v=4",
-      "website": "https://ircf.space"
+      "website": "https://ircf.space",
+      "descriptionEn": "A simple openVPN client for public VPN servers that allows users to connect to VPN services easily."
     },
     {
       "id": "sing-box-plus",
@@ -596,7 +623,8 @@
       "category": "ابزارها",
       "description": "Sing-Box + Enhancements",
       "iconUrl": "https://avatars.githubusercontent.com/u/161596627?v=4",
-      "website": "https://sing-box.sagernet.org/"
+      "website": "https://sing-box.sagernet.org/",
+      "descriptionEn": "Sing-Box + Enhancements"
     }
   ]
 }
